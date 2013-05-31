@@ -1,0 +1,37 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:itsrdf="http://www.w3.org/2005/11/its/rdf#">
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/file)"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/file/its:rules[1])"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/file/its:rules[1]/@version)"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/file/its:rules[1]/its:translateRule[1])"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/file/its:rules[1]/its:translateRule[1]/@selector)"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/file/its:rules[1]/its:translateRule[1]/@translate)"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/file/its:rules[1]/its:translateRule[2])"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/file/its:rules[1]/its:translateRule[2]/@selector)"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/file/its:rules[1]/its:translateRule[2]/@translate)"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/file/its:rules[1]/its:targetPointerRule[1])"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/file/its:rules[1]/its:targetPointerRule[1]/@selector)"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/file/its:rules[1]/its:targetPointerRule[1]/@targerPointer)"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/file/entry[1])"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/file/entry[1]/@id)"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/file/entry[1]/source[1])">
+      <itsrdf:targerPointer rdf:parseType="Literal">
+         <targerPointer xmlns:its="http://www.w3.org/2005/11/its"
+                        xmlns:datc="http://example.com/datacats">
+            <target>To be created (one)</target>
+         </targerPointer>
+      </itsrdf:targerPointer>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/file/entry[1]/target[1])"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/file/entry[2])"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/file/entry[2]/@id)"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/file/entry[2]/source[1])">
+      <itsrdf:targerPointer rdf:parseType="Literal">
+         <targerPointer xmlns:its="http://www.w3.org/2005/11/its"
+                        xmlns:datc="http://example.com/datacats">
+            <target>To be created (two)</target>
+         </targerPointer>
+      </itsrdf:targerPointer>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/file/entry[2]/target[1])"/>
+</rdf:RDF>

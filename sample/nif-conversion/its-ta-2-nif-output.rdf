@@ -1,0 +1,33 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:itsrdf="http://www.w3.org/2005/11/its/rdf#"
+         xmlns:nif="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#">
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#char=0,57">
+      <nif:occursIn rdf:resource="http://example.com/exampledoc.html"/>
+      <nif:isString>NIF2ITS2NIF test Welcome to Dublin in Ireland and Europe!</nif:isString>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#Context"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#char=28,34">
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:anchorOf>Dublin</nif:anchorOf>
+      <itsrdf:taClassRef rdf:resource="http://nerd.eurecom.fr/ontology#Location"/>
+      <itsrdf:taIdentRef rdf:resource="http://dbpedia.org/resource/Dublin"/>
+      <itsrdf:taConfidence>0.7</itsrdf:taConfidence>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.html#char=0,57"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#char=38,45">
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:anchorOf>Ireland</nif:anchorOf>
+      <itsrdf:taClassRef rdf:resource="http://nerd.eurecom.fr/ontology#Country"/>
+      <itsrdf:taIdentRef rdf:resource="http://dbpedia.org/resource/Ireland"/>
+      <itsrdf:taConfidence>0.44</itsrdf:taConfidence>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.html#char=0,57"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#char=50,56">
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:anchorOf>Europe</nif:anchorOf>
+      <itsrdf:taClassRef rdf:resource="http://nerd.eurecom.fr/ontology#Location"/>
+      <itsrdf:taIdentRef rdf:resource="http://dbpedia.org/resource/Europe"/>
+      <itsrdf:taConfidence>0.49</itsrdf:taConfidence>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.html#char=0,57"/>
+   </rdf:Description>
+</rdf:RDF>

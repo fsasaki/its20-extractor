@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<book xmlns:its="http://www.w3.org/2005/11/its">
+   <itsAnn>
+      <elem its:localeFilterList="*"/>
+   </itsAnn>
+  <info>
+      <itsAnn>
+         <elem its:localeFilterList="*"/>
+      </itsAnn>
+      <legalnotice its:localeFilterList="en-CA, fr-CA">
+         <itsAnn>
+            <elem its:localeFilterList="en-CA, fr-CA"/>
+            <attr name="its:localeFilterList" its:localeFilterList="en-CA, fr-CA"/>
+         </itsAnn>
+         <para>
+            <itsAnn>
+               <elem its:localeFilterList="en-CA, fr-CA"/>
+            </itsAnn>This legal notice is only for Canadian locales.</para>
+      </legalnotice>
+  </info>
+</book>

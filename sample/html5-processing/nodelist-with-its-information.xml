@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeList xmlns:its="http://www.w3.org/2005/11/its"
+          xmlns:datc="http://example.com/datacats">
+   <nodeList datacat="translate">
+      <node path="/html" outputType="default-value">
+         <output its:translate="yes"/>
+      </node>
+      <node path="/html/@lang" outputType="default-value">
+         <output its:translate="no"/>
+      </node>
+      <node path="/html/head[1]" outputType="default-value">
+         <output its:translate="yes"/>
+      </node>
+      <node path="/html/head[1]/meta[1]" outputType="default-value">
+         <output its:translate="yes"/>
+      </node>
+      <node path="/html/head[1]/meta[1]/@http-equiv" outputType="default-value">
+         <output its:translate="no"/>
+      </node>
+      <node path="/html/head[1]/meta[1]/@content" outputType="default-value">
+         <output its:translate="no"/>
+      </node>
+      <node path="/html/head[1]/meta[2]" outputType="default-value">
+         <output its:translate="yes"/>
+      </node>
+      <node path="/html/head[1]/meta[2]/@charset" outputType="default-value">
+         <output its:translate="no"/>
+      </node>
+      <node path="/html/head[1]/title[1]" outputType="default-value">
+         <output its:translate="yes"/>
+      </node>
+      <node path="/html/head[1]/its:rules[1]" outputType="default-value">
+         <output its:translate="yes"/>
+      </node>
+      <node path="/html/head[1]/its:rules[1]/@version" outputType="default-value">
+         <output its:translate="no"/>
+      </node>
+      <node path="/html/head[1]/its:rules[1]/@xlink:href"
+            outputType="default-value">
+         <output its:translate="no"/>
+      </node>
+      <node path="/html/body[1]" outputType="default-value">
+         <output its:translate="yes"/>
+      </node>
+      <node path="/html/body[1]/p[1]" outputType="default-value">
+         <output its:translate="yes"/>
+      </node>
+      <node path="/html/body[1]/p[1]/span[1]" outputType="default-value">
+         <output its:translate="yes"/>
+      </node>
+      <node path="/html/body[1]/p[1]/span[1]/@its:term" outputType="default-value">
+         <output its:translate="no"/>
+      </node>
+      <node path="/html/body[1]/p[1]/span[1]/@its:locNote"
+            outputType="default-value">
+         <output its:translate="no"/>
+      </node>
+      <node path="/html/body[1]/p[1]/code[1]" outputType="new-value-global">
+         <output xmlns:h="http://www.w3.org/1999/xhtml" translate="no"/>
+      </node>
+   </nodeList>
+   <nodeList datacat="directionality">
+      <node path="/html" outputType="default-value">
+         <output its:dir="ltr"/>
+      </node>
+      <node path="/html/@lang" outputType="default-value">
+         <output its:dir="ltr"/>
+      </node>
+      <node path="/html/head[1]" outputType="default-value">
+         <output its:dir="ltr"/>
+      </node>
+      <node path="/html/head[1]/meta[1]" outputType="default-value">
+         <output its:dir="ltr"/>
+      </node>
+      <node path="/html/head[1]/meta[1]/@http-equiv" outputType="default-value">
+         <output its:dir="ltr"/>
+      </node>
+      <node path="/html/head[1]/meta[1]/@content" outputType="default-value">
+         <output its:dir="ltr"/>
+      </node>
+      <node path="/html/head[1]/meta[2]" outputType="default-value">
+         <output its:dir="ltr"/>
+      </node>
+      <node path="/html/head[1]/meta[2]/@charset" outputType="default-value">
+         <output its:dir="ltr"/>
+      </node>
+      <node path="/html/head[1]/title[1]" outputType="default-value">
+         <output its:dir="ltr"/>
+      </node>
+      <node path="/html/head[1]/its:rules[1]" outputType="default-value">
+         <output its:dir="ltr"/>
+      </node>
+      <node path="/html/head[1]/its:rules[1]/@version" outputType="default-value">
+         <output its:dir="ltr"/>
+      </node>
+      <node path="/html/head[1]/its:rules[1]/@xlink:href"
+            outputType="default-value">
+         <output its:dir="ltr"/>
+      </node>
+      <node path="/html/body[1]" outputType="default-value">
+         <output its:dir="ltr"/>
+      </node>
+      <node path="/html/body[1]/p[1]" outputType="default-value">
+         <output its:dir="ltr"/>
+      </node>
+      <node path="/html/body[1]/p[1]/span[1]" outputType="default-value">
+         <output its:dir="ltr"/>
+      </node>
+      <node path="/html/body[1]/p[1]/span[1]/@its:term" outputType="default-value">
+         <output its:dir="ltr"/>
+      </node>
+      <node path="/html/body[1]/p[1]/span[1]/@its:locNote"
+            outputType="default-value">
+         <output its:dir="ltr"/>
+      </node>
+      <node path="/html/body[1]/p[1]/code[1]" outputType="default-value">
+         <output its:dir="ltr"/>
+      </node>
+   </nodeList>
+   <nodeList datacat="localizationnote">
+      <node path="/html" outputType="default-value">
+         <output/>
+      </node>
+      <node path="/html/@lang" outputType="default-value">
+         <output/>
+      </node>
+      <node path="/html/head[1]" outputType="default-value">
+         <output/>
+      </node>
+      <node path="/html/head[1]/meta[1]" outputType="default-value">
+         <output/>
+      </node>
+      <node path="/html/head[1]/meta[1]/@http-equiv" outputType="default-value">
+         <output/>
+      </node>
+      <node path="/html/head[1]/meta[1]/@content" outputType="default-value">
+         <output/>
+      </node>
+      <node path="/html/head[1]/meta[2]" outputType="default-value">
+         <output/>
+      </node>
+      <node path="/html/head[1]/meta[2]/@charset" outputType="default-value">
+         <output/>
+      </node>
+      <node path="/html/head[1]/title[1]" outputType="default-value">
+         <output/>
+      </node>
+      <node path="/html/head[1]/its:rules[1]" outputType="default-value">
+         <output/>
+      </node>
+      <node path="/html/head[1]/its:rules[1]/@version" outputType="default-value">
+         <output/>
+      </node>
+      <node path="/html/head[1]/its:rules[1]/@xlink:href"
+            outputType="default-value">
+         <output/>
+      </node>
+      <node path="/html/body[1]" outputType="default-value">
+         <output/>
+      </node>
+      <node path="/html/body[1]/p[1]" outputType="default-value">
+         <output/>
+      </node>
+      <node path="/html/body[1]/p[1]/span[1]" outputType="new-value-local">
+         <output its:locNote="Where will the terminfo come from?"/>
+      </node>
+      <node path="/html/body[1]/p[1]/span[1]/@its:term" outputType="default-value">
+         <output/>
+      </node>
+      <node path="/html/body[1]/p[1]/span[1]/@its:locNote"
+            outputType="default-value">
+         <output/>
+      </node>
+      <node path="/html/body[1]/p[1]/code[1]" outputType="default-value">
+         <output/>
+      </node>
+   </nodeList>
+</nodeList>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Res>
+   <itsAnn>
+      <elem xmlns:its="http://www.w3.org/2005/11/its" its:translate="yes"/>
+   </itsAnn>
+   <prolog>
+      <itsAnn>
+         <elem xmlns:its="http://www.w3.org/2005/11/its" its:translate="yes"/>
+      </itsAnn>
+      <its:rules xmlns:its="http://www.w3.org/2005/11/its" version="1.0">
+         <itsAnn>
+            <elem its:translate="yes"/>
+            <attr name="version" its:translate="no"/>
+         </itsAnn>
+         <its:translateRule selector="//msg/notes" translate="no">
+            <itsAnn>
+               <elem its:translate="yes"/>
+               <attr name="selector" its:translate="no"/>
+               <attr name="translate" its:translate="no"/>
+            </itsAnn>
+         </its:translateRule>
+         <its:locNoteRule locNoteType="description"
+                          selector="//msg/data"
+                          locNotePointer="../notes">
+            <itsAnn>
+               <elem its:translate="yes"/>
+               <attr name="locNoteType" its:translate="no"/>
+               <attr name="selector" its:translate="no"/>
+               <attr name="locNotePointer" its:translate="no"/>
+            </itsAnn>
+         </its:locNoteRule>
+      </its:rules>
+   </prolog>
+   <body>
+      <itsAnn>
+         <elem xmlns:its="http://www.w3.org/2005/11/its" its:translate="yes"/>
+      </itsAnn>
+      <msg id="FileNotFound">
+         <itsAnn>
+            <elem xmlns:its="http://www.w3.org/2005/11/its" its:translate="yes"/>
+            <attr xmlns:its="http://www.w3.org/2005/11/its" name="id" its:translate="no"/>
+         </itsAnn>
+         <notes>
+            <itsAnn>
+               <elem translate="no"/>
+            </itsAnn>Indicates that the resource file {0} could not be loaded.</notes>
+         <data>
+            <itsAnn>
+               <elem xmlns:its="http://www.w3.org/2005/11/its"
+                     its:translate="yes"
+                     locNoteType="description">
+                  <locNotePointer xmlns:datc="http://example.com/datacats">
+                     <notes>Indicates that the resource file {0} could not be loaded.</notes>
+                  </locNotePointer>
+               </elem>
+            </itsAnn>Cannot find the file {0}.</data>
+      </msg>
+      <msg id="DivByZero">
+         <itsAnn>
+            <elem xmlns:its="http://www.w3.org/2005/11/its" its:translate="yes"/>
+            <attr xmlns:its="http://www.w3.org/2005/11/its" name="id" its:translate="no"/>
+         </itsAnn>
+         <notes>
+            <itsAnn>
+               <elem translate="no"/>
+            </itsAnn>A division by 0 was going to be computed.</notes>
+         <data>
+            <itsAnn>
+               <elem xmlns:its="http://www.w3.org/2005/11/its"
+                     its:translate="yes"
+                     locNoteType="description">
+                  <locNotePointer xmlns:datc="http://example.com/datacats">
+                     <notes>A division by 0 was going to be computed.</notes>
+                  </locNotePointer>
+               </elem>
+            </itsAnn>Invalid parameter.</data>
+      </msg>
+   </body>
+</Res>

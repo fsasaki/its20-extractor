@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:its="http://www.w3.org/2005/11/its">
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/text)">
+      <its:term>no</its:term>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/text/its:rules[1])">
+      <its:term>no</its:term>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/text/its:rules[1]/@version)">
+      <its:term>no</its:term>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/text/its:rules[1]/its:termRule[1])">
+      <its:term>no</its:term>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/text/its:rules[1]/its:termRule[1]/@selector)">
+      <its:term>no</its:term>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/text/its:rules[1]/its:termRule[1]/@term)">
+      <its:term>no</its:term>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/text/its:rules[1]/its:termRule[1]/@termInfoPointer)">
+      <its:term>no</its:term>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/text/p[1])">
+      <its:term>no</its:term>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/text/p[1]/term[1])">
+      <its:term>yes</its:term>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/text/p[1]/term[1])">
+      <its:termInfoPointer rdf:parseType="Literal">
+         <termInfoPointer xmlns:datc="http://example.com/datacats">
+            <gloss xml:id="TDPV">the relationship, expressed through discourse
+structure, between the implied author or some other addresser,
+and the fiction.</gloss>
+         </termInfoPointer>
+      </its:termInfoPointer>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/text/p[1]/term[1]/@def)">
+      <its:term>no</its:term>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/text/p[1]/gloss[1])">
+      <its:term>no</its:term>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/text/p[1]/gloss[1]/@xml:id)">
+      <its:term>no</its:term>
+   </rdf:Description>
+</rdf:RDF>

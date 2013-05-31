@@ -1,0 +1,11 @@
+<doc>
+  <head>
+  <its:rules version="2.0" xmlns:its="http://www.w3.org/2005/11/its">
+  <its:langRule  
+      selector="//p" langPointer="@mylangattribute"/>
+</its:rules>
+  </head>
+  <body>
+    <p mylangattribute="ja">これはテストです。</p>
+  </body>
+</doc>

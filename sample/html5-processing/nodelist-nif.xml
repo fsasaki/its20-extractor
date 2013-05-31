@@ -1,0 +1,124 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:itsrdf="http://www.w3.org/2005/11/its/rdf#"
+         xmlns:str="http://nlp2rdf.lod2.eu/schema/string/">
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#offset_0_245">
+      <str:occursIn rdf:resource="http://example.com/exampledoc.html"/>
+      <str:isString>
+   
+      
+      
+      
+      
+      Translate flag global rules example
+      
+      
+      
+   
+   
+   
+      
+      This sentence should be translated, but code names like the span element should not be translated.
+      
+      
+      
+   
+</str:isString>
+      <rdf:type rdf:resource="str:Context"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#offset_0_245"><!--/html--><rdf:type rdf:resource="str:String"/>
+      <str:anchorOf>
+   
+      
+      
+      
+      
+      Translate flag global rules example
+      
+      
+      
+   
+   
+   
+      
+      This sentence should be translated, but code names like the span element should not be translated.
+      
+      
+      
+   
+</str:anchorOf>
+      <itsrdf:translate rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#yesOrNo">yes</itsrdf:translate>
+      <itsrdf:dir rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#dir">ltr</itsrdf:dir>
+      <str:referenceContext rdf:resource="http://example.com/exampledoc.html#offset_0_245"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#offset_4_99"><!--/html/head[1]--><rdf:type rdf:resource="str:String"/>
+      <str:anchorOf>
+      
+      
+      
+      
+      Translate flag global rules example
+      
+      
+      
+   </str:anchorOf>
+      <itsrdf:translate rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#yesOrNo">yes</itsrdf:translate>
+      <itsrdf:dir rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#dir">ltr</itsrdf:dir>
+      <str:referenceContext rdf:resource="http://example.com/exampledoc.html#offset_0_245"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#offset_11_11"><!--/html/head[1]/meta[1]--><rdf:type rdf:resource="str:String"/>
+      <str:anchorOf/>
+      <itsrdf:translate rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#yesOrNo">yes</itsrdf:translate>
+      <itsrdf:dir rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#dir">ltr</itsrdf:dir>
+      <str:referenceContext rdf:resource="http://example.com/exampledoc.html#offset_0_245"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#offset_27_27"><!--/html/head[1]/meta[2]--><rdf:type rdf:resource="str:String"/>
+      <str:anchorOf/>
+      <itsrdf:translate rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#yesOrNo">yes</itsrdf:translate>
+      <itsrdf:dir rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#dir">ltr</itsrdf:dir>
+      <str:referenceContext rdf:resource="http://example.com/exampledoc.html#offset_0_245"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#offset_43_78"><!--/html/head[1]/title[1]--><rdf:type rdf:resource="str:String"/>
+      <str:anchorOf>Translate flag global rules example</str:anchorOf>
+      <itsrdf:translate rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#yesOrNo">yes</itsrdf:translate>
+      <itsrdf:dir rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#dir">ltr</itsrdf:dir>
+      <str:referenceContext rdf:resource="http://example.com/exampledoc.html#offset_0_245"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#offset_94_94"><!--/html/head[1]/its:rules[1]--><rdf:type rdf:resource="str:String"/>
+      <str:anchorOf/>
+      <itsrdf:translate rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#yesOrNo">yes</itsrdf:translate>
+      <itsrdf:dir rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#dir">ltr</itsrdf:dir>
+      <str:referenceContext rdf:resource="http://example.com/exampledoc.html#offset_0_245"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#offset_109_246"><!--/html/body[1]--><rdf:type rdf:resource="str:String"/>
+      <str:anchorOf>
+      
+      This sentence should be translated, but code names like the span element should not be translated.
+      
+      
+      
+   </str:anchorOf>
+      <itsrdf:translate rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#yesOrNo">yes</itsrdf:translate>
+      <itsrdf:dir rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#dir">ltr</itsrdf:dir>
+      <str:referenceContext rdf:resource="http://example.com/exampledoc.html#offset_0_245"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#offset_123_228"><!--/html/body[1]/p[1]--><rdf:type rdf:resource="str:String"/>
+      <str:anchorOf>This sentence should be translated, but code names like the span element should not be translated.
+      </str:anchorOf>
+      <itsrdf:translate rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#yesOrNo">yes</itsrdf:translate>
+      <itsrdf:dir rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#dir">ltr</itsrdf:dir>
+      <str:referenceContext rdf:resource="http://example.com/exampledoc.html#offset_0_245"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#offset_163_167"><!--/html/body[1]/p[1]/span[1]--><rdf:type rdf:resource="str:String"/>
+      <str:anchorOf>code</str:anchorOf>
+      <itsrdf:translate rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#yesOrNo">yes</itsrdf:translate>
+      <itsrdf:dir rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#dir">ltr</itsrdf:dir>
+      <itsrdf:locNote>Where will the terminfo come from?</itsrdf:locNote>
+      <str:referenceContext rdf:resource="http://example.com/exampledoc.html#offset_0_245"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#offset_185_189"><!--/html/body[1]/p[1]/code[1]--><rdf:type rdf:resource="str:String"/>
+      <str:anchorOf>span</str:anchorOf>
+      <itsrdf:translate rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#yesOrNo">no</itsrdf:translate>
+      <itsrdf:dir rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#dir">ltr</itsrdf:dir>
+      <str:referenceContext rdf:resource="http://example.com/exampledoc.html#offset_0_245"/>
+   </rdf:Description>
+</rdf:RDF>

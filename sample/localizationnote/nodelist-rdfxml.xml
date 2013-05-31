@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:its="http://www.w3.org/2005/11/its">
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/Res)">
+      <its:translate>yes</its:translate>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/Res/prolog[1])">
+      <its:translate>yes</its:translate>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/Res/prolog[1]/its:rules[1])">
+      <its:translate>yes</its:translate>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/Res/prolog[1]/its:rules[1]/@version)">
+      <its:translate>no</its:translate>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/Res/prolog[1]/its:rules[1]/its:translateRule[1])">
+      <its:translate>yes</its:translate>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/Res/prolog[1]/its:rules[1]/its:translateRule[1]/@selector)">
+      <its:translate>no</its:translate>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/Res/prolog[1]/its:rules[1]/its:translateRule[1]/@translate)">
+      <its:translate>no</its:translate>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/Res/prolog[1]/its:rules[1]/its:locNoteRule[1])">
+      <its:translate>yes</its:translate>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/Res/prolog[1]/its:rules[1]/its:locNoteRule[1]/@locNoteType)">
+      <its:translate>no</its:translate>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/Res/prolog[1]/its:rules[1]/its:locNoteRule[1]/@selector)">
+      <its:translate>no</its:translate>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/Res/prolog[1]/its:rules[1]/its:locNoteRule[1]/@locNotePointer)">
+      <its:translate>no</its:translate>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/Res/body[1])">
+      <its:translate>yes</its:translate>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/Res/body[1]/msg[1])">
+      <its:translate>yes</its:translate>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/Res/body[1]/msg[1]/@id)">
+      <its:translate>no</its:translate>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/Res/body[1]/msg[1]/notes[1])">
+      <its:translate>no</its:translate>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/Res/body[1]/msg[1]/data[1])">
+      <its:translate>yes</its:translate>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/Res/body[1]/msg[2])">
+      <its:translate>yes</its:translate>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/Res/body[1]/msg[2]/@id)">
+      <its:translate>no</its:translate>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/Res/body[1]/msg[2]/notes[1])">
+      <its:translate>no</its:translate>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/Res/body[1]/msg[2]/data[1])">
+      <its:translate>yes</its:translate>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/Res/body[1]/msg[1]/data[1])">
+      <its:locNoteType>description</its:locNoteType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/Res/body[1]/msg[1]/data[1])">
+      <its:locNotePointer rdf:parseType="Literal">
+         <locNotePointer xmlns:datc="http://example.com/datacats">
+            <notes>Indicates that the resource file {0} could not be loaded.</notes>
+         </locNotePointer>
+      </its:locNotePointer>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/Res/body[1]/msg[2]/data[1])">
+      <its:locNoteType>description</its:locNoteType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/Res/body[1]/msg[2]/data[1])">
+      <its:locNotePointer rdf:parseType="Literal">
+         <locNotePointer xmlns:datc="http://example.com/datacats">
+            <notes>A division by 0 was going to be computed.</notes>
+         </locNotePointer>
+      </its:locNotePointer>
+   </rdf:Description>
+</rdf:RDF>

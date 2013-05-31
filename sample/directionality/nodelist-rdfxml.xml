@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:its="http://www.w3.org/2005/11/its">
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/text)">
+      <its:dir>ltr</its:dir>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/text/@xml:lang)">
+      <its:dir>ltr</its:dir>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/text/@its:version)">
+      <its:dir>ltr</its:dir>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/text/body[1])">
+      <its:dir>ltr</its:dir>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/text/body[1]/par[1])">
+      <its:dir>ltr</its:dir>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/text/body[1]/par[1]/quote[1])">
+      <its:dir>rtl</its:dir>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/text/body[1]/par[1]/quote[1]/@xml:lang)">
+      <its:dir>rtl</its:dir>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/text/body[1]/par[1]/quote[1]/@its:dir)">
+      <its:dir>rtl</its:dir>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/text/body[1]/par[1]/quote[2])">
+      <its:dir>ltr</its:dir>
+   </rdf:Description>
+</rdf:RDF>

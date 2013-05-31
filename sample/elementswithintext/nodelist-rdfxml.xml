@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:its="http://www.w3.org/2005/11/its">
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/text)">
+      <its:withinText>no</its:withinText>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/text/body[1])">
+      <its:withinText>no</its:withinText>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/text/body[1]/par[1])">
+      <its:withinText>no</its:withinText>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/text/body[1]/par[1]/bold[1])">
+      <its:withinText>yes</its:withinText>
+   </rdf:Description>
+</rdf:RDF>

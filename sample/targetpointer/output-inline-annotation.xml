@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<file>
+   <itsAnn/>
+   <its:rules xmlns:its="http://www.w3.org/2005/11/its" version="2.0">
+      <itsAnn/>
+      <its:translateRule selector="/file" translate="no">
+         <itsAnn/>
+      </its:translateRule>
+      <its:translateRule selector="//source" translate="yes">
+         <itsAnn/>
+      </its:translateRule>
+      <its:targetPointerRule selector="//source" targerPointer="../target">
+         <itsAnn/>
+      </its:targetPointerRule>
+   </its:rules>
+   <entry id="one">
+      <itsAnn/>
+      <source>
+         <itsAnn>
+            <elem>
+               <targerPointer xmlns:its="http://www.w3.org/2005/11/its"
+                              xmlns:datc="http://example.com/datacats">
+                  <target>To be created (one)</target>
+               </targerPointer>
+            </elem>
+         </itsAnn>Remember last folder</source>
+      <target>
+         <itsAnn/>To be created (one)</target>
+   </entry>
+   <entry id="two">
+      <itsAnn/>
+      <source>
+         <itsAnn>
+            <elem>
+               <targerPointer xmlns:its="http://www.w3.org/2005/11/its"
+                              xmlns:datc="http://example.com/datacats">
+                  <target>To be created (two)</target>
+               </targerPointer>
+            </elem>
+         </itsAnn>Custom file filter:</source>
+      <target>
+         <itsAnn/>To be created (two)</target>
+   </entry>
+</file>

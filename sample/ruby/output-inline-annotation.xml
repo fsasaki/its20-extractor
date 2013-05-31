@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<text xmlns:its="http://www.w3.org/2005/11/its" its:version="1.0">
+   <itsAnn/>
+   <head>
+      <itsAnn/> ... </head>
+   <body>
+      <itsAnn/>
+      <p>
+         <itsAnn/>この本は <its:ruby>
+            <itsAnn>
+               <elem>
+                  <its:ruby xmlns:datc="http://example.com/datacats">
+                     <its:rb>慶応義塾大学</its:rb>
+                     <its:rp>(</its:rp>
+                     <its:rt>けいおうぎじゅくだいがく</its:rt>
+                     <its:rp>)</its:rp>
+                  </its:ruby>
+               </elem>
+            </itsAnn>
+            <its:rb>
+               <itsAnn/>慶応義塾大学</its:rb>
+            <its:rp>
+               <itsAnn/>(</its:rp>
+            <its:rt>
+               <itsAnn/>けいおうぎじゅくだいがく</its:rt>
+            <its:rp>
+               <itsAnn/>)</its:rp>
+         </its:ruby>の歴史を説明するものです。</p>
+   </body>
+</text>

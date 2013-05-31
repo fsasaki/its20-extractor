@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc xmlns:its="http://www.w3.org/2005/11/its" its:version="2.0">
+   <itsAnn>
+      <elem translate="no"/>
+      <attr name="its:version" its:translate="no"/>
+   </itsAnn>
+   <its:rules version="2.0">
+      <itsAnn>
+         <elem translate="no"/>
+         <attr name="version" its:translate="no"/>
+      </itsAnn>
+      <its:param name="LCID">
+         <itsAnn>
+            <elem translate="no"/>
+            <attr name="name" its:translate="no"/>
+         </itsAnn>0x0409</its:param> 
+      <its:translateRule selector="/doc" translate="no">
+         <itsAnn>
+            <elem translate="no"/>
+            <attr name="selector" its:translate="no"/>
+            <attr name="translate" its:translate="no"/>
+         </itsAnn>
+      </its:translateRule> 
+      <its:translateRule selector="//msg[@lcid=$LCID]" translate="yes">
+         <itsAnn>
+            <elem translate="no"/>
+            <attr name="selector" its:translate="no"/>
+            <attr name="translate" its:translate="no"/>
+         </itsAnn>
+      </its:translateRule> 
+   </its:rules>
+   <msg lcid="0x0409" num="1">
+      <itsAnn>
+         <elem translate="yes"/>
+         <attr name="lcid" its:translate="no"/>
+         <attr name="num" its:translate="no"/>
+      </itsAnn>Create a folder</msg> 
+   <msg lcid="0x0411" num="1">
+      <itsAnn>
+         <elem translate="no"/>
+         <attr name="lcid" its:translate="no"/>
+         <attr name="num" its:translate="no"/>
+      </itsAnn>フォルダーを作成する</msg> 
+   <msg lcid="0x0407" num="1">
+      <itsAnn>
+         <elem translate="no"/>
+         <attr name="lcid" its:translate="no"/>
+         <attr name="num" its:translate="no"/>
+      </itsAnn>Erstellen Sie einen Ordner</msg> 
+   <msg lcid="0x040c" num="1">
+      <itsAnn>
+         <elem translate="no"/>
+         <attr name="lcid" its:translate="no"/>
+         <attr name="num" its:translate="no"/>
+      </itsAnn>Créer un dossier</msg> 
+</doc>

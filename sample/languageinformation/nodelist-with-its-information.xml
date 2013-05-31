@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeList xmlns:its="http://www.w3.org/2005/11/its"
+          xmlns:datc="http://example.com/datacats">
+   <nodeList datacat="languageinformation">
+      <node path="/doc" outputType="no-value">
+         <output/>
+      </node>
+      <node path="/doc/head[1]" outputType="no-value">
+         <output/>
+      </node>
+      <node path="/doc/head[1]/its:rules[1]" outputType="no-value">
+         <output/>
+      </node>
+      <node path="/doc/head[1]/its:rules[1]/@version" outputType="no-value">
+         <output/>
+      </node>
+      <node path="/doc/head[1]/its:rules[1]/its:langRule[1]" outputType="no-value">
+         <output/>
+      </node>
+      <node path="/doc/head[1]/its:rules[1]/its:langRule[1]/@selector"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/doc/head[1]/its:rules[1]/its:langRule[1]/@langPointer"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/doc/body[1]" outputType="no-value">
+         <output/>
+      </node>
+      <node path="/doc/body[1]/p[1]" outputType="new-value-global">
+         <output>
+            <langPointer mylangattribute="ja"/>
+         </output>
+      </node>
+      <node path="/doc/body[1]/p[1]/@mylangattribute" outputType="inherited">
+         <output>
+            <langPointer mylangattribute="ja"/>
+         </output>
+      </node>
+   </nodeList>
+</nodeList>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<text>
+   <itsAnn>
+      <elem xmlns:its="http://www.w3.org/2005/11/its" its:term="no"/>
+   </itsAnn>
+   <its:rules xmlns:its="http://www.w3.org/2005/11/its" version="1.0">
+      <itsAnn>
+         <elem its:term="no"/>
+         <attr name="version" its:term="no"/>
+      </itsAnn>
+      <its:termRule selector="//term" term="yes" termInfoPointer="id(@def)">
+         <itsAnn>
+            <elem its:term="no"/>
+            <attr name="selector" its:term="no"/>
+            <attr name="term" its:term="no"/>
+            <attr name="termInfoPointer" its:term="no"/>
+         </itsAnn>
+      </its:termRule>
+   </its:rules>
+   <p>
+      <itsAnn>
+         <elem xmlns:its="http://www.w3.org/2005/11/its" its:term="no"/>
+      </itsAnn>We may define <term def="TDPV">
+         <itsAnn>
+            <elem term="yes">
+               <termInfoPointer xmlns:its="http://www.w3.org/2005/11/its"
+                                xmlns:datc="http://example.com/datacats">
+                  <gloss xml:id="TDPV">the relationship, expressed through discourse
+structure, between the implied author or some other addresser,
+and the fiction.</gloss>
+               </termInfoPointer>
+            </elem>
+            <attr xmlns:its="http://www.w3.org/2005/11/its" name="def" its:term="no"/>
+         </itsAnn>discoursal point of view</term>
+as <gloss xml:id="TDPV">
+         <itsAnn>
+            <elem xmlns:its="http://www.w3.org/2005/11/its" its:term="no"/>
+            <attr xmlns:its="http://www.w3.org/2005/11/its" name="xml:id" its:term="no"/>
+         </itsAnn>the relationship, expressed through discourse
+structure, between the implied author or some other addresser,
+and the fiction.</gloss>
+   </p>
+</text>

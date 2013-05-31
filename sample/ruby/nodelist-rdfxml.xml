@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:its="http://www.w3.org/2005/11/its">
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/text/body[1]/p[1]/its:ruby[1])">
+      <its:ruby rdf:parseType="Literal">
+         <its:ruby xmlns:datc="http://example.com/datacats">
+            <its:rb>慶応義塾大学</its:rb>
+            <its:rp>(</its:rp>
+            <its:rt>けいおうぎじゅくだいがく</its:rt>
+            <its:rp>)</its:rp>
+         </its:ruby>
+      </its:ruby>
+   </rdf:Description>
+</rdf:RDF>

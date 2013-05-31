@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+   <itsAnn xmlns="">
+      <elem xmlns:its="http://www.w3.org/2005/11/its" its:translate="yes" its:dir="ltr"></elem>
+      <attr xmlns:its="http://www.w3.org/2005/11/its" name="lang" its:translate="no" its:dir="ltr"></attr>
+   </itsAnn>
+   
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <itsAnn xmlns="">
+         <elem xmlns:its="http://www.w3.org/2005/11/its" its:translate="yes" its:dir="ltr"></elem>
+      </itsAnn>
+      
+      <itsAnn xmlns="">
+         <elem xmlns:its="http://www.w3.org/2005/11/its">
+            <attr xmlns:its="http://www.w3.org/2005/11/its" name="http-equiv" its:translate="no" its:dir="ltr"></attr>
+            <attr xmlns:its="http://www.w3.org/2005/11/its" name="content" its:translate="no" its:dir="ltr"></attr>
+         </elem>
+      </itsAnn>
+      
+      
+      <itsAnn xmlns="">
+         <elem xmlns:its="http://www.w3.org/2005/11/its">
+            <itsAnn charset="utf-8" its:translate="yes" its:dir="ltr"></itsAnn>
+            <attr xmlns:its="http://www.w3.org/2005/11/its" name="charset" its:translate="no" its:dir="ltr"></attr>
+         </elem>
+      </itsAnn>
+      
+      
+      <title>
+         <itsAnn xmlns="">
+            <elem xmlns:its="http://www.w3.org/2005/11/its" its:translate="yes" its:dir="ltr"></elem>
+         </itsAnn>Translate flag global rules example
+      </title>
+      
+      
+      <its:rules xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:its="http://www.w3.org/2005/11/its" xmlns:h="http://www.w3.org/1999/xhtml" version="2.0" xlink:href="linked-rules.xml">
+         <itsAnn xmlns="">
+            <elem its:translate="yes" its:dir="ltr"></elem>
+            <attr name="version" its:translate="no" its:dir="ltr"></attr>
+            <attr name="xlink:href" its:translate="no" its:dir="ltr"></attr>
+         </itsAnn>
+      </its:rules>
+      
+      
+   </head>
+   
+   
+   <body>
+      <itsAnn xmlns="">
+         <elem xmlns:its="http://www.w3.org/2005/11/its" its:translate="yes" its:dir="ltr"></elem>
+      </itsAnn>
+      
+      
+      <p>
+         <itsAnn xmlns="">
+            <elem xmlns:its="http://www.w3.org/2005/11/its" its:translate="yes" its:dir="ltr"></elem>
+         </itsAnn>This sentence should be translated, but <span xmlns:its="http://www.w3.org/2005/11/its" its:term="yes" its:locNote="Where will the terminfo come from?">
+            <itsAnn xmlns="">
+               <elem its:translate="yes" its:dir="ltr" its:locNote="Where will the terminfo come from?"></elem>
+               <attr name="its:term" its:translate="no" its:dir="ltr"></attr>
+               <attr name="its:locNote" its:translate="no" its:dir="ltr"></attr>
+            </itsAnn>code</span> names like the <code>
+            <itsAnn xmlns="">
+               <elem xmlns:its="http://www.w3.org/2005/11/its" translate="no" its:dir="ltr"></elem>
+            </itsAnn>span</code> element should not be translated.
+         
+      </p>
+      
+      
+      
+   </body>
+   
+</html>

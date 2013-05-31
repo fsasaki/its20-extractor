@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:its="http://www.w3.org/2005/11/its">
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/doc/body[1]/p[1])">
+      <its:langPointer rdf:parseType="Literal">
+         <langPointer xmlns:datc="http://example.com/datacats" mylangattribute="ja"/>
+      </its:langPointer>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/doc/body[1]/p[1]/@mylangattribute)">
+      <its:langPointer rdf:parseType="Literal">
+         <langPointer xmlns:datc="http://example.com/datacats" mylangattribute="ja"/>
+      </its:langPointer>
+   </rdf:Description>
+</rdf:RDF>

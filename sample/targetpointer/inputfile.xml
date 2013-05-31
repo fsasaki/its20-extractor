@@ -1,0 +1,15 @@
+﻿<file>
+ <its:rules xmlns:its="http://www.w3.org/2005/11/its" version="2.0">
+  <its:translateRule selector="/file" translate="no"/>
+  <its:translateRule selector="//source" translate="yes"/>
+  <its:targetPointerRule selector="//source" targerPointer="../target"/>
+ </its:rules>
+ <entry id="one">
+  <source>Remember last folder</source>
+  <target>To be created (one)</target>
+ </entry>
+ <entry id="two">
+  <source>Custom file filter:</source>
+  <target>To be created (two)</target>
+ </entry>
+</file>

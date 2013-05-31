@@ -1,0 +1,6 @@
+<html xmlns:its="http://www.w3.org/2005/11/its">
+    <body>
+        <h2 its:translate="yes">Welcome to <span its:translate="no"
+                >Dublin</span> in <b its:translate="no">Ireland</b>! </h2>
+    </body>
+</html>

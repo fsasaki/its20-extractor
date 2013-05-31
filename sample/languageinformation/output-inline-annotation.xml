@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+   <itsAnn/>
+  <head>
+      <itsAnn/>
+      <its:rules xmlns:its="http://www.w3.org/2005/11/its" version="1.0">
+         <itsAnn/>
+         <its:langRule selector="//p" langPointer="@mylangattribute">
+            <itsAnn/>
+         </its:langRule>
+      </its:rules>
+  </head>
+  <body>
+      <itsAnn/>
+      <p mylangattribute="ja">
+         <itsAnn>
+            <elem>
+               <langPointer xmlns:its="http://www.w3.org/2005/11/its"
+                            xmlns:datc="http://example.com/datacats"
+                            mylangattribute="ja"/>
+            </elem>
+            <attr name="mylangattribute">
+               <langPointer xmlns:its="http://www.w3.org/2005/11/its"
+                            xmlns:datc="http://example.com/datacats"
+                            mylangattribute="ja"/>
+            </attr>
+         </itsAnn>これはテストです。</p>
+  </body>
+</doc>

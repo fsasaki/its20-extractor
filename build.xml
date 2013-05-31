@@ -1,0 +1,239 @@
+<!-- Apache Ant script to process files with ITS 2.0 information. -->
+
+<!-- Input parameters: 1) list of data categories to be processed via ant parameter "datacategories". If "datacategories" parameter is not given, we fall back to all datacategories that are defined in datacategories-definition.xml 2) URI of inputfile via ant parameter "inputfile". 
+    Sample call:
+    ant -Dinputfile=sample/translate/inputfile.xml -Ddatacategories='translate elementswithintext textanalysis'
+    The output is
+    - a list of nodes in temp/nodelist-with-its-information.xml
+    - an RDF representation in temp/nodelist-rdfxml.xml
+    - an inline annotations in tbd
+    - a NIF version in tbd
+    To process HTML5, use e.g.
+    ant -Dinputfile=sample/html5-processing/inputfile-html5.html -Ddatacategories='translate elementswithintext textanalysis' all-html5
+ -->
+
+<project name="ITS20GENERATOR" default="all-xml" basedir=".">
+
+    <path id="saxon9.classpath">
+        <pathelement location="tools/saxon9he.jar"/>
+    </path>
+    <path id="saxon1-0.classpath">
+        <pathelement location="tools/saxon.jar"/>
+    </path>
+    <path id="nerdcall.classpath">
+        <pathelement location="tools/run-nerd-for-java.jar"/>
+    </path>
+    
+    <path path="rdf2rdfcall.classpath">
+        <pathelement location="tools/rdf2rdf-1.0.1-2.3.1.jar"/>
+    </path>
+
+    <path id="validator.nu">
+        <pathelement location="tools/htmlparser-1.4.jar"/>
+    </path>
+
+    <target name="copy-input-xml">
+        <copy file="${inputfile}" tofile="temp/inputfile.xml"/>
+    </target>
+
+    <target name="preprocess-html5">
+        <copy file="${inputfile}" tofile="temp/temp-html5.html"/>
+        <java fork="true" classname="nu.validator.htmlparser.tools.HTML2XML"
+            output="temp/inputfile.xml">
+            <classpath refid="validator.nu"/>
+            <arg value="${inputfile}"/>
+        </java>
+        <copy file="temp/inputfile.xml" tofile="${inputfile}"/>
+        <!-- 
+        <java fork="true" classname="net.sf.saxon.Transform">
+            <classpath refid="saxon9.classpath"/>
+            <arg value="-o:temp/inputfile.xml"/>
+            <arg value="-versionmsg:off"/>
+            <arg value="temp/inputfile-as-xhtml5.xml"/>
+            <arg value="tools/html5-preprocessing.xsl"/>
+        </java>  -->
+    </target>
+
+    <!-- Task to generate intermediate XSLT. -->
+    <target name="intermediate-xslt">
+        <java fork="true" classname="net.sf.saxon.Transform">
+            <classpath refid="saxon9.classpath"/>
+            <arg value="-o:temp/intermediate.xsl"/>
+            <arg value="-versionmsg:off"/>
+            <arg value="tools/datacategories-definition.xml"/>
+            <arg value="tools/datacategories-2-xsl.xsl"/>
+            <arg value="inputDatacats=${datacategories}"/>
+            <arg value="inputDocUri=temp/inputfile.xml"/>
+            <arg value="originalInputDoc=${inputfile}"/>
+        </java>
+    </target>
+
+    <target name="intermediate-xslt-html5">
+        <java fork="true" classname="net.sf.saxon.Transform">
+            <classpath refid="saxon9.classpath"/>
+            <arg value="-o:temp/intermediate.xsl"/>
+            <arg value="-versionmsg:off"/>
+            <arg value="tools/datacategories-definition.xml"/>
+            <arg value="tools/datacategories-2-xsl.xsl"/>
+            <arg value="inputDatacats=${datacategories}"/>
+            <arg value="inputDocUri=temp/inputfile.xml"/>
+            <arg value="html5-input=yes"/>
+            <arg value="originalInputDocUri=${inputfile}"/>
+        </java>
+    </target>
+
+    <!-- Task to generate a list of all element and attribute nodes in the input document, providing ITS information. Uses the intermediate XSLT generated via intermediate-xslt task.-->
+
+    <target name="nodelist">
+        <java fork="true" classname="net.sf.saxon.Transform">
+            <classpath refid="saxon9.classpath"/>
+            <arg value="-o:temp/nodelist-with-its-information.xml"/>
+            <arg value="-versionmsg:off"/>
+            <arg value="temp/inputfile.xml"/>
+            <arg value="temp/intermediate.xsl"/>
+        </java>
+    </target>
+
+    <!-- Task to generate an RDF representation of the node list with ITS information. Generated from the XML representation provided via the nodelist task.-->
+    <target name="nodelist-as-rdf">
+        <java fork="true" classname="net.sf.saxon.Transform">
+            <classpath refid="saxon9.classpath"/>
+            <arg value="-o:temp/nodelist-rdfxml.xml"/>
+            <arg value="-versionmsg:off"/>
+            <arg value="temp/nodelist-with-its-information.xml"/>
+            <arg value="tools/generate-rdfxml.xsl"/>
+        </java>
+    </target>
+
+    <target name="nodelist-as-nif">
+        <java fork="true" classname="net.sf.saxon.Transform">
+            <classpath refid="saxon9.classpath"/>
+            <arg value="-o:temp/nodelist-nif.rdf"/>
+            <arg value="-versionmsg:off"/>
+            <arg value="temp/inputfile.xml"/>
+            <arg value="tools/generate-nif.xsl"/>
+        </java>
+        <java fork="true" classname="net.sf.saxon.Transform">
+            <classpath refid="saxon9.classpath"/>
+            <arg value="-o:temp/output-nif.ttl"/>
+            <arg value="-versionmsg:off"/>
+            <arg value="temp/nodelist-nif.rdf"/>
+            <arg value="tools/rdf-xml-to-turtle.xsl"/>
+        </java>
+        <!-- 
+        <java fork="true"  jar="tools/rdf2rdf-1.0.1-2.3.1.jar">
+            <arg value="temp/nodelist-nif.rdf"/>
+            <arg value="temp/output-nif.ttl"/>
+        </java> -->
+    </target>
+
+    <!-- Task to generate annotations providing ITS information inline. Generated from the XML representation provided via the nodelist task. -->
+    <target name="inline-annotation">
+        <java fork="true" classname="net.sf.saxon.Transform">
+            <classpath refid="saxon9.classpath"/>
+            <arg value="-o:temp/output-inline-annotation.xml"/>
+            <arg value="-versionmsg:off"/>
+            <arg value="temp/inputfile.xml"/>
+            <arg value="tools/datacategories-2-inline-annotations.xsl"/>
+        </java>
+    </target>
+
+    <target name="nerd-for-java">
+        <java fork="true" classname="net.sf.saxon.Transform">
+            <classpath refid="saxon9.classpath"/>
+            <arg value="-o:temp/nerdinput-as-text.txt"/>
+            <arg value="-versionmsg:off"/>
+            <arg value="temp/nerd-inputfile.xml"/>
+            <arg value="tools/nerdinput-to-text.xsl"/>
+        </java>
+        <!-- 
+        <java fork="true" classname="com.icl.saxon.StyleSheet">
+            <classpath refid="saxon1-0.classpath"/>
+            <classpath refid="nerdcall.classpath"/>
+            <arg value="-o"/>
+            <arg value="temp/out.xml"/>
+            <arg value="build.xml"/>
+            <arg value="tools/run-nerd.xsl"/> 
+        </java> -->
+    </target>
+
+    <!-- Deleting temporary files. -->
+    <target name="clean">
+        <delete verbose="true">
+            <fileset dir="temp" includes="*"/>
+        </delete>
+    </target>
+
+    <!-- Generating inline annotations and the RDF nodelist representation. -->
+    <target name="all-xml"
+        depends="clean, copy-input-xml,intermediate-xslt, nodelist, inline-annotation, nodelist-as-rdf, nodelist-as-nif"/>
+   
+    <target name="nif-conversion-for-test-suite">
+   <!--     <fileset dir="sample/nif-conversion/lqi/input/" id="myXML">
+            <include name="*.xml" />
+        </fileset>
+        <pathconvert property="inputXML" refid="myXML"/>
+        <exec executable="ant">
+            <arg value="-Dinputfile=${inputXML}"/>
+            <arg value="-Ddatacategories=localization-quality-issue"/>            
+        </exec>-->
+        <exec executable="ant">
+            <arg value="-Dinputfile=sample/nif-conversion/lqi/input/locqualityissue-nif-1.xml"/>
+            <arg value="-Ddatacategories=localization-quality-issue"/>            
+        </exec>
+        <copy file="temp/output-nif.ttl" tofile="sample/nif-conversion/lqi/expected/locqualityissue-nif-1.ttl"/>
+        <exec executable="ant">
+            <arg value="-Dinputfile=sample/nif-conversion/lqi/input/locqualityissue-nif-2.xml"/>
+            <arg value="-Ddatacategories=localization-quality-issue"/>            
+        </exec>
+        <copy file="temp/output-nif.ttl" tofile="sample/nif-conversion/lqi/expected/locqualityissue-nif-2.ttl"/>
+        <exec executable="ant">
+            <arg value="-Dinputfile=sample/nif-conversion/lqi/input/locqualityissue-nif-3.xml"/>
+            <arg value="-Ddatacategories=localization-quality-issue"/>            
+        </exec>
+        <copy file="temp/output-nif.ttl" tofile="sample/nif-conversion/lqi/expected/locqualityissue-nif-3.ttl"/>
+        <exec executable="ant">
+            <arg value="-Dinputfile=sample/nif-conversion/lqi/input/locqualityissue-nif-4.xml"/>
+            <arg value="-Ddatacategories=localization-quality-issue"/>            
+        </exec>
+        <copy file="temp/output-nif.ttl" tofile="sample/nif-conversion/lqi/expected/locqualityissue-nif-4.ttl"/>
+        <exec executable="ant">
+            <arg value="-Dinputfile=sample/nif-conversion/lqi/input/locqualityissue-nif-5.xml"/>
+            <arg value="-Ddatacategories=localization-quality-issue"/>            
+        </exec>
+        <copy file="temp/output-nif.ttl" tofile="sample/nif-conversion/lqi/expected/locqualityissue-nif-5.ttl"/>
+        <exec executable="ant">
+            <arg value="-Dinputfile=sample/nif-conversion/lqi/input/locqualityissue-nif-6.xml"/>
+            <arg value="-Ddatacategories=localization-quality-issue"/>            
+        </exec>
+        <copy file="temp/output-nif.ttl" tofile="sample/nif-conversion/lqi/expected/locqualityissue-nif-6.ttl"/>
+        <exec executable="ant">
+            <arg value="-Dinputfile=sample/nif-conversion/lqi/input/locqualityissue-nif-7.xml"/>
+            <arg value="-Ddatacategories=localization-quality-issue"/>            
+        </exec>
+        <copy file="temp/output-nif.ttl" tofile="sample/nif-conversion/lqi/expected/locqualityissue-nif-7.ttl"/>
+        <exec executable="ant">
+            <arg value="-Dinputfile=sample/nif-conversion/lqi/input/locqualityissue-nif-8.xml"/>
+            <arg value="-Ddatacategories=localization-quality-issue"/>            
+        </exec>
+        <copy file="temp/output-nif.ttl" tofile="sample/nif-conversion/lqi/expected/locqualityissue-nif-8.ttl"/>
+        <exec executable="ant">
+            <arg value="-Dinputfile=sample/nif-conversion/lqi/input/locqualityissue-nif-9.xml"/>
+            <arg value="-Ddatacategories=localization-quality-issue"/>            
+        </exec>
+        <copy file="temp/output-nif.ttl" tofile="sample/nif-conversion/lqi/expected/locqualityissue-nif-9.ttl"/>
+        <exec executable="ant">
+            <arg value="-Dinputfile=sample/nif-conversion/lqi/input/locqualityissue-nif-10.xml"/>
+            <arg value="-Ddatacategories=localization-quality-issue"/>            
+        </exec>
+        <copy file="temp/output-nif.ttl" tofile="sample/nif-conversion/lqi/expected/locqualityissue-nif-10.ttl"/>
+        <exec executable="ant">
+            <arg value="-Dinputfile=sample/nif-conversion/lqi/input/locqualityissue-nif-11.xml"/>
+            <arg value="-Ddatacategories=localization-quality-issue"/>            
+        </exec>
+        <copy file="temp/output-nif.ttl" tofile="sample/nif-conversion/lqi/expected/locqualityissue-nif-11.ttl"/>
+    </target>
+    <target name="all-html5"
+        depends="clean, preprocess-html5,intermediate-xslt-html5, nodelist, inline-annotation, nodelist-as-rdf, nodelist-as-nif"
+    />
+</project>

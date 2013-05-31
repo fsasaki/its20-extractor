@@ -1,0 +1,18 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:itsrdf="http://www.w3.org/2005/11/its/rdf#">
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/book)">
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/book/info[1])">
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/book/info[1]/legalnotice[1])">
+      <itsrdf:localeFilterList>en-CA, fr-CA</itsrdf:localeFilterList>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/book/info[1]/legalnotice[1]/@its:localeFilterList)">
+      <itsrdf:localeFilterList>en-CA, fr-CA</itsrdf:localeFilterList>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/book/info[1]/legalnotice[1]/para[1])">
+      <itsrdf:localeFilterList>en-CA, fr-CA</itsrdf:localeFilterList>
+   </rdf:Description>
+</rdf:RDF>

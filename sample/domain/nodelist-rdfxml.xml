@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:its="http://www.w3.org/2005/11/its">
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/doc/body[1])">
+      <its:domainMapping>automotive auto, medical medicine, 'criminal law' law, 'property law' law</its:domainMapping>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/doc/body[1])">
+      <its:domainPointer rdf:parseType="Literal">
+         <domainPointer xmlns:datc="http://example.com/datacats" content="automotive"/>
+      </its:domainPointer>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/doc/body[1]/p[1])">
+      <its:domainMapping>automotive auto, medical medicine, 'criminal law' law, 'property law' law</its:domainMapping>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/doc/body[1]/p[1])">
+      <its:domainPointer rdf:parseType="Literal">
+         <domainPointer xmlns:datc="http://example.com/datacats" content="automotive"/>
+      </its:domainPointer>
+   </rdf:Description>
+</rdf:RDF>

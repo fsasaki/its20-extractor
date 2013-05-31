@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<text xmlns:its="http://www.w3.org/2005/11/its"
+      xml:lang="en"
+      its:version="2.0">
+   <itsAnn>
+      <elem its:dir="ltr"/>
+      <attr name="xml:lang" its:dir="ltr"/>
+      <attr name="its:version" its:dir="ltr"/>
+   </itsAnn>
+   <body>
+      <itsAnn>
+         <elem its:dir="ltr"/>
+      </itsAnn>
+      <par>
+         <itsAnn>
+            <elem its:dir="ltr"/>
+         </itsAnn>In Arabic, the title <quote xml:lang="ar" its:dir="rtl">
+            <itsAnn>
+               <elem its:dir="rtl"/>
+               <attr name="xml:lang" its:dir="rtl"/>
+               <attr name="its:dir" its:dir="rtl"/>
+            </itsAnn>نشاط التدويل، W3C</quote>
+   means <quote>
+            <itsAnn>
+               <elem its:dir="ltr"/>
+            </itsAnn>Internationalization Activity, W3C</quote>.</par>
+   </body>
+</text>

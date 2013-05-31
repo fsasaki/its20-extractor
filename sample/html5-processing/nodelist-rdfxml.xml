@@ -1,0 +1,76 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:itsrdf="http://www.w3.org/2005/11/its/rdf#">
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/html)">
+      <itsrdf:translate rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#yesOrNo">yes</itsrdf:translate>
+      <itsrdf:dir rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#dir">ltr</itsrdf:dir>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/html/@lang)">
+      <itsrdf:translate rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#yesOrNo">no</itsrdf:translate>
+      <itsrdf:dir rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#dir">ltr</itsrdf:dir>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/html/head[1])">
+      <itsrdf:translate rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#yesOrNo">yes</itsrdf:translate>
+      <itsrdf:dir rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#dir">ltr</itsrdf:dir>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/html/head[1]/meta[1])">
+      <itsrdf:translate rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#yesOrNo">yes</itsrdf:translate>
+      <itsrdf:dir rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#dir">ltr</itsrdf:dir>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/html/head[1]/meta[1]/@http-equiv)">
+      <itsrdf:translate rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#yesOrNo">no</itsrdf:translate>
+      <itsrdf:dir rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#dir">ltr</itsrdf:dir>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/html/head[1]/meta[1]/@content)">
+      <itsrdf:translate rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#yesOrNo">no</itsrdf:translate>
+      <itsrdf:dir rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#dir">ltr</itsrdf:dir>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/html/head[1]/meta[2])">
+      <itsrdf:translate rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#yesOrNo">yes</itsrdf:translate>
+      <itsrdf:dir rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#dir">ltr</itsrdf:dir>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/html/head[1]/meta[2]/@charset)">
+      <itsrdf:translate rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#yesOrNo">no</itsrdf:translate>
+      <itsrdf:dir rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#dir">ltr</itsrdf:dir>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/html/head[1]/title[1])">
+      <itsrdf:translate rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#yesOrNo">yes</itsrdf:translate>
+      <itsrdf:dir rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#dir">ltr</itsrdf:dir>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/html/head[1]/its:rules[1])">
+      <itsrdf:translate rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#yesOrNo">yes</itsrdf:translate>
+      <itsrdf:dir rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#dir">ltr</itsrdf:dir>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/html/head[1]/its:rules[1]/@version)">
+      <itsrdf:translate rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#yesOrNo">no</itsrdf:translate>
+      <itsrdf:dir rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#dir">ltr</itsrdf:dir>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/html/head[1]/its:rules[1]/@xlink:href)">
+      <itsrdf:translate rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#yesOrNo">no</itsrdf:translate>
+      <itsrdf:dir rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#dir">ltr</itsrdf:dir>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/html/body[1])">
+      <itsrdf:translate rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#yesOrNo">yes</itsrdf:translate>
+      <itsrdf:dir rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#dir">ltr</itsrdf:dir>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/html/body[1]/p[1])">
+      <itsrdf:translate rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#yesOrNo">yes</itsrdf:translate>
+      <itsrdf:dir rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#dir">ltr</itsrdf:dir>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/html/body[1]/p[1]/span[1])">
+      <itsrdf:translate rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#yesOrNo">yes</itsrdf:translate>
+      <itsrdf:dir rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#dir">ltr</itsrdf:dir>
+      <itsrdf:locNote>Where will the terminfo come from?</itsrdf:locNote>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/html/body[1]/p[1]/span[1]/@its:term)">
+      <itsrdf:translate rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#yesOrNo">no</itsrdf:translate>
+      <itsrdf:dir rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#dir">ltr</itsrdf:dir>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/html/body[1]/p[1]/span[1]/@its:locNote)">
+      <itsrdf:translate rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#yesOrNo">no</itsrdf:translate>
+      <itsrdf:dir rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#dir">ltr</itsrdf:dir>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/html/body[1]/p[1]/code[1])">
+      <itsrdf:translate rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#yesOrNo">no</itsrdf:translate>
+      <itsrdf:dir rdf:datatype="http://www.w3.org/TR/its-2.0/its.xsd#dir">ltr</itsrdf:dir>
+   </rdf:Description>
+</rdf:RDF>

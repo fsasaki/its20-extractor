@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="datacategories-definition.rnc" type="compact"?>
+<datacats xmlns:its="http://www.w3.org/2005/11/its" xmlns="http://example.com/datacats"
+    xmlns:datc="http://example.com/datacats">
+    <!-- Definitions of data categories. Documentation: see figure at http://www.w3.org/People/fsasaki/archforms-css-rdf#fig-general-approach and the text below the figure.
+    -->
+    <datacat name="translate">
+        <defaults>
+            <defaultsElements its:translate="yes"/>
+            <defaultsAttributes its:translate="no"/>
+        </defaults>
+        <inheritance appliesTo="onlyElements"/>
+        <rulesElement name="translateRule"/>
+        <localAdding datcatSelector="*[@its:translate] | its:span[@translate | its:translateRule]"
+            datcatSelector-html5="*[@translate]"
+            addedMarkup="@its:translate | @translate[parent::its:span or parent::its:translateRule]"
+            addedMarkup-html5="@translate"/>
+    </datacat>
+    <datacat name="directionality">
+        <defaults>
+            <defaultsElements its:dir="ltr"/>
+            <defaultsAttributes its:dir="ltr"/>
+        </defaults>
+        <inheritance appliesTo="elementsAndAttributes"/>
+        <rulesElement name="dirRule"/>
+        <localAdding datcatSelector="*[@its:dir] | its:span[@dir |
+	its:dirRule]"
+            addedMarkup="@its:dir | @dir[parent::its:span or parent::its:dirRule]" datcatSelector-html5="*[@dir]" addedMarkup-html5="@dir"/>
+    </datacat>
+    <datacat name="elementswithintext">
+        <defaults>
+            <defaultsElements its:withinText="no"/>
+        </defaults>
+        <inheritance appliesTo="onlyElements"/>
+        <rulesElement name="withinTextRule"/>
+        <localAdding
+            datcatSelector="*[@its:withinText] | its:span[@withinText |
+            its:withinTextRule]"
+            addedMarkup="@its:withinText | @withinText[parent::its:span or parent::its:dirRule]" datcatSelector-html5="*[@its-within-text]" addedMarkup-html5="@its-within-text"/>
+    </datacat>
+    <datacat name="terminology">
+        <defaults>
+            <defaultsElements its:term="no"/>
+            <defaultsAttributes its:term="no"/>
+        </defaults>
+        <inheritance appliesTo="none"/>
+        <rulesElement name="termRule"/>
+        <localAdding datcatSelector="*[@its:term] | its:span[@term]"
+            addedMarkup="@its:term | @term[parent::its:span or parent::its:termRule] | @its:termInfoRef | @termInfoRef[parent::its:span]"
+            datcatSelector-html5="*[@its-term]" addedMarkup-html5="@its-term"/>
+    </datacat>
+    <datacat name="ruby">
+        <inheritance appliesTo="none"/>
+        <rulesElement name="rubyRule"/>
+        <localAdding datcatSelector="its:ruby" addedMarkup="self::its:ruby" datcatSelector-html5="ruby" addedMarkup-html5="self::ruby"/>
+    </datacat>
+    <datacat name="localizationnote">
+        <defaults>
+            <defaultsElements/>
+            <defaultsAttributes/>
+        </defaults>
+        <inheritance appliesTo="onlyElements"/>
+        <rulesElement name="locNoteRule"/>
+        <localAdding
+            datcatSelector="*[@its:locNote] |
+        its:span[@locNote] | *[@its:locNoteRef] | its:span[@locNoteRef]"
+            addedMarkup="@its:locNote |
+            @its:locNoteType | @its:locNoteRef | @locNote[parent::its:span] |
+            @locNoteType[parent::its:span] |
+        @locNoteRef[parent::its:span]"
+        datcatSelector-html5="*[@its-loc-note] | *[@its-loc-note-ref]" addedMarkup-html5="@its-loc-note |
+        @its-loc-note-type | @its-loc-note-ref"
+        />
+    </datacat>
+    <datacat name="languageinformation">
+        <inheritance appliesTo="elementsAndAttributes"/>
+        <rulesElement name="langRule"/>
+    </datacat>
+    <datacat name="domain">
+        <inheritance appliesTo="elementsAndAttributes"/>
+        <rulesElement name="domainRule"/>
+    </datacat>
+    <!-- 
+    <datacat name="qa-error">
+        <inheritance appliesTo="onlyElements"/>
+        <rulesElement name="qaErrorRule"/>
+    </datacat>  -->
+    <!-- tbd for ta:  datcatSelector-html5="*[@its-locale-filter-list]" addedMarkup-html5="@its-locale-filter-list" -->
+    <datacat name="textanalysis">
+        <inheritance appliesTo="none"/>
+        <rulesElement name="textAnalysisRule"/>
+        <localAdding datcatSelector="*[@its:taConfidence | @taConfidence[parent::its:span] | @its:taClassRef | @taClassRef[parent::its:span] | @its:taSource | @taSource[parent::its:span] | @its:taIdent | @taIdent[parent::its:span] | @its:taIdentRef | @taIdentRef[parent::its:span]]"
+            addedMarkup="@its:taConfidence | @taConfidence[parent::its:span] | @its:taClassRef | @taClassRef[parent::its:span] | @its:taSource | @taSource[parent::its:span] | @its:taIdent | @taIdent[parent::its:span] | @its:taIdentRef | @taIdentRef[parent::its:span]"
+            datcatSelector-html5="*[@its-ta-confidence | @its-ta-class-ref | @its-ta-source | @its-ta-ident | @its-ta-ident-ref]"
+            addedMarkup-html5="@its-ta-confidence | @its-ta-class-ref | @its-ta-source | @its-ta-ident | @its-ta-ident-ref"/>
+    </datacat>
+    <datacat name="localefilter">
+        <defaults>
+            <defaultsElements its:localeFilterList="*"/>
+            <defaultsAttributes its:localeFilterList="*"/>
+        </defaults>
+        <inheritance appliesTo="elementsAndAttributes"/>
+        <rulesElement name="localeFilterRule"/>
+        <localAdding datcatSelector="*[@its:localeFilterList] | its:span[@localeFilterList]"
+            addedMarkup="@its:localeFilterList | @localeFilterList[parent::its:span]" datcatSelector-html5="*[@its-locale-filter-list]" addedMarkup-html5="@its-locale-filter-list"/>
+    </datacat>
+    <datacat name="externalresource">
+        <inheritance appliesTo="none"/>
+        <rulesElement name="externalResourceRefRule"/>
+    </datacat>
+    <datacat name="targetpointer">
+        <inheritance appliesTo="none"/>
+        <rulesElement name="targetPointerRule"/>
+    </datacat>
+    <datacat name="idvalue">
+        <inheritance appliesTo="onlyElements"/>
+        <rulesElement name="idValueRule"/>
+    </datacat>
+    <datacat name="localization-quality-issue">
+        <defaults>
+            <defaultsElements/>
+            <defaultsAttributes/>
+        </defaults>
+        <inheritance appliesTo="onlyElements"/>
+        <rulesElement name="locQualityIssueRule"/>
+        <localAdding
+            datcatSelector="*[@its:locQualityIssueType or @its:locQualityIssueComment or @its:locQualityIssuesRef] |
+            its:span[@locQualityIssueType or @locQualityIssueComment or @locQualityIssuesRef]"
+            addedMarkup="@its:locQualityIssueType | @its:locQualityIssueComment | @its:locQualityIssueSeverity | @its:locQualityIssueProfileRef | @its:locQualityIssueEnabled | @locQualityIssueType[parent::its:span] | @locQualityIssueComment[parent::its:span] | @locQualityIssueSeverity[parent::its:span] | @locQualityIssueProfileRef[parent::its:span] | @locQualityIssueEnabled[parent::its:span]"
+            datcatSelector-html5="*[@its-loc-quality-issue-type or @its-loc-quality-issue-comment or @its-loc-quality-issues-ref]" addedMarkup-html5="@its-loc-quality-issue-type | @its-locquality-issue-comment | @its-loc-quality-issue-severity | @its.loc-quality-issue-profile-ref | @its-loc-quality-issue-enabled"
+        />
+        <!-- In the aftermath element there is one or more XSLT templates that are needed e.g. for resolving references to standoff markup or other post processing. -->
+        <aftermath>
+            <xsl:template match="output[locQualityIssuesRefPointer]" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" mode="aftermath">
+                <xsl:variable name="inputdoc"
+                    select="doc('../temp/inputfile.xml')"/>
+                <xsl:variable name="reference"><xsl:value-of select="locQualityIssuesRefPointer/@* | locQualityIssuesRefPointer/*"/></xsl:variable>
+                <output hasLocQualityIssue="" xmlns="">
+                    <xsl:for-each select="$inputdoc//*[@xml:id = substring-after($reference,'#')]">
+                        <xsl:copy-of select="*[local-name()='locQualityIssue']"/>
+                    </xsl:for-each>
+                </output>
+            </xsl:template>
+            <xsl:template match="output[@locQualityIssueType or @locQualityIssueComment or @locQualityIssuesRef or @its:locQualityIssueType or @its:locQualityIssueComment or @its:locQualityIssuesRef]" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  mode="aftermath">
+                <output hasLocQualityIssue="" xmlns=""><its:locQualityIssue><xsl:copy-of select="@*"/></its:locQualityIssue></output>
+            </xsl:template>
+        </aftermath>
+    </datacat>
+</datacats>

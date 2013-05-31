@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeList xmlns:its="http://www.w3.org/2005/11/its"
+          xmlns:datc="http://example.com/datacats">
+   <nodeList datacat="targetpointer">
+      <node path="/file" outputType="no-value">
+         <output/>
+      </node>
+      <node path="/file/its:rules[1]" outputType="no-value">
+         <output/>
+      </node>
+      <node path="/file/its:rules[1]/@version" outputType="no-value">
+         <output/>
+      </node>
+      <node path="/file/its:rules[1]/its:translateRule[1]" outputType="no-value">
+         <output/>
+      </node>
+      <node path="/file/its:rules[1]/its:translateRule[1]/@selector"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/file/its:rules[1]/its:translateRule[1]/@translate"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/file/its:rules[1]/its:translateRule[2]" outputType="no-value">
+         <output/>
+      </node>
+      <node path="/file/its:rules[1]/its:translateRule[2]/@selector"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/file/its:rules[1]/its:translateRule[2]/@translate"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/file/its:rules[1]/its:targetPointerRule[1]"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/file/its:rules[1]/its:targetPointerRule[1]/@selector"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/file/its:rules[1]/its:targetPointerRule[1]/@targerPointer"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/file/entry[1]" outputType="no-value">
+         <output/>
+      </node>
+      <node path="/file/entry[1]/@id" outputType="no-value">
+         <output/>
+      </node>
+      <node path="/file/entry[1]/source[1]" outputType="new-value-global">
+         <output>
+            <targerPointer>
+               <target>To be created (one)</target>
+            </targerPointer>
+         </output>
+      </node>
+      <node path="/file/entry[1]/target[1]" outputType="no-value">
+         <output/>
+      </node>
+      <node path="/file/entry[2]" outputType="no-value">
+         <output/>
+      </node>
+      <node path="/file/entry[2]/@id" outputType="no-value">
+         <output/>
+      </node>
+      <node path="/file/entry[2]/source[1]" outputType="new-value-global">
+         <output>
+            <targerPointer>
+               <target>To be created (two)</target>
+            </targerPointer>
+         </output>
+      </node>
+      <node path="/file/entry[2]/target[1]" outputType="no-value">
+         <output/>
+      </node>
+   </nodeList>
+</nodeList>
