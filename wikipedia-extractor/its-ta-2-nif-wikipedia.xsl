@@ -1,9 +1,8 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
 	xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	xmlns:itsrdf="http://www.w3.org/2005/11/its/rdf#"
 	xmlns:nif="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#"
-	exclude-result-prefixes="h xs">
+	exclude-result-prefixes="h">
 	<xsl:output indent="yes" method="xml" omit-xml-declaration="yes"/>
 	<xsl:strip-space elements="*"/>
 	<xsl:param name="base-uri">http://example.com/exampledoc.html</xsl:param>
