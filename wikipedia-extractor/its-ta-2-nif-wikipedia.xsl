@@ -5,7 +5,7 @@
 	exclude-result-prefixes="h">
 	<xsl:output indent="yes" method="xml" omit-xml-declaration="yes"/>
 	<xsl:strip-space elements="*"/>
-	<xsl:param name="base-uri">http://example.com/exampledoc.html</xsl:param>
+	<xsl:param name="base-uri">http://example.com/exampledoc.html#</xsl:param>
 	<xsl:param name="dbpediaPrefix">http://dbpedia.org/resource/</xsl:param>
 	<xsl:variable name="wsStripped">
 		<xsl:apply-templates mode="stripWS"/>
@@ -32,7 +32,7 @@
 		</xsl:variable>
 		<xsl:variable name="offset-start" select="string-length($preceding)"/>
 		<xsl:variable name="offset-end" select="$offset-start + string-length(.)"/>
-		<nif:Context rdf:about="{concat($base-uri,'#char=',$offset-start,',',$offset-end)}">
+		<nif:Context rdf:about="{concat($base-uri,'char=',$offset-start,',',$offset-end)}">
 			<rdf:type
 				rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
 			<nif:beginIndex><xsl:value-of select="$offset-start"/></nif:beginIndex>
@@ -53,7 +53,7 @@
 		</xsl:variable>
 		<xsl:variable name="offset-start" select="string-length($preceding-sibling) + $currentOffset"/>
 		<xsl:variable name="offset-end" select="$offset-start + string-length(.)"/>
-		<nif:RFC6147String rdf:about="{concat($base-uri,'#char=',$offset-start,',',$offset-end)}">
+		<nif:RFC6147String rdf:about="{concat($base-uri,'char=',$offset-start,',',$offset-end)}">
 			<nif:beginIndex><xsl:value-of select="$offset-start"/></nif:beginIndex>
 			<nif:endIndex><xsl:value-of select="$offset-end"/></nif:endIndex>
 			<itsrdf:taIdentRef rdf:resource="{concat($dbpediaPrefix,substring-after(@href,'wiki/'))}"/>
