@@ -53,10 +53,10 @@
 		</xsl:variable>
 		<xsl:variable name="offset-start" select="string-length($preceding-sibling) + $currentOffset"/>
 		<xsl:variable name="offset-end" select="$offset-start + string-length(.)"/>
-		<nif:RFC6147String rdf:about="{concat($base-uri,'char=',$offset-start,',',$offset-end)}">
+		<nif:RFC5147String rdf:about="{concat($base-uri,'char=',$offset-start,',',$offset-end)}">
 			<nif:beginIndex><xsl:value-of select="$offset-start"/></nif:beginIndex>
 			<nif:endIndex><xsl:value-of select="$offset-end"/></nif:endIndex>
 			<itsrdf:taIdentRef rdf:resource="{concat($dbpediaPrefix,substring-after(@href,'wiki/'))}"/>
-		</nif:RFC6147String>
+		</nif:RFC5147String>
 	</xsl:template>
 </xsl:stylesheet>
