@@ -22,6 +22,10 @@
 	<xsl:template match="/">
 		<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 			xmlns:itsrdf="http://www.w3.org/2005/11/its/rdf#">
+			<nif:Context rdf:about="{concat($base-uri,'char=0,',string-length($wsStripped/*))}">
+				<rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+				<nif:isString><xsl:value-of select="$wsStripped/*"/></nif:isString>
+			</nif:Context>
 			<xsl:apply-templates select="$wsStripped/*"/>
 		</rdf:RDF>
 	</xsl:template>
@@ -32,15 +36,15 @@
 		</xsl:variable>
 		<xsl:variable name="offset-start" select="string-length($preceding)"/>
 		<xsl:variable name="offset-end" select="$offset-start + string-length(.)"/>
-		<nif:Context rdf:about="{concat($base-uri,'char=',$offset-start,',',$offset-end)}">
+		<nif:Paragraph rdf:about="{concat($base-uri,'char=',$offset-start,',',$offset-end)}">
 			<rdf:type
 				rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
-			<nif:beginIndex><xsl:value-of select="$offset-start"/></nif:beginIndex>
+<!-- 			<nif:beginIndex><xsl:value-of select="$offset-start"/></nif:beginIndex>
 			<nif:endIndex><xsl:value-of select="$offset-end"/></nif:endIndex>
 			<nif:isString>
 				<xsl:value-of select="."/>
-			</nif:isString>
-		</nif:Context>
+			</nif:isString> -->
+		</nif:Paragraph>
 		<xsl:apply-templates mode="writeTaIdentRef">
 			<xsl:with-param name="currentOffset" select="$offset-start"/>
 		</xsl:apply-templates>
