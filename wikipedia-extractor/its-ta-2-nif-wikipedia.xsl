@@ -32,6 +32,8 @@
 			xmlns:itsrdf="http://www.w3.org/2005/11/its/rdf#">
 			<nif:Context rdf:about="{concat($base-uri,'char=0,',string-length($wsStripped/*))}">
 				<rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+			  <nif:beginIndex>0</nif:beginIndex>
+			  <nif:endIndex><xsl:value-of select="string-length($wsStripped/*)"/></nif:endIndex>
 				<nif:isString><xsl:value-of select="$wsStripped/*"/></nif:isString>
 			</nif:Context>
 			<xsl:apply-templates select="$wsStripped/*"/>
@@ -66,14 +68,12 @@
 		<xsl:variable name="offset-start" select="string-length($preceding-sibling) + $currentOffset"/>
 		<xsl:variable name="offset-end" select="$offset-start + string-length(.)"/>
 	  <xsl:variable name="element-path"><xsl:apply-templates select="." mode="get-full-path"/></xsl:variable>
-	  <rdf:Description rdf:about="{concat($base-uri,'xpath(',$element-path,')')}">
-	    <nif:convertedFrom rdf:resource="{concat($base-uri,'char=',$offset-start,',',$offset-end)}"/>
-	  </rdf:Description>
 		<nif:RFC5147String rdf:about="{concat($base-uri,'char=',$offset-start,',',$offset-end)}">
 			<nif:beginIndex><xsl:value-of select="$offset-start"/></nif:beginIndex>
 			<nif:endIndex><xsl:value-of select="$offset-end"/></nif:endIndex>
 			<itsrdf:taIdentRef rdf:resource="{concat($dbpediaPrefix,substring-after(@href,'wiki/'))}"/>
 		  <nif:referenceContext rdf:resource="{concat($base-uri,'char=0,',string-length($wsStripped/*))}"/>
+		  <nif:wasConvertedFrom rdf:resource="{concat($base-uri,'char=',$offset-start,',',$offset-end)}"/>
 		</nif:RFC5147String>
 	</xsl:template>
 </xsl:stylesheet>
