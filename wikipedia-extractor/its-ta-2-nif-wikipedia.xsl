@@ -73,6 +73,7 @@
 			<nif:beginIndex><xsl:value-of select="$offset-start"/></nif:beginIndex>
 			<nif:endIndex><xsl:value-of select="$offset-end"/></nif:endIndex>
 			<itsrdf:taIdentRef rdf:resource="{concat($dbpediaPrefix,substring-after(@href,'wiki/'))}"/>
+		  <nif:referenceContext rdf:resource="{concat($base-uri,'char=0,',string-length($wsStripped/*))}"/>
 		</nif:RFC5147String>
 	</xsl:template>
 </xsl:stylesheet>
