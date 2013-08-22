@@ -66,8 +66,8 @@
 		<xsl:variable name="offset-start" select="string-length($preceding-sibling) + $currentOffset"/>
 		<xsl:variable name="offset-end" select="$offset-start + string-length(.)"/>
 	  <xsl:variable name="element-path"><xsl:apply-templates select="." mode="get-full-path"/></xsl:variable>
-	  <rdf:Description rdf:about="{concat($base-uri,'#xpath(',$element-path,')')}">
-	    <nif:convertedFrom rdf:resource="{concat($base-uri,'#char=',$offset-start,',',$offset-end)}"/>
+	  <rdf:Description rdf:about="{concat($base-uri,'xpath(',$element-path,')')}">
+	    <nif:convertedFrom rdf:resource="{concat($base-uri,'char=',$offset-start,',',$offset-end)}"/>
 	  </rdf:Description>
 		<nif:RFC5147String rdf:about="{concat($base-uri,'char=',$offset-start,',',$offset-end)}">
 			<nif:beginIndex><xsl:value-of select="$offset-start"/></nif:beginIndex>
