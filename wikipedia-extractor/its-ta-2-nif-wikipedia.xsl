@@ -15,8 +15,8 @@
     <xsl:text>/</xsl:text>
     <xsl:if test="count(. | ../@*) = count(../@*)">@</xsl:if>
     <xsl:value-of select="name()"/>
-    <xsl:if test="self::* and parent::*"><xsl:text>%5B</xsl:text><xsl:number/><xsl:text>%5D</xsl:text></xsl:if>
-    <xsl:if test="not(child::*)">/text()%5B1%5D</xsl:if>
+    <xsl:if test="self::* and parent::*"><xsl:text>[</xsl:text><xsl:number/><xsl:text>]</xsl:text></xsl:if>
+    <xsl:if test="not(child::*)">/text()[1]</xsl:if>
   </xsl:template>
 	<xsl:template match="node()|@*" mode="stripWS">
 		<xsl:copy>
