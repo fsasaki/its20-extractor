@@ -10,6 +10,14 @@
 	<xsl:variable name="wsStripped">
 		<xsl:apply-templates mode="stripWS"/>
 	</xsl:variable>
+  <xsl:template match="*|@*" mode="get-full-path">
+    <xsl:apply-templates select="parent::*" mode="get-full-path"/>
+    <xsl:text>/</xsl:text>
+    <xsl:if test="count(. | ../@*) = count(../@*)">@</xsl:if>
+    <xsl:value-of select="name()"/>
+    <xsl:if test="self::* and parent::*"><xsl:text>%5B</xsl:text><xsl:number/><xsl:text>%5D</xsl:text></xsl:if>
+    <xsl:if test="not(child::*)">/text()%5B1%5D</xsl:if>
+  </xsl:template>
 	<xsl:template match="node()|@*" mode="stripWS">
 		<xsl:copy>
 			<xsl:apply-templates mode="stripWS" select="node()|@*"/>
@@ -57,6 +65,10 @@
 		</xsl:variable>
 		<xsl:variable name="offset-start" select="string-length($preceding-sibling) + $currentOffset"/>
 		<xsl:variable name="offset-end" select="$offset-start + string-length(.)"/>
+	  <xsl:variable name="element-path"><xsl:apply-templates select="." mode="get-full-path"/></xsl:variable>
+	  <rdf:Description rdf:about="{concat($base-uri,'#xpath(',$element-path,')')}">
+	    <nif:convertedFrom rdf:resource="{concat($base-uri,'#char=',$offset-start,',',$offset-end)}"/>
+	  </rdf:Description>
 		<nif:RFC5147String rdf:about="{concat($base-uri,'char=',$offset-start,',',$offset-end)}">
 			<nif:beginIndex><xsl:value-of select="$offset-start"/></nif:beginIndex>
 			<nif:endIndex><xsl:value-of select="$offset-end"/></nif:endIndex>
