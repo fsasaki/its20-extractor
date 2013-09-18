@@ -8,7 +8,7 @@
 	<xsl:param name="base-uri">http://example.com/exampledoc.html#</xsl:param>
 	<xsl:param name="dbpediaPrefix">http://dbpedia.org/resource/</xsl:param>
 	<xsl:variable name="wsStripped">
-		<xsl:apply-templates mode="stripWS"/>
+		<xsl:apply-templates mode="stripWS" select="//h:table[@class='infobox']/following::*"/>
 	</xsl:variable>
   <xsl:template match="*|@*" mode="get-full-path">
     <xsl:apply-templates select="parent::*" mode="get-full-path"/>
