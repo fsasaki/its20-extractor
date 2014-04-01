@@ -13,5 +13,3 @@ Usage
 1. base-uri: provides the URI of the wikipedia page or the resource on dbpedia.
 
 2. dbpediaPrefix: provides the dbpedia prefix for the generated entity type / concept class information.
-
-A sample transformation including an online HTML tidy tool is available: http://tinyurl.com/n6ykjwr
