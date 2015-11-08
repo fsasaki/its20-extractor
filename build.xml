@@ -12,6 +12,12 @@
     ant -Dinputfile=sample/html5-processing/inputfile-html5.html -Ddatacategories='translate elementswithintext textanalysis' all-html5
  -->
 
+<!-- Sample call html5 new:
+/Applications/oxygen16.1/tools/ant/bin/ant -Dinputfile=sample/html5-processing/inputfile-html5.html -Ddatacategories='translate elementswithintext textanalysis localizationnote' all-html5-->
+<!-- Sample call xml new:
+/Applications/oxygen16.1/tools/ant/bin/ant -Dinputfile=file-with-its-information.xml -Ddatacategories='translate elementswithintext terminology textanalysis'
+-->
+
 <project name="ITS20GENERATOR" default="all-xml" basedir=".">
 
     <path id="saxon9.classpath">
@@ -35,7 +41,7 @@
     <target name="copy-input-xml">
         <copy file="${inputfile}" tofile="temp/inputfile.xml"/>
     </target>
-
+    
     <target name="preprocess-html5">
         <copy file="${inputfile}" tofile="temp/temp-html5.html"/>
         <java fork="true" classname="nu.validator.htmlparser.tools.HTML2XML"
@@ -43,7 +49,7 @@
             <classpath refid="validator.nu"/>
             <arg value="${inputfile}"/>
         </java>
-        <copy file="temp/inputfile.xml" tofile="${inputfile}"/>
+        <!--  <copy file="temp/inputfile.xml" tofile="${inputfile}"/> -->
         <!-- 
         <java fork="true" classname="net.sf.saxon.Transform">
             <classpath refid="saxon9.classpath"/>
@@ -112,19 +118,21 @@
             <arg value="-versionmsg:off"/>
             <arg value="temp/inputfile.xml"/>
             <arg value="tools/generate-nif.xsl"/>
-        </java>
+        </java><!--  
         <java fork="true" classname="net.sf.saxon.Transform">
             <classpath refid="saxon9.classpath"/>
             <arg value="-o:temp/output-nif.ttl"/>
             <arg value="-versionmsg:off"/>
             <arg value="temp/nodelist-nif.rdf"/>
-            <arg value="tools/rdf-xml-to-turtle.xsl"/>
-        </java>
-        <!-- 
-        <java fork="true"  jar="tools/rdf2rdf-1.0.1-2.3.1.jar">
-            <arg value="temp/nodelist-nif.rdf"/>
-            <arg value="temp/output-nif.ttl"/>
-        </java> -->
+            <arg value="tools/rdf-xml-to-turtle.xsl"/> 
+        </java>-->
+        <exec executable="curl">
+            <arg value="--data-urlencode"/>
+            <arg value="content@temp/nodelist-nif.rdf"/>
+            <arg value="http://rdf-translator.appspot.com/convert/xml/json-ld/content"/> 
+            <arg value="-o nodelist-nif.json"/>
+        </exec>
+        <copy file=" nodelist-nif.json" tofile="temp/nodelist-nif.json"/>  
     </target>
 
     <!-- Task to generate annotations providing ITS information inline. Generated from the XML representation provided via the nodelist task. -->
@@ -164,6 +172,14 @@
         </delete>
     </target>
 
+    <target name="allDatacats">
+        <exec executable="/Applications/oxygen16.1/tools/ant/bin/ant">
+            <arg value="-Dinputfile=${inputfile}"/>
+            <arg value="-Ddatacategories=translate directionality elementswithintext terminology ruby localizationnote languageinformation domain textanalysis localefilter externalresource targetpointer idvalue localization-quality-issue textanalysis"/>
+            <!-- missing data categories:  Provenance, Preserve Space, Localization Quality Issue, Localization Quality Rating, MT Confidence, Allowed Characters, Storage Size -->
+        </exec>
+    </target>
+
     <!-- Generating inline annotations and the RDF nodelist representation. -->
     <target name="all-xml"
         depends="clean, copy-input-xml,intermediate-xslt, nodelist, inline-annotation, nodelist-as-rdf, nodelist-as-nif"/>
@@ -177,10 +193,6 @@
             <arg value="-Dinputfile=${inputXML}"/>
             <arg value="-Ddatacategories=localization-quality-issue"/>            
         </exec>-->
-        <exec executable="ant">
-            <arg value="-Dinputfile=sample/nif-conversion/lqi/input/locqualityissue-nif-1.xml"/>
-            <arg value="-Ddatacategories=localization-quality-issue"/>            
-        </exec>
         <copy file="temp/output-nif.ttl" tofile="sample/nif-conversion/lqi/expected/locqualityissue-nif-1.ttl"/>
         <exec executable="ant">
             <arg value="-Dinputfile=sample/nif-conversion/lqi/input/locqualityissue-nif-2.xml"/>

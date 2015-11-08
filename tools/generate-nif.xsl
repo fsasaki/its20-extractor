@@ -5,7 +5,7 @@
 	xmlns:nif="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#">
 	<xsl:output indent="yes" method="xml" omit-xml-declaration="yes" exclude-result-prefixes="its"/>
 	<xsl:key name="nodePath" match="node" use="@path"/>
-	<xsl:param name="base-uri">http://example.com/exampledoc.html</xsl:param>
+	<xsl:param name="base-uri">http://example.com/exampledoc.xml</xsl:param>
 	<xsl:variable name="nif-ontology-ns"
 		>"http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#</xsl:variable>
 	<xsl:variable name="inputdoc-decorated"
@@ -23,7 +23,7 @@
 			xmlns:itsrdf="http://www.w3.org/2005/11/its/rdf#">
 			<rdf:Description rdf:about="{$referenceContext}">
 				<nif:sourceUrl rdf:resource="{$base-uri}"/>
-				<nif:beginIndex>0</nif:beginIndex>
+			    <nif:beginIndex>0</nif:beginIndex>
 				<nif:endIndex><xsl:value-of select="$completeStringLength"/></nif:endIndex>
 				<nif:isString>
 					<xsl:value-of select="$whiteSpaceStripped"/>
@@ -66,8 +66,16 @@
 			select="$child-offset-start + string-length(child::*[1])"/>
 		<xsl:for-each select="$inputdoc-decorated">
 			<xsl:if
-				test="key('nodePath',$element-path)/output/@* | key('nodePath',$element-path)/output/*">
-				<!-- Produce only triples if the current element has *not* the same text content as the first child node  -->
+				test="key('nodePath',$element-path)/output/@* | key('nodePath',$element-path)/output/* | key('nodePath',$element-path)/output[matches(.,'\S') and ancestor::nodeList[@datacat='idvalue']] and not($offset-start = $child-offset-start and $offset-end = $child-offset-end) and not($offset-start = $offset-end)">
+				<!-- tbd: breaks with externalResource:  
+				<output xmlns:db="docbook.org/ns/docbook">
+					<externalResourceRefPointer fileref="movie.avi"/>
+				</output> -->
+				<!-- Produce only triples if the current element has *not* the same text content as the first child node, and if there is actual textual content.  -->
+			<!-- 	<xsl:if
+					test="not($offset-start = $child-offset-start and $offset-end = $child-offset-end) and not($offset-start = $offset-end)"> 
+					deleted the below so that there is output for annotations of attributes
+			-->
 				<xsl:if
 					test="not($offset-start = $child-offset-start and $offset-end = $child-offset-end)">
 					<rdf:Description>
@@ -84,20 +92,18 @@
 						<nif:endIndex><xsl:value-of select="$offset-end"/></nif:endIndex>
 						<rdf:type
 							rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
-						<nif:anchorOf>
+						<nif:isString>
 							<xsl:value-of select="$me"/>
-						</nif:anchorOf>
+						</nif:isString>						
 						<xsl:for-each
-							select="key('nodePath',$element-path)/output/@* | key('nodePath',$element-path)/output/*[not(local-name()='locQualityIssue')]">
+							select="key('nodePath',$element-path)/output/@* | key('nodePath',$element-path)/output/*[not(local-name()='locQualityIssue')] | key('nodePath',$element-path)/output[matches(.,'\S') and ancestor::nodeList[@datacat='idvalue']]">
 							<xsl:call-template name="generateTriple"/>
 						</xsl:for-each>
 						<nif:referenceContext rdf:resource="{$referenceContext}"/>
-					</rdf:Description>
+					
 <!-- 					<xsl:variable name="escapedElementPath"
 						select="replace(replace($element-path,'\[','%5B'),'\]','%5D')"/> -->
-					<rdf:Description
-						rdf:about="{concat($base-uri,'#char=',$offset-start,',',$offset-end)}">
-						<nif:convertedFrom
+						<nif:wasConvertedFrom
 							rdf:resource="{concat($base-uri,'#xpath(',$element-path,')')}"
 						/>
 					</rdf:Description>
@@ -109,6 +115,9 @@
 	<xsl:template name="generateTriple">
 		<xsl:variable name="predicateName">
 			<xsl:choose>
+				<xsl:when test="local-name()='targetPointer'">itsrdf:targetPointer</xsl:when>
+				<xsl:when test="ancestor::nodeList[@datacat='idvalue']">itsrdf:idvalue</xsl:when>
+				<xsl:when test="contains(local-name(),'Pointer')">itsrdf:<xsl:value-of select="substring-before(local-name(),'Pointer')"/></xsl:when>
 				<xsl:when test="namespace-uri()=''">itsrdf:<xsl:value-of select="name()"/>
 				</xsl:when>
 				<xsl:otherwise>itsrdf:<xsl:value-of select="local-name()"/></xsl:otherwise>
@@ -117,11 +126,14 @@
 		<xsl:element name="{$predicateName}">
 			<xsl:apply-templates mode="writeObjects" select="self::node()"/>
 		</xsl:element>
+		<xsl:if test="local-name() = 'localeFilterList' and not(parent::*/@*[local-name()='localeFilterType'])">
+			<xsl:text>itsrdf:localeFilterType "included";</xsl:text>
+		</xsl:if>
 	</xsl:template>
 	<xsl:template mode="writeObjects" match="@*">
 		<xsl:value-of select="."/>
 	</xsl:template>
-	<xsl:template match="@*[local-name()='taIdentRef' or local-name()='locQualityIssueProfileRef']" mode="writeObjects">
+	<xsl:template match="@*[local-name()='taIdentRef' or local-name()='its-ta-ident-ref' or local-name()='taClassRef' or local-name()='its-ta-class-ref' or local-name()='locQualityIssueProfileRef']" mode="writeObjects">
 		<xsl:attribute name="rdf:resource">
 			<xsl:value-of select="."/>
 		</xsl:attribute>
@@ -135,4 +147,7 @@
 		</itsrdf:LocQualityIssue>
 		</xsl:for-each>
 	</xsl:template>
+	<xsl:template match="externalResourceRefPointer" mode="writeObjects"><xsl:value-of select="node()|@*"/></xsl:template>
+	<xsl:template match="domainPointer" mode="writeObjects"><xsl:value-of select="node()|@*"/></xsl:template>
+	<xsl:template match="langPointer" mode="writeObjects"><xsl:value-of select="node()|@*"/></xsl:template>
 </xsl:stylesheet>

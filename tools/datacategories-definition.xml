@@ -96,8 +96,8 @@
     </datacat>
     <datacat name="localefilter">
         <defaults>
-            <defaultsElements its:localeFilterList="*"/>
-            <defaultsAttributes its:localeFilterList="*"/>
+            <defaultsElements its:localeFilterList="*" its:localeFilterType="included"/>
+            <defaultsAttributes its:localeFilterList="*" its:localeFilterType="included"/>
         </defaults>
         <inheritance appliesTo="elementsAndAttributes"/>
         <rulesElement name="localeFilterRule"/>
