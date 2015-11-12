@@ -1,0 +1,1690 @@
+<rdf:RDF xmlns:itsrdf="http://www.w3.org/2005/11/its/rdf#"
+         xmlns:oa="http://www.w3.org/ns/oa#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:its="http://www.w3.org/2005/11/its">
+   <rdf:Description rdf:about="http://example.com/myannotations/a1">
+      <oa:hasBody rdf:nodeID="b1"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t1"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t1">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s1"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s1">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b1">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a2">
+      <oa:hasBody rdf:nodeID="b2"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t2"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t2">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s2"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s2">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/topic[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b2">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a3">
+      <oa:hasBody rdf:nodeID="b3"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t3"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t3">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s3"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s3">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/topic[1]/title[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b3">
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a5">
+      <oa:hasBody rdf:nodeID="b5"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t5"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t5">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s5"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s5">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/topic[1]/body[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b5">
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a7">
+      <oa:hasBody rdf:nodeID="b7"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t7"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t7">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s7"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s7">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/topic[1]/body[1]/dl[1]/dlentry[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b7">
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a8">
+      <oa:hasBody rdf:nodeID="b8"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t8"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t8">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s8"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s8">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/topic[1]/body[1]/dl[1]/dlentry[1]/dt[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b8">
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a9">
+      <oa:hasBody rdf:nodeID="b9"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t9"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t9">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s9"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s9">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/topic[1]/body[1]/dl[1]/dlentry[1]/dd[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b9">
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a10">
+      <oa:hasBody rdf:nodeID="b10"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t10"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t10">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s10"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s10">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/topic[1]/body[1]/dl[1]/dlentry[1]/dd[1]/term[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b10">
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a11">
+      <oa:hasBody rdf:nodeID="b11"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t11"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t11">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s11"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s11">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/topic[1]/body[1]/p[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b11">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a12">
+      <oa:hasBody rdf:nodeID="b12"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t12"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t12">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s12"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s12">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/topic[1]/body[1]/ul[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b12">
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a13">
+      <oa:hasBody rdf:nodeID="b13"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t13"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t13">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s13"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s13">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/topic[1]/body[1]/ul[1]/li[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b13">
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a14">
+      <oa:hasBody rdf:nodeID="b14"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t14"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t14">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s14"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s14">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/topic[1]/body[1]/ul[1]/li[2]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b14">
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a15">
+      <oa:hasBody rdf:nodeID="b15"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t15"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t15">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s15"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s15">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/topic[1]/body[1]/ul[1]/li[3]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b15">
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a16">
+      <oa:hasBody rdf:nodeID="b16"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t16"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t16">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s16"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s16">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/topic[1]/body[1]/ul[1]/li[4]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b16">
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a17">
+      <oa:hasBody rdf:nodeID="b17"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t17"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t17">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s17"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s17">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/topic[1]/body[1]/p[2]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b17">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a18">
+      <oa:hasBody rdf:nodeID="b18"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t18"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t18">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s18"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s18">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/topic[1]/body[1]/p[2]/ph[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b18">
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:lang>fr</itsrdf:lang>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a21">
+      <oa:hasBody rdf:nodeID="b21"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t21"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t21">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s21"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s21">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/text[1]/body[1]/par[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b21">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:lang>en</itsrdf:lang>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a22">
+      <oa:hasBody rdf:nodeID="b22"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t22"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t22">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s22"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s22">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/text[1]/body[1]/par[1]/quote[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b22">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>rtl</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:lang>ar</itsrdf:lang>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a23">
+      <oa:hasBody rdf:nodeID="b23"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t23"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t23">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s23"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s23">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/text[1]/body[1]/par[1]/quote[2]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b23">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:lang>en</itsrdf:lang>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a24">
+      <oa:hasBody rdf:nodeID="b24"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t24"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t24">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s24"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s24">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/doc[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b24">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a28">
+      <oa:hasBody rdf:nodeID="b28"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t28"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t28">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s28"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s28">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/doc[1]/body[1]/p[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b28">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:domainMapping>automotive auto, medical medicine, 'criminal law' law, 'property law' law</itsrdf:domainMapping>
+      <itsrdf:domain>automotive</itsrdf:domain>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a31">
+      <oa:hasBody rdf:nodeID="b31"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t31"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t31">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s31"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s31">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/text[2]/body[1]/par[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b31">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a32">
+      <oa:hasBody rdf:nodeID="b32"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t32"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t32">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s32"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s32">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/text[2]/body[1]/par[1]/bold[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b32">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>yes</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a34">
+      <oa:hasBody rdf:nodeID="b34"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t34"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t34">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s34"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s34">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/doc[2]/mediaobject[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b34">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a39">
+      <oa:hasBody rdf:nodeID="b39"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t39"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t39">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s39"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s39">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/doc[2]/mediaobject[1]/textobject[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b39">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a40">
+      <oa:hasBody rdf:nodeID="b40"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t40"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t40">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s40"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s40">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/doc[2]/mediaobject[1]/textobject[1]/para[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b40">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a42">
+      <oa:hasBody rdf:nodeID="b42"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t42"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t42">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s42"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s42">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/doc[2]/mediaobject[1]/textobject[1]/warning[1]/para[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b42">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a44">
+      <oa:hasBody rdf:nodeID="b44"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t44"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t44">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s44"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s44">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/doc[3]/msg[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b44">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a45">
+      <oa:hasBody rdf:nodeID="b45"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t45"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t45">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s45"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s45">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/doc[3]/msg[1]/text[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b45">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <itsrdf:idvalue>settingsMissing_t</itsrdf:idvalue>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a46">
+      <oa:hasBody rdf:nodeID="b46"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t46"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t46">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s46"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s46">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/doc[3]/msg[1]/desc[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b46">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <itsrdf:idvalue>settingsMissing_d</itsrdf:idvalue>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a47">
+      <oa:hasBody rdf:nodeID="b47"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t47"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t47">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s47"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s47">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/doc[3]/msg[1]/desc[1]/em[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b47">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <itsrdf:idvalue>settingsMissing_d</itsrdf:idvalue>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a48">
+      <oa:hasBody rdf:nodeID="b48"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t48"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t48">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s48"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s48">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/doc[4]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b48">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a51">
+      <oa:hasBody rdf:nodeID="b51"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t51"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t51">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s51"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s51">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/doc[4]/body[1]/p[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b51">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:lang>ja</itsrdf:lang>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a55">
+      <oa:hasBody rdf:nodeID="b55"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t55"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t55">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s55"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s55">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/book[1]/info[1]/legalnotice[1]/para[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b55">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>en-CA, fr-CA</itsrdf:localeFilterList>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a56">
+      <oa:hasBody rdf:nodeID="b56"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t56"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t56">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s56"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s56">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/Res[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b56">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a58">
+      <oa:hasBody rdf:nodeID="b58"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t58"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t58">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s58"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s58">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/Res[1]/body[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b58">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a59">
+      <oa:hasBody rdf:nodeID="b59"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t59"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t59">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s59"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s59">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/Res[1]/body[1]/msg[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b59">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a60">
+      <oa:hasBody rdf:nodeID="b60"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t60"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t60">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s60"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s60">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/Res[1]/body[1]/msg[1]/notes[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b60">
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a61">
+      <oa:hasBody rdf:nodeID="b61"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t61"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t61">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s61"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s61">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/Res[1]/body[1]/msg[1]/data[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b61">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:locNoteType>description</itsrdf:locNoteType>
+      <itsrdf:locNote>Indicates that the resource file {0} could not be loaded.</itsrdf:locNote>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a62">
+      <oa:hasBody rdf:nodeID="b62"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t62"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t62">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s62"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s62">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/Res[1]/body[1]/msg[2]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b62">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a63">
+      <oa:hasBody rdf:nodeID="b63"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t63"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t63">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s63"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s63">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/Res[1]/body[1]/msg[2]/notes[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b63">
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a64">
+      <oa:hasBody rdf:nodeID="b64"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t64"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t64">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s64"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s64">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/Res[1]/body[1]/msg[2]/data[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b64">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:locNoteType>description</itsrdf:locNoteType>
+      <itsrdf:locNote>A division by 0 was going to be computed.</itsrdf:locNote>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a65">
+      <oa:hasBody rdf:nodeID="b65"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t65"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t65">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s65"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s65">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/file[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b65">
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a66">
+      <oa:hasBody rdf:nodeID="b66"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t66"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t66">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s66"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s66">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/file[1]/entry[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b66">
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a67">
+      <oa:hasBody rdf:nodeID="b67"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t67"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t67">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s67"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s67">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/file[1]/entry[1]/source[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b67">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <itsrdf:targetPointer>To be created (one)</itsrdf:targetPointer>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a68">
+      <oa:hasBody rdf:nodeID="b68"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t68"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t68">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s68"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s68">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/file[1]/entry[1]/target[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b68">
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a69">
+      <oa:hasBody rdf:nodeID="b69"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t69"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t69">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s69"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s69">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/file[1]/entry[2]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b69">
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a70">
+      <oa:hasBody rdf:nodeID="b70"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t70"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t70">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s70"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s70">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/file[1]/entry[2]/source[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b70">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <itsrdf:targetPointer>To be created (two)</itsrdf:targetPointer>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a71">
+      <oa:hasBody rdf:nodeID="b71"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t71"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t71">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s71"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s71">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/file[1]/entry[2]/target[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b71">
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a73">
+      <oa:hasBody rdf:nodeID="b73"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t73"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t73">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s73"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s73">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/text[3]/p[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b73">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a74">
+      <oa:hasBody rdf:nodeID="b74"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t74"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t74">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s74"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s74">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/text[3]/p[1]/term[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b74">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>yes</itsrdf:term>
+      <itsrdf:termInfo>the relationship, expressed through discourse
+    structure, between the implied author or some other addresser,
+    and the fiction.</itsrdf:termInfo>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a75">
+      <oa:hasBody rdf:nodeID="b75"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t75"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t75">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s75"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s75">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/text[3]/p[1]/gloss[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b75">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a78">
+      <oa:hasBody rdf:nodeID="b78"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t78"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t78">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s78"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s78">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/textTa[1]/body[1]/p[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b78">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a79">
+      <oa:hasBody rdf:nodeID="b79"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t79"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t79">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s79"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s79">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/textTa[1]/body[1]/p[1]/span[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b79">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <itsrdf:taClassRef rdf:resource="http://nerd.eurecom.fr/ontology#Location"/>
+      <itsrdf:taIdentRef rdf:resource="http://dbpedia.org/resource/Dublin"/>
+      <itsrdf:taConfidence>0.7</itsrdf:taConfidence>
+      <itsrdf:annotatorsRef>text-analysis|http://enrycher.ijs.si</itsrdf:annotatorsRef>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a80">
+      <oa:hasBody rdf:nodeID="b80"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t80"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t80">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s80"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s80">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/textTa[1]/body[1]/p[1]/span[2]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b80">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <itsrdf:taSource>Wordnet3.0</itsrdf:taSource>
+      <itsrdf:taIdent>301467919</itsrdf:taIdent>
+      <itsrdf:taConfidence>0.5</itsrdf:taConfidence>
+      <itsrdf:annotatorsRef>text-analysis|http://enrycher.ijs.si</itsrdf:annotatorsRef>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a82">
+      <oa:hasBody rdf:nodeID="b82"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t82"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t82">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s82"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s82">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/doc[5]/file[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b82">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a85">
+      <oa:hasBody rdf:nodeID="b85"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t85"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t85">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s85"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s85">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/doc[5]/file[1]/unit[1]/segment[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b85">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a86">
+      <oa:hasBody rdf:nodeID="b86"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t86"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t86">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s86"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s86">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/doc[5]/file[1]/unit[1]/segment[1]/source[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b86">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a87">
+      <oa:hasBody rdf:nodeID="b87"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t87"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t87">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s87"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s87">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/doc[5]/file[1]/unit[1]/segment[1]/target[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b87">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a88">
+      <oa:hasBody rdf:nodeID="b88"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t88"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t88">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s88"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s88">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/doc[5]/file[1]/unit[1]/segment[1]/target[1]/mrk[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b88">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <itsrdf:hasLocQualityIssue>
+         <itsrdf:LocQualityIssue>
+            <itsrdf:locQualityIssueComment>'c'es' is unknown. Could be 'c'est'</itsrdf:locQualityIssueComment>
+            <itsrdf:locQualityIssueSeverity>75</itsrdf:locQualityIssueSeverity>
+            <itsrdf:locQualityIssueProfileRef rdf:resource="http://example.org/qaMovel/v1"/>
+            <itsrdf:locQualityIssueEnabled>yes</itsrdf:locQualityIssueEnabled>
+         </itsrdf:LocQualityIssue>
+      </itsrdf:hasLocQualityIssue>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a93">
+      <oa:hasBody rdf:nodeID="b93"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t93"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t93">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s93"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s93">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/textMTConfidence[1]/body[1]/p[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b93">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a94">
+      <oa:hasBody rdf:nodeID="b94"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t94"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t94">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s94"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s94">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/textMTConfidence[1]/body[1]/p[1]/span[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b94">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <itsrdf:mtConfidence>0.6982</itsrdf:mtConfidence>
+      <itsrdf:annotatorsRef>mt-confidence|file:///tools.xml#T1</itsrdf:annotatorsRef>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a95">
+      <oa:hasBody rdf:nodeID="b95"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t95"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t95">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s95"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s95">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/textMTConfidence[1]/body[1]/p[1]/span[2]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b95">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <itsrdf:mtConfidence>0.7982</itsrdf:mtConfidence>
+      <itsrdf:annotatorsRef>mt-confidence|file:///tools.xml#T2</itsrdf:annotatorsRef>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a96">
+      <oa:hasBody rdf:nodeID="b96"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t96"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t96">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s96"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s96">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/textMTConfidence[1]/body[1]/p[1]/span[3]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b96">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <itsrdf:mtConfidence>0.9982</itsrdf:mtConfidence>
+      <itsrdf:annotatorsRef>mt-confidence|file:///tools.xml#T3</itsrdf:annotatorsRef>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a97">
+      <oa:hasBody rdf:nodeID="b97"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t97"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t97">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s97"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s97">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/textMTConfidence[1]/body[1]/p[1]/span[4]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b97">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <itsrdf:mtConfidence>0.6982</itsrdf:mtConfidence>
+      <itsrdf:annotatorsRef>mt-confidence|file:///tools.xml#T4</itsrdf:annotatorsRef>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a99">
+      <oa:hasBody rdf:nodeID="b99"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t99"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t99">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s99"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s99">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/allowedCharactersMessages[1]/msg[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b99">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a100">
+      <oa:hasBody rdf:nodeID="b100"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t100"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t100">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s100"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s100">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/allowedCharactersMessages[1]/msg[1]/panelmsg[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b100">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <itsrdf:allowedCharacters>[ -þ]</itsrdf:allowedCharacters>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a101">
+      <oa:hasBody rdf:nodeID="b101"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t101"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t101">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s101"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s101">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/storageSizeMessages[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b101">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a102">
+      <oa:hasBody rdf:nodeID="b102"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t102"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t102">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s102"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s102">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/storageSizeMessages[1]/var[1]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b102">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <itsrdf:storageSize>8</itsrdf:storageSize>
+      <itsrdf:storageEncoding>UTF-16</itsrdf:storageEncoding>
+      <itsrdf:lineBreakType>lf</itsrdf:lineBreakType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a103">
+      <oa:hasBody rdf:nodeID="b103"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t103"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t103">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s103"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s103">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/storageSizeMessages[1]/var[2]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b103">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <itsrdf:storageSize>8</itsrdf:storageSize>
+      <itsrdf:storageEncoding>UTF-16</itsrdf:storageEncoding>
+      <itsrdf:lineBreakType>lf</itsrdf:lineBreakType>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/myannotations/a104">
+      <oa:hasBody rdf:nodeID="b104"/>
+      <oa:hasTarget rdf:resource="http://example.com/mytargets/t104"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/mytargets/t104">
+      <oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+      <oa:hasSelector rdf:nodeID="s104"/>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="s104">
+      <rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+      <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/"
+                          rdf:resource="http://www.w3.org/TR/xpath/"/>
+      <rdf:value>/itsProcessingInput/storageSizeMessages[1]/var[3]</rdf:value>
+   </rdf:Description>
+   <rdf:Description rdf:nodeID="b104">
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <itsrdf:storageSize>12</itsrdf:storageSize>
+      <itsrdf:storageEncoding>UTF-16</itsrdf:storageEncoding>
+      <itsrdf:lineBreakType>lf</itsrdf:lineBreakType>
+   </rdf:Description>
+</rdf:RDF>

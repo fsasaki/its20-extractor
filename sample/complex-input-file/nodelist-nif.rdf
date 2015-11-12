@@ -1,0 +1,1058 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:itsrdf="http://www.w3.org/2005/11/its/rdf#"
+         xmlns:its="http://www.w3.org/2005/11/its"
+         xmlns:nif="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#">
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=0,1619">
+      <nif:sourceUrl rdf:resource="http://example.com/exampledoc.xml"/>
+      <nif:beginIndex>0</nif:beginIndex>
+      <nif:endIndex>1619</nif:endIndex>
+      <nif:isString>The ITS TopicData categoryITS defines data category as an abstract concept for a particular type of information for internationalization and localization of XML schemas and documents.For the implementation of ITS, apply the rules in the order:DefaultRules in the schemaRules in the document instanceLocal attributesEt voilà ! The last rule wins.In Arabic, the title نشاط التدويل، W3C means Internationalization Activity, W3C.The new car from XYZ - buy it now!Text with bold.This video illustrates the proper way to assemble an inverting time distortion device.  It is imperative that the primary and secondary temporal couplings not be mounted in the wrong order. Temporal catastrophe is the likely result. The future you destroy may be your own. Can't find settings file.The module cannot find the default settings file. You need to re-initialize the system.これはテストです。This legal notice is only for Canadian locales.Indicates that the resource file {0} could not be loaded.Cannot find the file {0}.A division by 0 was going to be computed.Invalid parameter.Remember last folderTo be created (one)Custom file filter:To be created (two)We may define discoursal point of view as the relationship, expressed through discourse structure, between the implied author or some other addresser, and the fiction.Dublin is the capital of Ireland.This is the contentc'es le contenuDublin is the capital city of Ireland and has the 50th biggest population density in Europe.Madrid is the capital of Spain.Berlin is the capital of Germany.London is the capital of EnglandClick the CONTINUE Button on the printer panelCONTINUESTOPCANCEL</nif:isString>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#Context"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=0,1619">
+      <nif:beginIndex>0</nif:beginIndex>
+      <nif:endIndex>1619</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>The ITS TopicData categoryITS defines data category as an abstract concept for a particular type of information for internationalization and localization of XML schemas and documents.For the implementation of ITS, apply the rules in the order:DefaultRules in the schemaRules in the document instanceLocal attributesEt voilà ! The last rule wins.In Arabic, the title نشاط التدويل، W3C means Internationalization Activity, W3C.The new car from XYZ - buy it now!Text with bold.This video illustrates the proper way to assemble an inverting time distortion device.  It is imperative that the primary and secondary temporal couplings not be mounted in the wrong order. Temporal catastrophe is the likely result. The future you destroy may be your own. Can't find settings file.The module cannot find the default settings file. You need to re-initialize the system.これはテストです。This legal notice is only for Canadian locales.Indicates that the resource file {0} could not be loaded.Cannot find the file {0}.A division by 0 was going to be computed.Invalid parameter.Remember last folderTo be created (one)Custom file filter:To be created (two)We may define discoursal point of view as the relationship, expressed through discourse structure, between the implied author or some other addresser, and the fiction.Dublin is the capital of Ireland.This is the contentc'es le contenuDublin is the capital city of Ireland and has the 50th biggest population density in Europe.Madrid is the capital of Spain.Berlin is the capital of Germany.London is the capital of EnglandClick the CONTINUE Button on the printer panelCONTINUESTOPCANCEL</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput)"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=0,345">
+      <nif:beginIndex>0</nif:beginIndex>
+      <nif:endIndex>345</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>The ITS TopicData categoryITS defines data category as an abstract concept for a particular type of information for internationalization and localization of XML schemas and documents.For the implementation of ITS, apply the rules in the order:DefaultRules in the schemaRules in the document instanceLocal attributesEt voilà ! The last rule wins.</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/topic[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=0,13">
+      <nif:beginIndex>0</nif:beginIndex>
+      <nif:endIndex>13</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>The ITS Topic</nif:isString>
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/topic[1]/title[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=13,345">
+      <nif:beginIndex>13</nif:beginIndex>
+      <nif:endIndex>345</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>Data categoryITS defines data category as an abstract concept for a particular type of information for internationalization and localization of XML schemas and documents.For the implementation of ITS, apply the rules in the order:DefaultRules in the schemaRules in the document instanceLocal attributesEt voilà ! The last rule wins.</nif:isString>
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/topic[1]/body[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=13,183">
+      <nif:beginIndex>13</nif:beginIndex>
+      <nif:endIndex>183</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>Data categoryITS defines data category as an abstract concept for a particular type of information for internationalization and localization of XML schemas and documents.</nif:isString>
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/topic[1]/body[1]/dl[1]/dlentry[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=13,26">
+      <nif:beginIndex>13</nif:beginIndex>
+      <nif:endIndex>26</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>Data category</nif:isString>
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/topic[1]/body[1]/dl[1]/dlentry[1]/dt[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=26,183">
+      <nif:beginIndex>26</nif:beginIndex>
+      <nif:endIndex>183</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>ITS defines data category as an abstract concept for a particular type of information for internationalization and localization of XML schemas and documents.</nif:isString>
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/topic[1]/body[1]/dl[1]/dlentry[1]/dd[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=38,51">
+      <nif:beginIndex>38</nif:beginIndex>
+      <nif:endIndex>51</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>data category</nif:isString>
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/topic[1]/body[1]/dl[1]/dlentry[1]/dd[1]/term[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=183,243">
+      <nif:beginIndex>183</nif:beginIndex>
+      <nif:endIndex>243</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>For the implementation of ITS, apply the rules in the order:</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/topic[1]/body[1]/p[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=243,315">
+      <nif:beginIndex>243</nif:beginIndex>
+      <nif:endIndex>315</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>DefaultRules in the schemaRules in the document instanceLocal attributes</nif:isString>
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/topic[1]/body[1]/ul[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=243,250">
+      <nif:beginIndex>243</nif:beginIndex>
+      <nif:endIndex>250</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>Default</nif:isString>
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/topic[1]/body[1]/ul[1]/li[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=250,269">
+      <nif:beginIndex>250</nif:beginIndex>
+      <nif:endIndex>269</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>Rules in the schema</nif:isString>
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/topic[1]/body[1]/ul[1]/li[2])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=269,299">
+      <nif:beginIndex>269</nif:beginIndex>
+      <nif:endIndex>299</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>Rules in the document instance</nif:isString>
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/topic[1]/body[1]/ul[1]/li[3])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=299,315">
+      <nif:beginIndex>299</nif:beginIndex>
+      <nif:endIndex>315</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>Local attributes</nif:isString>
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/topic[1]/body[1]/ul[1]/li[4])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=315,345">
+      <nif:beginIndex>315</nif:beginIndex>
+      <nif:endIndex>345</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>Et voilà ! The last rule wins.</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/topic[1]/body[1]/p[2])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=315,325">
+      <nif:beginIndex>315</nif:beginIndex>
+      <nif:endIndex>325</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>Et voilà !</nif:isString>
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:lang>fr</itsrdf:lang>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/topic[1]/body[1]/p[2]/ph[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=345,425">
+      <nif:beginIndex>345</nif:beginIndex>
+      <nif:endIndex>425</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>In Arabic, the title نشاط التدويل، W3C means Internationalization Activity, W3C.</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:lang>en</itsrdf:lang>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/text[1]/body[1]/par[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=366,383">
+      <nif:beginIndex>366</nif:beginIndex>
+      <nif:endIndex>383</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>نشاط التدويل، W3C</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>rtl</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:lang>ar</itsrdf:lang>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/text[1]/body[1]/par[1]/quote[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=390,424">
+      <nif:beginIndex>390</nif:beginIndex>
+      <nif:endIndex>424</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>Internationalization Activity, W3C</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:lang>en</itsrdf:lang>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/text[1]/body[1]/par[1]/quote[2])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=425,459">
+      <nif:beginIndex>425</nif:beginIndex>
+      <nif:endIndex>459</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>The new car from XYZ - buy it now!</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/doc[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=425,459">
+      <nif:beginIndex>425</nif:beginIndex>
+      <nif:endIndex>459</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>The new car from XYZ - buy it now!</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:domainMapping>automotive auto, medical medicine, 'criminal law' law, 'property law' law</itsrdf:domainMapping>
+      <itsrdf:domain>automotive</itsrdf:domain>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/doc[1]/body[1]/p[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=459,474">
+      <nif:beginIndex>459</nif:beginIndex>
+      <nif:endIndex>474</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>Text with bold.</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/text[2]/body[1]/par[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=469,473">
+      <nif:beginIndex>469</nif:beginIndex>
+      <nif:endIndex>473</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>bold</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>yes</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/text[2]/body[1]/par[1]/bold[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=474,747">
+      <nif:beginIndex>474</nif:beginIndex>
+      <nif:endIndex>747</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>This video illustrates the proper way to assemble an inverting time distortion device.  It is imperative that the primary and secondary temporal couplings not be mounted in the wrong order. Temporal catastrophe is the likely result. The future you destroy may be your own. </nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/doc[2]/mediaobject[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=474,747">
+      <nif:beginIndex>474</nif:beginIndex>
+      <nif:endIndex>747</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>This video illustrates the proper way to assemble an inverting time distortion device.  It is imperative that the primary and secondary temporal couplings not be mounted in the wrong order. Temporal catastrophe is the likely result. The future you destroy may be your own. </nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/doc[2]/mediaobject[1]/textobject[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=474,561">
+      <nif:beginIndex>474</nif:beginIndex>
+      <nif:endIndex>561</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>This video illustrates the proper way to assemble an inverting time distortion device. </nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/doc[2]/mediaobject[1]/textobject[1]/para[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=561,747">
+      <nif:beginIndex>561</nif:beginIndex>
+      <nif:endIndex>747</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString> It is imperative that the primary and secondary temporal couplings not be mounted in the wrong order. Temporal catastrophe is the likely result. The future you destroy may be your own. </nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/doc[2]/mediaobject[1]/textobject[1]/warning[1]/para[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=747,859">
+      <nif:beginIndex>747</nif:beginIndex>
+      <nif:endIndex>859</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>Can't find settings file.The module cannot find the default settings file. You need to re-initialize the system.</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/doc[3]/msg[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=747,772">
+      <nif:beginIndex>747</nif:beginIndex>
+      <nif:endIndex>772</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>Can't find settings file.</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <itsrdf:idvalue>settingsMissing_t</itsrdf:idvalue>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/doc[3]/msg[1]/text[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=772,859">
+      <nif:beginIndex>772</nif:beginIndex>
+      <nif:endIndex>859</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>The module cannot find the default settings file. You need to re-initialize the system.</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <itsrdf:idvalue>settingsMissing_d</itsrdf:idvalue>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/doc[3]/msg[1]/desc[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=783,789">
+      <nif:beginIndex>783</nif:beginIndex>
+      <nif:endIndex>789</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>cannot</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <itsrdf:idvalue>settingsMissing_d</itsrdf:idvalue>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/doc[3]/msg[1]/desc[1]/em[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=859,868">
+      <nif:beginIndex>859</nif:beginIndex>
+      <nif:endIndex>868</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>これはテストです。</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/doc[4])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=859,868">
+      <nif:beginIndex>859</nif:beginIndex>
+      <nif:endIndex>868</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>これはテストです。</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:lang>ja</itsrdf:lang>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/doc[4]/body[1]/p[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=868,915">
+      <nif:beginIndex>868</nif:beginIndex>
+      <nif:endIndex>915</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>This legal notice is only for Canadian locales.</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>en-CA, fr-CA</itsrdf:localeFilterList>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/book[1]/info[1]/legalnotice[1]/para[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=915,1056">
+      <nif:beginIndex>915</nif:beginIndex>
+      <nif:endIndex>1056</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>Indicates that the resource file {0} could not be loaded.Cannot find the file {0}.A division by 0 was going to be computed.Invalid parameter.</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/Res[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=915,1056">
+      <nif:beginIndex>915</nif:beginIndex>
+      <nif:endIndex>1056</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>Indicates that the resource file {0} could not be loaded.Cannot find the file {0}.A division by 0 was going to be computed.Invalid parameter.</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/Res[1]/body[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=915,997">
+      <nif:beginIndex>915</nif:beginIndex>
+      <nif:endIndex>997</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>Indicates that the resource file {0} could not be loaded.Cannot find the file {0}.</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/Res[1]/body[1]/msg[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=915,972">
+      <nif:beginIndex>915</nif:beginIndex>
+      <nif:endIndex>972</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>Indicates that the resource file {0} could not be loaded.</nif:isString>
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/Res[1]/body[1]/msg[1]/notes[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=972,997">
+      <nif:beginIndex>972</nif:beginIndex>
+      <nif:endIndex>997</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>Cannot find the file {0}.</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:locNoteType>description</itsrdf:locNoteType>
+      <itsrdf:locNote>Indicates that the resource file {0} could not be loaded.</itsrdf:locNote>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/Res[1]/body[1]/msg[1]/data[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=997,1056">
+      <nif:beginIndex>997</nif:beginIndex>
+      <nif:endIndex>1056</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>A division by 0 was going to be computed.Invalid parameter.</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/Res[1]/body[1]/msg[2])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=997,1038">
+      <nif:beginIndex>997</nif:beginIndex>
+      <nif:endIndex>1038</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>A division by 0 was going to be computed.</nif:isString>
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/Res[1]/body[1]/msg[2]/notes[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=1038,1056">
+      <nif:beginIndex>1038</nif:beginIndex>
+      <nif:endIndex>1056</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>Invalid parameter.</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:locNoteType>description</itsrdf:locNoteType>
+      <itsrdf:locNote>A division by 0 was going to be computed.</itsrdf:locNote>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/Res[1]/body[1]/msg[2]/data[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=1056,1133">
+      <nif:beginIndex>1056</nif:beginIndex>
+      <nif:endIndex>1133</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>Remember last folderTo be created (one)Custom file filter:To be created (two)</nif:isString>
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/file[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=1056,1095">
+      <nif:beginIndex>1056</nif:beginIndex>
+      <nif:endIndex>1095</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>Remember last folderTo be created (one)</nif:isString>
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/file[1]/entry[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=1056,1076">
+      <nif:beginIndex>1056</nif:beginIndex>
+      <nif:endIndex>1076</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>Remember last folder</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <itsrdf:targetPointer>To be created (one)</itsrdf:targetPointer>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/file[1]/entry[1]/source[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=1076,1095">
+      <nif:beginIndex>1076</nif:beginIndex>
+      <nif:endIndex>1095</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>To be created (one)</nif:isString>
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/file[1]/entry[1]/target[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=1095,1133">
+      <nif:beginIndex>1095</nif:beginIndex>
+      <nif:endIndex>1133</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>Custom file filter:To be created (two)</nif:isString>
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/file[1]/entry[2])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=1095,1114">
+      <nif:beginIndex>1095</nif:beginIndex>
+      <nif:endIndex>1114</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>Custom file filter:</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <itsrdf:targetPointer>To be created (two)</itsrdf:targetPointer>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/file[1]/entry[2]/source[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=1114,1133">
+      <nif:beginIndex>1114</nif:beginIndex>
+      <nif:endIndex>1133</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>To be created (two)</nif:isString>
+      <itsrdf:translate>no</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/file[1]/entry[2]/target[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=1133,1300">
+      <nif:beginIndex>1133</nif:beginIndex>
+      <nif:endIndex>1300</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>We may define discoursal point of view as the relationship, expressed through discourse structure, between the implied author or some other addresser, and the fiction.</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/text[3]/p[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=1147,1171">
+      <nif:beginIndex>1147</nif:beginIndex>
+      <nif:endIndex>1171</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>discoursal point of view</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>yes</itsrdf:term>
+      <itsrdf:termInfo>the relationship, expressed through discourse
+    structure, between the implied author or some other addresser,
+    and the fiction.</itsrdf:termInfo>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/text[3]/p[1]/term[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=1175,1300">
+      <nif:beginIndex>1175</nif:beginIndex>
+      <nif:endIndex>1300</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>the relationship, expressed through discourse structure, between the implied author or some other addresser, and the fiction.</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/text[3]/p[1]/gloss[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=1300,1333">
+      <nif:beginIndex>1300</nif:beginIndex>
+      <nif:endIndex>1333</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>Dublin is the capital of Ireland.</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/textTa[1]/body[1]/p[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=1300,1306">
+      <nif:beginIndex>1300</nif:beginIndex>
+      <nif:endIndex>1306</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>Dublin</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <itsrdf:taClassRef rdf:resource="http://nerd.eurecom.fr/ontology#Location"/>
+      <itsrdf:taIdentRef rdf:resource="http://dbpedia.org/resource/Dublin"/>
+      <itsrdf:taConfidence>0.7</itsrdf:taConfidence>
+      <itsrdf:annotatorsRef>text-analysis|http://enrycher.ijs.si</itsrdf:annotatorsRef>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/textTa[1]/body[1]/p[1]/span[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=1314,1321">
+      <nif:beginIndex>1314</nif:beginIndex>
+      <nif:endIndex>1321</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>capital</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <itsrdf:taSource>Wordnet3.0</itsrdf:taSource>
+      <itsrdf:taIdent>301467919</itsrdf:taIdent>
+      <itsrdf:taConfidence>0.5</itsrdf:taConfidence>
+      <itsrdf:annotatorsRef>text-analysis|http://enrycher.ijs.si</itsrdf:annotatorsRef>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/textTa[1]/body[1]/p[1]/span[2])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=1333,1367">
+      <nif:beginIndex>1333</nif:beginIndex>
+      <nif:endIndex>1367</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>This is the contentc'es le contenu</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/doc[5]/file[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=1333,1367">
+      <nif:beginIndex>1333</nif:beginIndex>
+      <nif:endIndex>1367</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>This is the contentc'es le contenu</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/doc[5]/file[1]/unit[1]/segment[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=1333,1352">
+      <nif:beginIndex>1333</nif:beginIndex>
+      <nif:endIndex>1352</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>This is the content</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/doc[5]/file[1]/unit[1]/segment[1]/source[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=1352,1367">
+      <nif:beginIndex>1352</nif:beginIndex>
+      <nif:endIndex>1367</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>c'es le contenu</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/doc[5]/file[1]/unit[1]/segment[1]/target[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=1352,1356">
+      <nif:beginIndex>1352</nif:beginIndex>
+      <nif:endIndex>1356</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>c'es</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <itsrdf:hasLocQualityIssue>
+         <itsrdf:LocQualityIssue>
+            <itsrdf:locQualityIssueComment>'c'es' is unknown. Could be 'c'est'</itsrdf:locQualityIssueComment>
+            <itsrdf:locQualityIssueSeverity>75</itsrdf:locQualityIssueSeverity>
+            <itsrdf:locQualityIssueProfileRef rdf:resource="http://example.org/qaMovel/v1"/>
+            <itsrdf:locQualityIssueEnabled>yes</itsrdf:locQualityIssueEnabled>
+         </itsrdf:LocQualityIssue>
+      </itsrdf:hasLocQualityIssue>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/doc[5]/file[1]/unit[1]/segment[1]/target[1]/mrk[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=1367,1555">
+      <nif:beginIndex>1367</nif:beginIndex>
+      <nif:endIndex>1555</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>Dublin is the capital city of Ireland and has the 50th biggest population density in Europe.Madrid is the capital of Spain.Berlin is the capital of Germany.London is the capital of England</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/textMTConfidence[1]/body[1]/p[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=1367,1459">
+      <nif:beginIndex>1367</nif:beginIndex>
+      <nif:endIndex>1459</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>Dublin is the capital city of Ireland and has the 50th biggest population density in Europe.</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <itsrdf:mtConfidence>0.6982</itsrdf:mtConfidence>
+      <itsrdf:annotatorsRef>mt-confidence|file:///tools.xml#T1</itsrdf:annotatorsRef>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/textMTConfidence[1]/body[1]/p[1]/span[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=1459,1490">
+      <nif:beginIndex>1459</nif:beginIndex>
+      <nif:endIndex>1490</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>Madrid is the capital of Spain.</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <itsrdf:mtConfidence>0.7982</itsrdf:mtConfidence>
+      <itsrdf:annotatorsRef>mt-confidence|file:///tools.xml#T2</itsrdf:annotatorsRef>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/textMTConfidence[1]/body[1]/p[1]/span[2])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=1490,1523">
+      <nif:beginIndex>1490</nif:beginIndex>
+      <nif:endIndex>1523</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>Berlin is the capital of Germany.</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <itsrdf:mtConfidence>0.9982</itsrdf:mtConfidence>
+      <itsrdf:annotatorsRef>mt-confidence|file:///tools.xml#T3</itsrdf:annotatorsRef>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/textMTConfidence[1]/body[1]/p[1]/span[3])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=1523,1555">
+      <nif:beginIndex>1523</nif:beginIndex>
+      <nif:endIndex>1555</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>London is the capital of England</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <itsrdf:mtConfidence>0.6982</itsrdf:mtConfidence>
+      <itsrdf:annotatorsRef>mt-confidence|file:///tools.xml#T4</itsrdf:annotatorsRef>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/textMTConfidence[1]/body[1]/p[1]/span[4])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=1555,1601">
+      <nif:beginIndex>1555</nif:beginIndex>
+      <nif:endIndex>1601</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>Click the CONTINUE Button on the printer panel</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/allowedCharactersMessages[1]/msg[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=1565,1573">
+      <nif:beginIndex>1565</nif:beginIndex>
+      <nif:endIndex>1573</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>CONTINUE</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <itsrdf:allowedCharacters>[ -þ]</itsrdf:allowedCharacters>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/allowedCharactersMessages[1]/msg[1]/panelmsg[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=1601,1619">
+      <nif:beginIndex>1601</nif:beginIndex>
+      <nif:endIndex>1619</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>CONTINUESTOPCANCEL</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/storageSizeMessages[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=1601,1609">
+      <nif:beginIndex>1601</nif:beginIndex>
+      <nif:endIndex>1609</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>CONTINUE</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <itsrdf:storageSize>8</itsrdf:storageSize>
+      <itsrdf:storageEncoding>UTF-16</itsrdf:storageEncoding>
+      <itsrdf:lineBreakType>lf</itsrdf:lineBreakType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/storageSizeMessages[1]/var[1])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=1609,1613">
+      <nif:beginIndex>1609</nif:beginIndex>
+      <nif:endIndex>1613</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>STOP</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <itsrdf:storageSize>8</itsrdf:storageSize>
+      <itsrdf:storageEncoding>UTF-16</itsrdf:storageEncoding>
+      <itsrdf:lineBreakType>lf</itsrdf:lineBreakType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/storageSizeMessages[1]/var[2])"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=1613,1619">
+      <nif:beginIndex>1613</nif:beginIndex>
+      <nif:endIndex>1619</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>CANCEL</nif:isString>
+      <itsrdf:translate>yes</itsrdf:translate>
+      <itsrdf:dir>ltr</itsrdf:dir>
+      <itsrdf:withinText>no</itsrdf:withinText>
+      <itsrdf:term>no</itsrdf:term>
+      <itsrdf:localeFilterList>*</itsrdf:localeFilterList>
+      <itsrdf:localeFilterType>included</itsrdf:localeFilterType>
+      <itsrdf:storageSize>12</itsrdf:storageSize>
+      <itsrdf:storageEncoding>UTF-16</itsrdf:storageEncoding>
+      <itsrdf:lineBreakType>lf</itsrdf:lineBreakType>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,1619"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/itsProcessingInput/storageSizeMessages[1]/var[3])"/>
+   </rdf:Description>
+</rdf:RDF>

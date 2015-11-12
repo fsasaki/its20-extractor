@@ -1,8 +1,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	xmlns:itsrdf="http://www.w3.org/2005/11/its/rdf#"
-	xmlns:its="http://www.w3.org/2005/11/its" 
-	xmlns:nif="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#">
+	xmlns:its="http://www.w3.org/2005/11/its">
 	<xsl:output indent="yes" method="xml" omit-xml-declaration="yes" exclude-result-prefixes="its"/>
 	<xsl:key name="nodePath" match="node" use="@path"/>
 	<xsl:param name="base-uri">http://example.com/exampledoc.xml</xsl:param>
@@ -10,7 +9,7 @@
 		>"http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#</xsl:variable>
 	<xsl:variable name="inputdoc-decorated"
 		select="doc('../temp/nodelist-with-its-information.xml')"/>
-	<xsl:include href="stripping.xsl"/>
+	<xsl:include href="stripping.xsl"/> 
 	<xsl:strip-space elements="*"/>
 	<xsl:variable name="whiteSpaceStripped">
 		<xsl:apply-templates select="/" mode="stripWS"/>
@@ -19,21 +18,17 @@
 	<xsl:variable name="referenceContext"
 		select="concat($base-uri,'#char=0,',$completeStringLength)"/>
 	<xsl:template match="/">
-		<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-			xmlns:itsrdf="http://www.w3.org/2005/11/its/rdf#">
-			<rdf:Description rdf:about="{$referenceContext}">
-				<nif:sourceUrl rdf:resource="{$base-uri}"/>
-			    <nif:beginIndex>0</nif:beginIndex>
-				<nif:endIndex><xsl:value-of select="$completeStringLength"/></nif:endIndex>
-				<nif:isString>
-					<xsl:value-of select="$whiteSpaceStripped"/>
-				</nif:isString>
-				<rdf:type
-					rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#Context"
-				/>
-			</rdf:Description>
+		{		
+		"@context": [
+		"http://www.w3.org/ns/anno.jsonld",
+		{
+		"itsrdf" : "http://www.w3.org/2005/11/its/rdf# &lt;http://www.w3.org/2005/11/its/rdf#>"
+			}
+			],
+			[
 			<xsl:apply-templates select="$whiteSpaceStripped" mode="processStripped"/>
-		</rdf:RDF>
+		    ]
+		    }
 	</xsl:template>
 	<xsl:template match="text()" mode="processStripped"/>
 	<xsl:template match="*|@*" mode="get-full-path">
@@ -49,6 +44,7 @@
 		<!-- <xsl:if test="not(child::*)">/text()[1]</xsl:if> -->
 	</xsl:template>
 	<xsl:template match="*" mode="processStripped">
+		<xsl:variable name="annotationNumber"><xsl:number level="any" count="*"/></xsl:variable>
 		<xsl:variable name="element-path">
 			<xsl:apply-templates select="." mode="get-full-path"/>
 		</xsl:variable>
@@ -78,35 +74,36 @@
 			-->
 				<xsl:if
 					test="not($offset-start = $child-offset-start and $offset-end = $child-offset-end)">
-					
-					<rdf:Description>
-						<xsl:attribute name="rdf:about">
-							<xsl:value-of
-								select="concat($base-uri,'#char=',$offset-start,',',$offset-end)"/>
-						</xsl:attribute>
+					{
+					"id" : "<xsl:value-of select="concat('http://example.com/myannotations/a',$annotationNumber)"/>",
+					type": "Annotation",
 						<!-- 					<xsl:comment>current start: <xsl:value-of select="$offset-start"/>
 						current end: <xsl:value-of select="$offset-end"/>
 						current path: <xsl:value-of select="$element-path"/>
 						current child start: <xsl:value-of select="$child-offset-start"/>
 						current child endt: <xsl:value-of select="$child-offset-end"/></xsl:comment> -->
-						<xsl:variable name="found">
-						<nif:beginIndex><xsl:value-of select="$offset-start"/></nif:beginIndex>
-						<nif:endIndex><xsl:value-of select="$offset-end"/></nif:endIndex>
-						<rdf:type
-							rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
-						<nif:isString>
-							<xsl:value-of select="$me"/>
-						</nif:isString>						
-						<xsl:for-each
-							select="key('nodePath',$element-path)/output/@* | key('nodePath',$element-path)/output/*[not(local-name()='locQualityIssue')] | key('nodePath',$element-path)/output[matches(.,'\S') and ancestor::nodeList[@datacat='idvalue']]">
-							<xsl:call-template name="generateTriple"/>
-						</xsl:for-each>
-						<nif:referenceContext rdf:resource="{$referenceContext}"/>
-<!-- 					<xsl:variable name="escapedElementPath"
-						select="replace(replace($element-path,'\[','%5B'),'\]','%5D')"/> -->
-						<nif:wasConvertedFrom
-							rdf:resource="{concat($base-uri,'#xpath(',$element-path,')')}"
+					"body" : {"id" : "<xsl:value-of select="concat('b',$annotationNumber)"/>" }
+					<!--  
+						<oa:hasTarget
+							rdf:resource="{concat('http://example.com/mytargets/t',$annotationNumber)}" xmlns:oa="http://www.w3.org/ns/oa#"
 						/>
+						<rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+
+					<rdf:Description rdf:about="{concat('http://example.com/mytargets/t',$annotationNumber)}" xmlns:oa="http://www.w3.org/ns/oa#">
+						<oa:hasSource rdf:resource="http://example.com/myfile.xml"/>
+						<oa:hasSelector rdf:nodeID="{concat('s',$annotationNumber)}"/>
+					</rdf:Description>
+					<rdf:Description rdf:nodeID="{concat('s',$annotationNumber)}" xmlns:oa="http://www.w3.org/ns/oa#">
+						<rdf:type rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+						<dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/" rdf:resource="http://www.w3.org/TR/xpath/"/>
+						<rdf:value><xsl:value-of select="$element-path"/></rdf:value>
+					</rdf:Description>
+					<rdf:Description rdf:nodeID="{concat('b',$annotationNumber)}">
+						<xsl:variable name="found">					
+							<xsl:for-each
+								select="key('nodePath',$element-path)/output/@* | key('nodePath',$element-path)/output/*[not(local-name()='locQualityIssue')] | key('nodePath',$element-path)/output[matches(.,'\S') and ancestor::nodeList[@datacat='idvalue']]">
+								<xsl:call-template name="generateTriple"/>
+							</xsl:for-each>
 						</xsl:variable>
 						<xsl:for-each select="$found/*">
 							<xsl:variable name="currentName" select="name()"/>
@@ -114,7 +111,8 @@
 								<xsl:copy-of select="."/>
 							</xsl:if>
 						</xsl:for-each>
-					</rdf:Description>
+					</rdf:Description>-->
+					}
 				</xsl:if>
 			</xsl:if>
 		</xsl:for-each>

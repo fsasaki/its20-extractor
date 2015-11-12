@@ -1,33 +1,33 @@
 ﻿<itsProcessingInput>
  <!-- Translate data category -->
-<topic id="myTopic">
- <title>The ITS Topic</title>
- <prolog>
-  <its:rules xmlns:its="http://www.w3.org/2005/11/its" version="2.0">
-   <its:translateRule selector="itsProcessingInput/topic[1]//*" translate="no"/>
-   <its:translateRule selector="itsProcessingInput/topic[1]//p" translate="yes"/>
-   <!-- With these rules only the text "For the implementation of ITS, apply the rules in the order:"
+ <topic id="myTopic">
+  <title>The ITS Topic</title>
+  <prolog>
+   <its:rules xmlns:its="http://www.w3.org/2005/11/its" version="2.0">
+    <its:translateRule selector="itsProcessingInput/topic[1]//*" translate="no"/>
+    <its:translateRule selector="itsProcessingInput/topic[1]//p" translate="yes"/>
+    <!-- With these rules only the text "For the implementation of ITS, apply the rules in the order:"
    and " The last rule wins." should end up translatable --> 
    </its:rules>
- </prolog>
- <body>
-  <dl>
-   <dlentry id="tDataCat">
-    <dt>Data category</dt>
-    <dd>ITS defines <term>data category</term> as an abstract concept for a particular 
-    type of information for internationalization and localization of XML schemas and documents.</dd>
-   </dlentry>
-  </dl>
-  <p>For the implementation of ITS, apply the rules in the order:</p>
-  <ul>
-   <li>Default</li>
-   <li>Rules in the schema</li>
-   <li>Rules in the document instance</li>
-   <li>Local attributes</li>
-  </ul>
-  <p><ph xml:lang="fr">Et voilà !</ph> The last rule wins.</p>
- </body>
-</topic>
+  </prolog>
+  <body>
+   <dl>
+    <dlentry id="tDataCat">
+     <dt>Data category</dt>
+     <dd>ITS defines <term>data category</term> as an abstract concept for a particular 
+      type of information for internationalization and localization of XML schemas and documents.</dd>
+    </dlentry>
+   </dl>
+   <p>For the implementation of ITS, apply the rules in the order:</p>
+   <ul>
+    <li>Default</li>
+    <li>Rules in the schema</li>
+    <li>Rules in the document instance</li>
+    <li>Local attributes</li>
+   </ul>
+   <p><ph xml:lang="fr">Et voilà !</ph> The last rule wins.</p>
+  </body>
+ </topic>
  <!-- Directionality data category -->
  <text xml:lang="en" xmlns:its="http://www.w3.org/2005/11/its" its:version="2.0">
   <body>
@@ -171,4 +171,47 @@
    <p><span its:taClassRef="http://nerd.eurecom.fr/ontology#Location"  its:taIdentRef="http://dbpedia.org/resource/Dublin" its:taConfidence="0.7">Dublin</span> is the <span its:taSource="Wordnet3.0" its:taIdent="301467919" its:taConfidence="0.5">capital</span> of Ireland.</p>
   </body>
  </textTa>
+ <!-- Localization quality issue -->
+ <doc xmlns:its="http://www.w3.org/2005/11/its" its:version="2.0">
+  <file>
+   <header>
+    <its:rules version="2.0">
+     <its:locQualityIssueRule selector="//mrk[@type='x-itslq']"
+      locQualityIssuesRefPointer="@ref"/>
+    </its:rules>
+   </header>
+   <unit id="1">
+    <segment>
+     <source>This is the content</source>
+     <target><mrk type="x-itslq" ref="#lq1">c'es</mrk> le contenu</target>
+    </segment>
+    <its:locQualityIssues xml:id="lq1">
+     <its:locQualityIssue
+      locQualityIssueComment="'c'es' is unknown. Could be 'c'est'"
+      locQualityIssueSeverity="75"
+      locQualityIssueProfileRef="http://example.org/qaMovel/v1"
+      locQualityIssueEnabled="yes"/>
+    </its:locQualityIssues>
+   </unit>
+  </file>
+ </doc>
+ <textMTConfidence xmlns:its="http://www.w3.org/2005/11/its" its:version="2.0">
+  <body>
+   <p>
+    <span its:annotatorsRef="mt-confidence|file:///tools.xml#T1" its:mtConfidence="0.6982">Dublin is the capital city of Ireland and has the 50th biggest population density in Europe.</span>
+    <span its:annotatorsRef="mt-confidence|file:///tools.xml#T2" its:mtConfidence="0.7982">Madrid is the capital of Spain.</span>
+    <span its:annotatorsRef="mt-confidence|file:///tools.xml#T3" its:mtConfidence="0.9982">Berlin is the capital of Germany.</span>
+    <span its:annotatorsRef="mt-confidence|file:///tools.xml#T4" its:mtConfidence="0.6982">London is the capital of England</span>
+   </p>
+  </body>
+ </textMTConfidence>
+ <allowedCharactersMessages xmlns:its="http://www.w3.org/2005/11/its" its:version="2.0">
+  <msg num="123">Click the <panelmsg its:allowedCharacters="[&#x0020;-&#x00FE;]"
+   >CONTINUE</panelmsg> Button on the printer panel</msg>
+ </allowedCharactersMessages>
+ <storageSizeMessages xmlns:its="http://www.w3.org/2005/11/its" its:version="2.0">
+  <var num="panelA1_Continue" its:storageSize="8" its:storageEncoding="UTF-16" its:lineBreakType="lf">CONTINUE</var>
+  <var num="panelA1_Stop" its:storageSize="8" its:storageEncoding="UTF-16" its:lineBreakType="lf">STOP</var>
+  <var num="panelB5_Cancel" its:storageSize="12" its:storageEncoding="UTF-16" its:lineBreakType="lf">CANCEL</var>
+ </storageSizeMessages>
 </itsProcessingInput>

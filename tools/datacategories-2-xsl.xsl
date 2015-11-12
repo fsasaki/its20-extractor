@@ -100,7 +100,15 @@
 					<XSL:attribute name="outputType">
 						<XSL:value-of select="$outputType"/>
 					</XSL:attribute>
-					<XSL:copy-of select="$outputValue"/>
+					<output>
+						<XSL:copy-of select="$outputValue/@*"/>
+						<XSL:if test="ancestor-or-self::*[@its:annotatorsRef or @its-annotators-ref]">
+							<XSL:attribute name="its:annotatorsRef">
+								<XSL:value-of select="ancestor-or-self::*[@its:annotatorsRef][last()]/@its:annotatorsRef | ancestor::*[@its-annotators-ref][last()]/@its-annotators-ref"/>
+							</XSL:attribute>
+						</XSL:if>
+					<XSL:copy-of select="$outputValue/node()"/>
+					</output>
 				</XSL:element>
 			</XSL:template>
 			<XSL:template match="/">
@@ -111,6 +119,11 @@
 							<XSL:attribute name="datacat">
 								<XSL:text>
 									<xsl:value-of select="@name"/>
+								</XSL:text>
+							</XSL:attribute>
+							<XSL:attribute name="annotatorsRef">
+								<XSL:text>
+									<xsl:value-of select="@annotatorsRef"/>
 								</XSL:text>
 							</XSL:attribute>
 							<!-- The call of the recursion template used for local and inheritance stuff. Takes care of (possible non-existing) default values. -->
@@ -130,7 +143,32 @@
 					</xsl:for-each>
 				</nodeList>
 				</XSL:variable>
+				<XSL:variable name="nodeList-v2">
 				<XSL:apply-templates select="$nodeList-v1" mode="aftermath"/>
+				</XSL:variable>
+				<XSL:apply-templates select="$nodeList-v2" mode="aftermath-remove-unused-annotators-ref"/>
+				<!--  <nodeList datacat="translate" annotatorsRef="translate">
+      <node path="/itsProcessingInput/textTa[1]" outputType="default-value">
+         <output its:translate="yes"
+         outputType="no-value"
+            its:annotatorsRef="text-analysis|http://enrycher.ijs.si"/>
+      </node> -->
+			</XSL:template>
+			<XSL:template match="@its:annotatorsRef" mode="aftermath-remove-unused-annotators-ref">
+				<XSL:variable name="current-annotators-ref">
+					<XSL:value-of select="."/>
+				</XSL:variable>
+					<XSL:variable name="current-datacategory">
+						<XSL:value-of select="ancestor::nodeList[@annotatorsRef]/@annotatorsRef"/>
+				</XSL:variable>
+				<XSL:if test="contains($current-annotators-ref,$current-datacategory) and not (ancestor::node/@outputType='no-value')">
+					<XSL:copy-of select="."/>
+				</XSL:if>
+			</XSL:template>
+			<XSL:template match="node()|@*" mode="aftermath-remove-unused-annotators-ref">
+				<XSL:copy>
+					<XSL:apply-templates select="node()|@*" mode="aftermath-remove-unused-annotators-ref"/>
+				</XSL:copy>
 			</XSL:template>
 			<XSL:template match="node()|@*" mode="aftermath">
 				<XSL:copy>

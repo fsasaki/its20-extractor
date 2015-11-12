@@ -4,7 +4,7 @@
     xmlns:datc="http://example.com/datacats">
     <!-- Definitions of data categories. Documentation: see figure at http://www.w3.org/People/fsasaki/archforms-css-rdf#fig-general-approach and the text below the figure.
     -->
-    <datacat name="translate">
+    <datacat name="translate" annotatorsRef="translate">
         <defaults>
             <defaultsElements its:translate="yes"/>
             <defaultsAttributes its:translate="no"/>
@@ -16,7 +16,7 @@
             addedMarkup="@its:translate | @translate[parent::its:span or parent::its:translateRule]"
             addedMarkup-html5="@translate"/>
     </datacat>
-    <datacat name="directionality">
+    <datacat name="directionality" annotatorsRef="directionality">
         <defaults>
             <defaultsElements its:dir="ltr"/>
             <defaultsAttributes its:dir="ltr"/>
@@ -24,10 +24,10 @@
         <inheritance appliesTo="elementsAndAttributes"/>
         <rulesElement name="dirRule"/>
         <localAdding datcatSelector="*[@its:dir] | its:span[@dir |
-	its:dirRule]"
+            its:dirRule]"
             addedMarkup="@its:dir | @dir[parent::its:span or parent::its:dirRule]" datcatSelector-html5="*[@dir]" addedMarkup-html5="@dir"/>
     </datacat>
-    <datacat name="elementswithintext">
+    <datacat name="elementswithintext" annotatorsRef="elements-within-text">
         <defaults>
             <defaultsElements its:withinText="no"/>
         </defaults>
@@ -38,7 +38,7 @@
             its:withinTextRule]"
             addedMarkup="@its:withinText | @withinText[parent::its:span or parent::its:dirRule]" datcatSelector-html5="*[@its-within-text]" addedMarkup-html5="@its-within-text"/>
     </datacat>
-    <datacat name="terminology">
+    <datacat name="terminology" annotatorsRef="terminology">
         <defaults>
             <defaultsElements its:term="no"/>
             <defaultsAttributes its:term="no"/>
@@ -49,12 +49,12 @@
             addedMarkup="@its:term | @term[parent::its:span or parent::its:termRule] | @its:termInfoRef | @termInfoRef[parent::its:span]"
             datcatSelector-html5="*[@its-term]" addedMarkup-html5="@its-term"/>
     </datacat>
-    <datacat name="ruby">
+    <datacat name="ruby" annotatorsRef="ruby">
         <inheritance appliesTo="none"/>
         <rulesElement name="rubyRule"/>
         <localAdding datcatSelector="its:ruby" addedMarkup="self::its:ruby" datcatSelector-html5="ruby" addedMarkup-html5="self::ruby"/>
     </datacat>
-    <datacat name="localizationnote">
+    <datacat name="localizationnote" annotatorsRef="localization-note">
         <defaults>
             <defaultsElements/>
             <defaultsAttributes/>
@@ -63,20 +63,24 @@
         <rulesElement name="locNoteRule"/>
         <localAdding
             datcatSelector="*[@its:locNote] |
-        its:span[@locNote] | *[@its:locNoteRef] | its:span[@locNoteRef]"
+            its:span[@locNote] | *[@its:locNoteRef] | its:span[@locNoteRef]"
             addedMarkup="@its:locNote |
             @its:locNoteType | @its:locNoteRef | @locNote[parent::its:span] |
             @locNoteType[parent::its:span] |
-        @locNoteRef[parent::its:span]"
-        datcatSelector-html5="*[@its-loc-note] | *[@its-loc-note-ref]" addedMarkup-html5="@its-loc-note |
-        @its-loc-note-type | @its-loc-note-ref"
+            @locNoteRef[parent::its:span]"
+            datcatSelector-html5="*[@its-loc-note] | *[@its-loc-note-ref]" addedMarkup-html5="@its-loc-note |
+            @its-loc-note-type | @its-loc-note-ref"
         />
     </datacat>
-    <datacat name="languageinformation">
+    <datacat name="languageinformation" annotatorsRef="language-information">
         <inheritance appliesTo="elementsAndAttributes"/>
         <rulesElement name="langRule"/>
+        <localAdding datcatSelector="*[@xml:lang | @xml:lang[parent::its:span]]"
+            addedMarkup="@xml:lang | @xml:lang[parent::its:span]"
+            datcatSelector-html5="*[@lang | @lang[parent::its:span]]"
+            addedMarkup-html5="@lang | @lang[parent::its:span"/>
     </datacat>
-    <datacat name="domain">
+    <datacat name="domain" annotatorsRef="domain">
         <inheritance appliesTo="elementsAndAttributes"/>
         <rulesElement name="domainRule"/>
     </datacat>
@@ -86,7 +90,7 @@
         <rulesElement name="qaErrorRule"/>
     </datacat>  -->
     <!-- tbd for ta:  datcatSelector-html5="*[@its-locale-filter-list]" addedMarkup-html5="@its-locale-filter-list" -->
-    <datacat name="textanalysis">
+    <datacat name="textanalysis" annotatorsRef="text-analysis">
         <inheritance appliesTo="none"/>
         <rulesElement name="textAnalysisRule"/>
         <localAdding datcatSelector="*[@its:taConfidence | @taConfidence[parent::its:span] | @its:taClassRef | @taClassRef[parent::its:span] | @its:taSource | @taSource[parent::its:span] | @its:taIdent | @taIdent[parent::its:span] | @its:taIdentRef | @taIdentRef[parent::its:span]]"
@@ -94,7 +98,7 @@
             datcatSelector-html5="*[@its-ta-confidence | @its-ta-class-ref | @its-ta-source | @its-ta-ident | @its-ta-ident-ref]"
             addedMarkup-html5="@its-ta-confidence | @its-ta-class-ref | @its-ta-source | @its-ta-ident | @its-ta-ident-ref"/>
     </datacat>
-    <datacat name="localefilter">
+    <datacat name="localefilter" annotatorsRef="locale-filter">
         <defaults>
             <defaultsElements its:localeFilterList="*" its:localeFilterType="included"/>
             <defaultsAttributes its:localeFilterList="*" its:localeFilterType="included"/>
@@ -104,19 +108,19 @@
         <localAdding datcatSelector="*[@its:localeFilterList] | its:span[@localeFilterList]"
             addedMarkup="@its:localeFilterList | @localeFilterList[parent::its:span]" datcatSelector-html5="*[@its-locale-filter-list]" addedMarkup-html5="@its-locale-filter-list"/>
     </datacat>
-    <datacat name="externalresource">
+    <datacat name="externalresource" annotatorsRef="external-resource">
         <inheritance appliesTo="none"/>
         <rulesElement name="externalResourceRefRule"/>
     </datacat>
-    <datacat name="targetpointer">
+    <datacat name="targetpointer" annotatorsRef="target-pointer">
         <inheritance appliesTo="none"/>
         <rulesElement name="targetPointerRule"/>
     </datacat>
-    <datacat name="idvalue">
+    <datacat name="idvalue" annotatorsRef="id-value">
         <inheritance appliesTo="onlyElements"/>
         <rulesElement name="idValueRule"/>
     </datacat>
-    <datacat name="localization-quality-issue">
+    <datacat name="localization-quality-issue" annotatorsRef="localization-quality-issue">
         <defaults>
             <defaultsElements/>
             <defaultsAttributes/>
@@ -145,5 +149,29 @@
                 <output hasLocQualityIssue="" xmlns=""><its:locQualityIssue><xsl:copy-of select="@*"/></its:locQualityIssue></output>
             </xsl:template>
         </aftermath>
+    </datacat>
+    <datacat name="mtconfidence" annotatorsRef="mt-confidence">
+        <inheritance appliesTo="onlyElements"/>
+        <rulesElement name="mtConfidenceRule"/>
+        <localAdding datcatSelector="*[@its:mtConfidence | @mtConfidence[parent::its:span]]"
+            addedMarkup="@its:mtConfidence | @mtConfidence[parent::its:span]"
+            datcatSelector-html5="*[@its-ta-confidence]"
+            addedMarkup-html5="@its-ta-confidence"/>
+    </datacat>
+    <datacat name="allowedcharacters" annotatorsRef="allowed-characters">
+        <inheritance appliesTo="onlyElements"/>
+        <rulesElement name="allowedCharactersRule"/>
+        <localAdding datcatSelector="*[@its:allowedCharacters | @allowedCharacters[parent::its:span]]"
+            addedMarkup="@its:allowedCharacters | @allowedCharacters[parent::its:span]"
+            datcatSelector-html5="*[@its-allowed-characters]"
+            addedMarkup-html5="@its-allowed-characters"/>
+    </datacat>
+    <datacat name="storagesize" annotatorsRef="storage-size">
+        <inheritance appliesTo="onlyElements"/>
+        <rulesElement name="storageSizeRule"/>
+        <localAdding datcatSelector="*[@its:storageSize | @storageSize[parent::its:span]]"
+            addedMarkup="@its:storageSize | @its:storageEncoding |  @its:lineBreakType | @storageEncoding[parent::its:span] | @storageSize[parent::its:span] | @lineBreakType[parent::its:span]"
+            datcatSelector-html5="*[@its-storage-size]"
+            addedMarkup-html5="@its-storage-size | @its-line-break-type | @its-storage-encoding"/>
     </datacat>
 </datacats>

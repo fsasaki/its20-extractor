@@ -111,6 +111,31 @@
         </java>
     </target>
 
+    <target name="nodelist-as-web-annotation">
+        <java fork="true" classname="net.sf.saxon.Transform">
+            <classpath refid="saxon9.classpath"/>
+            <arg value="-o:temp/nodelist-web-annotation.rdf"/>
+            <arg value="-versionmsg:off"/>
+            <arg value="temp/inputfile.xml"/>
+            <arg value="tools/generate-web-annotation.xsl"/>
+        </java>       
+        <java fork="true" classname="net.sf.saxon.Transform">
+            <classpath refid="saxon9.classpath"/>
+            <arg value="-o:temp/nodelist-web-annotation-via-xslt.json"/>
+            <arg value="-versionmsg:off"/>
+            <arg value="temp/nodelist-web-annotation.rdf"/>
+            <arg value="tools/generate-web-annotation-json.xsl"/> 
+        </java><!-- 
+        <exec executable="curl">
+            <arg value="- -data-urlencode"/>
+            <arg value="content@temp/nodelist-web-annotation.rdf"/>
+            <arg value="http://rdf-translator.appspot.com/convert/xml/json-ld/content"/> 
+            <arg value="-o nodelist-web-annotation.json"/>
+        </exec>
+        <copy file=" nodelist-web-annotation.json" tofile="temp/nodelist-web-annotation.json"/>
+        <delete file=" nodelist-web-annotation.json"/>   -->
+    </target>
+
     <target name="nodelist-as-nif">
         <java fork="true" classname="net.sf.saxon.Transform">
             <classpath refid="saxon9.classpath"/>
@@ -132,7 +157,8 @@
             <arg value="http://rdf-translator.appspot.com/convert/xml/json-ld/content"/> 
             <arg value="-o nodelist-nif.json"/>
         </exec>
-        <copy file=" nodelist-nif.json" tofile="temp/nodelist-nif.json"/>  
+        <copy file="nodelist-nif.json" tofile="temp/nodelist-nif.json"/>
+        <delete file=" nodelist-nif.json"></delete>
     </target>
 
     <!-- Task to generate annotations providing ITS information inline. Generated from the XML representation provided via the nodelist task. -->
@@ -175,14 +201,14 @@
     <target name="allDatacats">
         <exec executable="/Applications/oxygen16.1/tools/ant/bin/ant">
             <arg value="-Dinputfile=${inputfile}"/>
-            <arg value="-Ddatacategories=translate directionality elementswithintext terminology ruby localizationnote languageinformation domain textanalysis localefilter externalresource targetpointer idvalue localization-quality-issue textanalysis"/>
-            <!-- missing data categories:  Provenance, Preserve Space, Localization Quality Issue, Localization Quality Rating, MT Confidence, Allowed Characters, Storage Size -->
+            <arg value="-Ddatacategories=translate directionality elementswithintext terminology ruby localizationnote languageinformation domain textanalysis localefilter externalresource targetpointer idvalue localization-quality-issue textanalysis mtconfidence allowedcharacters storagesize"/>
+            <!-- missing data categories:  Provenance, Preserve Space, Localization Quality Rating-->
         </exec>
     </target>
 
     <!-- Generating inline annotations and the RDF nodelist representation. -->
     <target name="all-xml"
-        depends="clean, copy-input-xml,intermediate-xslt, nodelist, inline-annotation, nodelist-as-rdf, nodelist-as-nif"/>
+        depends="clean, copy-input-xml,intermediate-xslt, nodelist, inline-annotation, nodelist-as-rdf, nodelist-as-nif, nodelist-as-web-annotation"/>
    
     <target name="nif-conversion-for-test-suite">
    <!--     <fileset dir="sample/nif-conversion/lqi/input/" id="myXML">
