@@ -1,0 +1,13 @@
+﻿<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en" trgLang="fr"
+ xmlns:itsm="urn:oasis:names:tc:xliff:itsm:2.1">
+ <file id="f1">
+  <unit id="u1">
+   <segment>
+    <source><mrk id="m1" type="itsm:generic" itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"
+      itsm:taIdentRef="http://dbpedia.org/resource/Arizona">Arizona</mrk></source>
+    <source><sm id="sm1" type="itsm:generic" itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"
+     itsm:taIdentRef="http://dbpedia.org/resource/Arizona"/>Arizona<em startRef="sm1"/></source>
+   </segment>
+  </unit>
+ </file>
+</xliff>

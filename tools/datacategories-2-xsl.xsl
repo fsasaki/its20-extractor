@@ -11,6 +11,8 @@
 	<!--  	<xsl:variable name="original-base-uri" select="substring-before(base-uri(doc($originalInputDocUri)),tokenize(base-uri(doc($originalInputDocUri)), '(/)|(\\)')[last()])"/>	 -->
 	<xsl:param name="inputDatacats">all</xsl:param>
 	<xsl:param name="html5-input">no</xsl:param>
+	<!-- External rules are only supported for XML files. They are given as a parameter while calling the stylesheet. -->
+	<xsl:param name="externalRulesFileURI">none</xsl:param>
 	<xsl:variable name="dataCatDoc" select="." as="node()*"/>
 	<xsl:variable name="inputDoc" select="doc('../temp/inputfile.xml')" as="node()*"/>
 	<xsl:variable name="datacategories">
@@ -223,7 +225,13 @@
 				<xsl:with-param name="docWithRules">
 					<xsl:choose>
 						<xsl:when test="$html5-input='no'">
+							<rulesList>
 							<xsl:copy-of select="$inputDoc"/>
+								<xsl:if test="$externalRulesFileURI != 'none'">
+									<xsl:message>Processing also external rules. External rules file URI: <xsl:value-of select="$externalRulesFileURI"/></xsl:message>
+									<xsl:copy-of select="doc($externalRulesFileURI)"/>
+								</xsl:if>
+							</rulesList>
 						</xsl:when>
 						<xsl:when test="$html5-input='yes'">
 							<!-- 							<xsl:message>trying to process rule in html5: <xsl:value-of select="for $doc in ($inputDoc//h:link[@rel='its-rules']/@href) return concat($original-base-uri,$doc)" xmlns:h="http://www.w3.org/1999/xhtml"/></xsl:message> 

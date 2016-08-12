@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeList xmlns:its="http://www.w3.org/2005/11/its"
+          xmlns:datc="http://example.com/datacats">
+   <nodeList datacat="textanalysis" annotatorsRef="text-analysis">
+      <node path="/xliff" outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/@version" outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/@srcLang" outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/@trgLang" outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]" outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/@id" outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[1]" outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[1]/@id" outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[1]/segment[1]" outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[1]/segment[1]/source[1]"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[1]/segment[1]/source[1]/mrk[1]"
+            outputType="new-value-global">
+         <output>
+            <taClassRefPointer xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
+                               xmlns:itsm="urn:oasis:names:tc:xliff:itsm:2.1"
+                               itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"/>
+            <taIdentRefPointer xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
+                               xmlns:itsm="urn:oasis:names:tc:xliff:itsm:2.1"
+                               itsm:taIdentRef="http://dbpedia.org/resource/Arizona"/>
+         </output>
+      </node>
+      <node path="/xliff/file[1]/unit[1]/segment[1]/source[1]/mrk[1]/@id"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[1]/segment[1]/source[1]/mrk[1]/@type"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[1]/segment[1]/source[1]/mrk[1]/@itsm:taClassRef"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[1]/segment[1]/source[1]/mrk[1]/@itsm:taIdentRef"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[1]/segment[1]/source[2]"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[1]/segment[1]/source[2]/sm[1]"
+            outputType="new-value-global">
+         <output>
+            <taClassRefPointer xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
+                               xmlns:itsm="urn:oasis:names:tc:xliff:itsm:2.1"
+                               itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"/>
+            <taIdentRefPointer xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
+                               xmlns:itsm="urn:oasis:names:tc:xliff:itsm:2.1"
+                               itsm:taIdentRef="http://dbpedia.org/resource/Arizona"/>
+         </output>
+      </node>
+      <node path="/xliff/file[1]/unit[1]/segment[1]/source[2]/sm[1]/@id"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[1]/segment[1]/source[2]/sm[1]/@type"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[1]/segment[1]/source[2]/sm[1]/@itsm:taClassRef"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[1]/segment[1]/source[2]/sm[1]/@itsm:taIdentRef"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[1]/segment[1]/source[2]/em[1]"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[1]/segment[1]/source[2]/em[1]/@startRef"
+            outputType="no-value">
+         <output/>
+      </node>
+   </nodeList>
+</nodeList>

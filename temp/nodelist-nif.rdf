@@ -1,0 +1,22 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:itsrdf="http://www.w3.org/2005/11/its/rdf#"
+         xmlns:its="http://www.w3.org/2005/11/its"
+         xmlns:nif="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#">
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=0,14">
+      <nif:sourceUrl rdf:resource="http://example.com/exampledoc.xml"/>
+      <nif:beginIndex>0</nif:beginIndex>
+      <nif:endIndex>14</nif:endIndex>
+      <nif:isString>ArizonaArizona</nif:isString>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#Context"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.xml#char=0,7">
+      <nif:beginIndex>0</nif:beginIndex>
+      <nif:endIndex>7</nif:endIndex>
+      <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#RFC5147String"/>
+      <nif:isString>Arizona</nif:isString>
+      <itsrdf:taClassRef/>
+      <itsrdf:taIdentRef/>
+      <nif:referenceContext rdf:resource="http://example.com/exampledoc.xml#char=0,14"/>
+      <nif:wasConvertedFrom rdf:resource="http://example.com/exampledoc.xml#xpath(/xliff/file[1]/unit[1]/segment[1]/source[1]/mrk[1])"/>
+   </rdf:Description>
+</rdf:RDF>

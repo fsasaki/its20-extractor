@@ -1,0 +1,5 @@
+<its:rules xmlns:its="http://www.w3.org/2005/11/its" version="2.0"
+    xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0" queryLanguage="xpath" xmlns:itsm="urn:oasis:names:tc:xliff:itsm:2.1">
+    <its:textAnalysisRule selector="//xlf2:mrk[@type='itsm:generic' and (@itsm:taClassRef or @itsm:taIdentRef)]" taClassRefPointer="@itsm:taClassRef" taIdentRefPointer="@itsm:taIdentRef"/>
+    <its:textAnalysisRule selector="//xlf2:sm[@type='itsm:generic' and (@itsm:taClassRef or @itsm:taIdentRef)]" taClassRefPointer="@itsm:taClassRef" taIdentRefPointer="@itsm:taIdentRef"/>
+</its:rules>

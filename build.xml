@@ -71,6 +71,7 @@
             <arg value="inputDatacats=${datacategories}"/>
             <arg value="inputDocUri=temp/inputfile.xml"/>
             <arg value="originalInputDoc=${inputfile}"/>
+            <arg value="externalRulesFileURI=../external-rules.xml"/>
         </java>
     </target>
 
@@ -151,14 +152,15 @@
             <arg value="temp/nodelist-nif.rdf"/>
             <arg value="tools/rdf-xml-to-turtle.xsl"/> 
         </java>-->
+        <!-- 
         <exec executable="curl">
-            <arg value="--data-urlencode"/>
+            <arg value="- -data-urlencode"/>
             <arg value="content@temp/nodelist-nif.rdf"/>
             <arg value="http://rdf-translator.appspot.com/convert/xml/json-ld/content"/> 
             <arg value="-o nodelist-nif.json"/>
         </exec>
         <copy file="nodelist-nif.json" tofile="temp/nodelist-nif.json"/>
-        <delete file=" nodelist-nif.json"></delete>
+        <delete file=" nodelist-nif.json"></delete> -->
     </target>
 
     <!-- Task to generate annotations providing ITS information inline. Generated from the XML representation provided via the nodelist task. -->
@@ -208,8 +210,8 @@
 
     <!-- Generating inline annotations and the RDF nodelist representation. -->
     <target name="all-xml"
-        depends="clean, copy-input-xml,intermediate-xslt, nodelist, inline-annotation, nodelist-as-rdf, nodelist-as-nif, nodelist-as-web-annotation"/>
-   
+        depends="clean, copy-input-xml,intermediate-xslt, nodelist, inline-annotation, nodelist-as-rdf, nodelist-as-nif"/>
+    <!-- If needed, add , nodelist-as-web-annotation to above target. -->
     <target name="nif-conversion-for-test-suite">
    <!--     <fileset dir="sample/nif-conversion/lqi/input/" id="myXML">
             <include name="*.xml" />
