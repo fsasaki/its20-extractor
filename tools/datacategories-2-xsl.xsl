@@ -284,6 +284,10 @@
 					<XSL:with-param name="outputType">new-value-global</XSL:with-param>
 					<XSL:with-param name="outputValue" as="node()*">
 						<output>
+							<XSL:if test="self::xlf2:sm" xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0">
+								<XSL:variable name="startRefId" select="@id"/>
+								<sm_em-content><XSL:copy-of select="self::xlf2:sm/following-sibling::node()[following-sibling::xlf2:em[@startRef=$startRefId]]"></XSL:copy-of></sm_em-content>
+							</XSL:if>
 							<xsl:if test="not(empty($globalMarkup))">
 								<xsl:copy-of
 									select="$globalMarkup[not(self::attribute()[name()='idValue'])]"

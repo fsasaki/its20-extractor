@@ -145,6 +145,12 @@
          <xsl:with-param name="outputType">new-value-global</xsl:with-param>
          <xsl:with-param name="outputValue" as="node()*">
             <output>
+               <xsl:if test="self::xlf2:sm">
+                  <xsl:variable name="startRefId" select="@id"/>
+                  <sm_em-content>
+                     <xsl:copy-of select="self::xlf2:sm/following-sibling::node()[following-sibling::xlf2:em[@startRef=$startRefId]]"/>
+                  </sm_em-content>
+               </xsl:if>
                <taClassRefPointer>
                   <xsl:apply-templates select="@itsm:taClassRef" mode="textanalysistaClassRefPointer"/>
                </taClassRefPointer>
@@ -190,6 +196,12 @@
          <xsl:with-param name="outputType">new-value-global</xsl:with-param>
          <xsl:with-param name="outputValue" as="node()*">
             <output>
+               <xsl:if test="self::xlf2:sm">
+                  <xsl:variable name="startRefId" select="@id"/>
+                  <sm_em-content>
+                     <xsl:copy-of select="self::xlf2:sm/following-sibling::node()[following-sibling::xlf2:em[@startRef=$startRefId]]"/>
+                  </sm_em-content>
+               </xsl:if>
                <taClassRefPointer>
                   <xsl:apply-templates select="@itsm:taClassRef" mode="textanalysistaClassRefPointer"/>
                </taClassRefPointer>

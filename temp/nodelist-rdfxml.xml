@@ -32,6 +32,12 @@
    <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[1]/segment[1]/source[1]/mrk[1]/@itsm:taIdentRef)"/>
    <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[1]/segment[1]/source[2])"/>
    <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[1]/segment[1]/source[2]/sm[1])">
+      <itsrdf:sm_em-content rdf:parseType="Literal">
+         <sm_em-content xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
+                        xmlns:itsm="urn:oasis:names:tc:xliff:itsm:2.1"
+                        xmlns:its="http://www.w3.org/2005/11/its"
+                        xmlns:datc="http://example.com/datacats">Arizona</sm_em-content>
+      </itsrdf:sm_em-content>
       <itsrdf:taClassRefPointer rdf:parseType="Literal">
          <taClassRefPointer xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
                             xmlns:itsm="urn:oasis:names:tc:xliff:itsm:2.1"
