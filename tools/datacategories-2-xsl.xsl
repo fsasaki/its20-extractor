@@ -286,7 +286,8 @@
 						<output>
 							<XSL:if test="self::xlf2:sm" xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0">
 								<XSL:variable name="startRefId" select="@id"/>
-								<sm_em-content><XSL:copy-of select="self::xlf2:sm/following-sibling::node()[following-sibling::xlf2:em[@startRef=$startRefId]]"></XSL:copy-of></sm_em-content>
+								<XSL:variable name="parentElem" select="name(parent::*)"/>
+								<sm_em-content><XSL:copy-of select="self::xlf2:sm/following::node()[parent::*[name()=$parentElem] and following::xlf2:em[parent::*[name()=$parentElem] and @startRef=$startRefId]]"></XSL:copy-of></sm_em-content>
 							</XSL:if>
 							<xsl:if test="not(empty($globalMarkup))">
 								<xsl:copy-of

@@ -147,8 +147,9 @@
             <output>
                <xsl:if test="self::xlf2:sm">
                   <xsl:variable name="startRefId" select="@id"/>
+                  <xsl:variable name="parentElem" select="name(parent::*)"/>
                   <sm_em-content>
-                     <xsl:copy-of select="self::xlf2:sm/following-sibling::node()[following-sibling::xlf2:em[@startRef=$startRefId]]"/>
+                     <xsl:copy-of select="self::xlf2:sm/following::node()[parent::*[name()=$parentElem] and following::xlf2:em[parent::*[name()=$parentElem] and @startRef=$startRefId]]"/>
                   </sm_em-content>
                </xsl:if>
                <taClassRefPointer>
@@ -198,8 +199,9 @@
             <output>
                <xsl:if test="self::xlf2:sm">
                   <xsl:variable name="startRefId" select="@id"/>
+                  <xsl:variable name="parentElem" select="name(parent::*)"/>
                   <sm_em-content>
-                     <xsl:copy-of select="self::xlf2:sm/following-sibling::node()[following-sibling::xlf2:em[@startRef=$startRefId]]"/>
+                     <xsl:copy-of select="self::xlf2:sm/following::node()[parent::*[name()=$parentElem] and following::xlf2:em[parent::*[name()=$parentElem] and @startRef=$startRefId]]"/>
                   </sm_em-content>
                </xsl:if>
                <taClassRefPointer>

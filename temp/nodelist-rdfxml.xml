@@ -36,7 +36,20 @@
          <sm_em-content xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
                         xmlns:itsm="urn:oasis:names:tc:xliff:itsm:2.1"
                         xmlns:its="http://www.w3.org/2005/11/its"
-                        xmlns:datc="http://example.com/datacats">Arizona</sm_em-content>
+                        xmlns:datc="http://example.com/datacats">Arizona<em xmlns="urn:oasis:names:tc:xliff:document:2.0" startRef="sm1"/> Yeah!<sm xmlns="urn:oasis:names:tc:xliff:document:2.0"
+                id="sm1"
+                type="itsm:generic"
+                itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"
+                itsm:taIdentRef="http://dbpedia.org/resource/Arizona"/>Arizona<em xmlns="urn:oasis:names:tc:xliff:document:2.0" startRef="sm1"/> Yeah!<mrk xmlns="urn:oasis:names:tc:xliff:document:2.0"
+                 id="m1"
+                 type="itsm:generic"
+                 itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"
+                 itsm:taIdentRef="http://dbpedia.org/resource/Arizona">Arizona</mrk>
+            <sm xmlns="urn:oasis:names:tc:xliff:document:2.0"
+                id="sm1"
+                type="itsm:generic"
+                itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"
+                itsm:taIdentRef="http://dbpedia.org/resource/Arizona"/>Arizona</sm_em-content>
       </itsrdf:sm_em-content>
       <itsrdf:taClassRefPointer rdf:parseType="Literal">
          <taClassRefPointer xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
@@ -59,4 +72,102 @@
    <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[1]/segment[1]/source[2]/sm[1]/@itsm:taIdentRef)"/>
    <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[1]/segment[1]/source[2]/em[1])"/>
    <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[1]/segment[1]/source[2]/em[1]/@startRef)"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[2])"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[2]/@id)"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[2]/segment[1])"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[2]/segment[1]/source[1])"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[2]/segment[1]/source[1]/sm[1])">
+      <itsrdf:sm_em-content rdf:parseType="Literal">
+         <sm_em-content xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
+                        xmlns:itsm="urn:oasis:names:tc:xliff:itsm:2.1"
+                        xmlns:its="http://www.w3.org/2005/11/its"
+                        xmlns:datc="http://example.com/datacats">Arizona<em xmlns="urn:oasis:names:tc:xliff:document:2.0" startRef="sm1"/> Yeah!<mrk xmlns="urn:oasis:names:tc:xliff:document:2.0"
+                 id="m1"
+                 type="itsm:generic"
+                 itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"
+                 itsm:taIdentRef="http://dbpedia.org/resource/Arizona">Arizona</mrk>
+            <sm xmlns="urn:oasis:names:tc:xliff:document:2.0"
+                id="sm1"
+                type="itsm:generic"
+                itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"
+                itsm:taIdentRef="http://dbpedia.org/resource/Arizona"/>Arizona</sm_em-content>
+      </itsrdf:sm_em-content>
+      <itsrdf:taClassRefPointer rdf:parseType="Literal">
+         <taClassRefPointer xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
+                            xmlns:itsm="urn:oasis:names:tc:xliff:itsm:2.1"
+                            xmlns:its="http://www.w3.org/2005/11/its"
+                            xmlns:datc="http://example.com/datacats"
+                            itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"/>
+      </itsrdf:taClassRefPointer>
+      <itsrdf:taIdentRefPointer rdf:parseType="Literal">
+         <taIdentRefPointer xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
+                            xmlns:itsm="urn:oasis:names:tc:xliff:itsm:2.1"
+                            xmlns:its="http://www.w3.org/2005/11/its"
+                            xmlns:datc="http://example.com/datacats"
+                            itsm:taIdentRef="http://dbpedia.org/resource/Arizona"/>
+      </itsrdf:taIdentRefPointer>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[2]/segment[1]/source[1]/sm[1]/@id)"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[2]/segment[1]/source[1]/sm[1]/@type)"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[2]/segment[1]/source[1]/sm[1]/@itsm:taClassRef)"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[2]/segment[1]/source[1]/sm[1]/@itsm:taIdentRef)"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[2]/segment[1]/target[1])"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[2]/segment[2])"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[2]/segment[2]/source[1])"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[2]/segment[2]/source[1]/em[1])"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[2]/segment[2]/source[1]/em[1]/@startRef)"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[2]/segment[2]/target[1])"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[3])"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[3]/@id)"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[3]/segment[1])"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[3]/segment[1]/source[1])"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[3]/segment[1]/source[1]/mrk[1])">
+      <itsrdf:taClassRefPointer rdf:parseType="Literal">
+         <taClassRefPointer xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
+                            xmlns:itsm="urn:oasis:names:tc:xliff:itsm:2.1"
+                            xmlns:its="http://www.w3.org/2005/11/its"
+                            xmlns:datc="http://example.com/datacats"
+                            itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"/>
+      </itsrdf:taClassRefPointer>
+      <itsrdf:taIdentRefPointer rdf:parseType="Literal">
+         <taIdentRefPointer xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
+                            xmlns:itsm="urn:oasis:names:tc:xliff:itsm:2.1"
+                            xmlns:its="http://www.w3.org/2005/11/its"
+                            xmlns:datc="http://example.com/datacats"
+                            itsm:taIdentRef="http://dbpedia.org/resource/Arizona"/>
+      </itsrdf:taIdentRefPointer>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[3]/segment[1]/source[1]/mrk[1]/@id)"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[3]/segment[1]/source[1]/mrk[1]/@type)"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[3]/segment[1]/source[1]/mrk[1]/@itsm:taClassRef)"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[3]/segment[1]/source[1]/mrk[1]/@itsm:taIdentRef)"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[3]/segment[1]/source[2])"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[3]/segment[1]/source[2]/sm[1])">
+      <itsrdf:sm_em-content rdf:parseType="Literal">
+         <sm_em-content xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
+                        xmlns:itsm="urn:oasis:names:tc:xliff:itsm:2.1"
+                        xmlns:its="http://www.w3.org/2005/11/its"
+                        xmlns:datc="http://example.com/datacats">Arizona</sm_em-content>
+      </itsrdf:sm_em-content>
+      <itsrdf:taClassRefPointer rdf:parseType="Literal">
+         <taClassRefPointer xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
+                            xmlns:itsm="urn:oasis:names:tc:xliff:itsm:2.1"
+                            xmlns:its="http://www.w3.org/2005/11/its"
+                            xmlns:datc="http://example.com/datacats"
+                            itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"/>
+      </itsrdf:taClassRefPointer>
+      <itsrdf:taIdentRefPointer rdf:parseType="Literal">
+         <taIdentRefPointer xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
+                            xmlns:itsm="urn:oasis:names:tc:xliff:itsm:2.1"
+                            xmlns:its="http://www.w3.org/2005/11/its"
+                            xmlns:datc="http://example.com/datacats"
+                            itsm:taIdentRef="http://dbpedia.org/resource/Arizona"/>
+      </itsrdf:taIdentRefPointer>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[3]/segment[1]/source[2]/sm[1]/@id)"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[3]/segment[1]/source[2]/sm[1]/@type)"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[3]/segment[1]/source[2]/sm[1]/@itsm:taClassRef)"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[3]/segment[1]/source[2]/sm[1]/@itsm:taIdentRef)"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[3]/segment[1]/source[2]/em[1])"/>
+   <rdf:Description rdf:about="http://example.com/exampledoc.html#xpath(/xliff/file[1]/unit[3]/segment[1]/source[2]/em[1]/@startRef)"/>
 </rdf:RDF>
