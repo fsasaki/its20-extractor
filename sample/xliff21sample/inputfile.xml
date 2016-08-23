@@ -6,8 +6,27 @@
     <source><mrk id="m1" type="itsm:generic" itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"
       itsm:taIdentRef="http://dbpedia.org/resource/Arizona">Arizona</mrk></source>
     <source><sm id="sm1" type="itsm:generic" itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"
-     itsm:taIdentRef="http://dbpedia.org/resource/Arizona"/>Arizona<em startRef="sm1"/></source>
+     itsm:taIdentRef="http://dbpedia.org/resource/Arizona"/>Arizona<em startRef="sm1"/> Yeah!</source>
    </segment>
   </unit>
+   <unit id="u2">
+     <segment>
+       <source><sm id="sm1" type="itsm:generic" itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"
+         itsm:taIdentRef="http://dbpedia.org/resource/Arizona"/>Arizona</source>
+       <target>Аризона</target>
+     </segment>
+     <segment>
+       <source><em startRef="sm1"/> Yeah!</source>
+       <target>Да!</target>
+     </segment>
+   </unit>
+   <unit id="u3">
+     <segment>
+       <source><mrk id="m1" type="itsm:generic" itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"
+         itsm:taIdentRef="http://dbpedia.org/resource/Arizona">Arizona</mrk></source>
+       <source><sm id="sm1" type="itsm:generic" itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"
+         itsm:taIdentRef="http://dbpedia.org/resource/Arizona"/>Arizona<em startRef="sm1"/> Yeah!</source>
+     </segment>
+   </unit>
  </file>
 </xliff>

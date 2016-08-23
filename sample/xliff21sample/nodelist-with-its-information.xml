@@ -67,6 +67,21 @@
       <node path="/xliff/file[1]/unit[1]/segment[1]/source[2]/sm[1]"
             outputType="new-value-global">
          <output>
+            <sm_em-content xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
+                           xmlns:itsm="urn:oasis:names:tc:xliff:itsm:2.1">Arizona<em xmlns="urn:oasis:names:tc:xliff:document:2.0" startRef="sm1"/> Yeah!<sm xmlns="urn:oasis:names:tc:xliff:document:2.0"
+                   id="sm1"
+                   type="itsm:generic"
+                   itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"
+                   itsm:taIdentRef="http://dbpedia.org/resource/Arizona"/>Arizona<em xmlns="urn:oasis:names:tc:xliff:document:2.0" startRef="sm1"/> Yeah!<mrk xmlns="urn:oasis:names:tc:xliff:document:2.0"
+                    id="m1"
+                    type="itsm:generic"
+                    itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"
+                    itsm:taIdentRef="http://dbpedia.org/resource/Arizona">Arizona</mrk>
+               <sm xmlns="urn:oasis:names:tc:xliff:document:2.0"
+                   id="sm1"
+                   type="itsm:generic"
+                   itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"
+                   itsm:taIdentRef="http://dbpedia.org/resource/Arizona"/>Arizona</sm_em-content>
             <taClassRefPointer xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
                                xmlns:itsm="urn:oasis:names:tc:xliff:itsm:2.1"
                                itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"/>
@@ -96,6 +111,161 @@
          <output/>
       </node>
       <node path="/xliff/file[1]/unit[1]/segment[1]/source[2]/em[1]/@startRef"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[2]" outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[2]/@id" outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[2]/segment[1]" outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[2]/segment[1]/source[1]"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[2]/segment[1]/source[1]/sm[1]"
+            outputType="new-value-global">
+         <output>
+            <sm_em-content xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
+                           xmlns:itsm="urn:oasis:names:tc:xliff:itsm:2.1">Arizona<em xmlns="urn:oasis:names:tc:xliff:document:2.0" startRef="sm1"/> Yeah!<mrk xmlns="urn:oasis:names:tc:xliff:document:2.0"
+                    id="m1"
+                    type="itsm:generic"
+                    itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"
+                    itsm:taIdentRef="http://dbpedia.org/resource/Arizona">Arizona</mrk>
+               <sm xmlns="urn:oasis:names:tc:xliff:document:2.0"
+                   id="sm1"
+                   type="itsm:generic"
+                   itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"
+                   itsm:taIdentRef="http://dbpedia.org/resource/Arizona"/>Arizona</sm_em-content>
+            <taClassRefPointer xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
+                               xmlns:itsm="urn:oasis:names:tc:xliff:itsm:2.1"
+                               itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"/>
+            <taIdentRefPointer xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
+                               xmlns:itsm="urn:oasis:names:tc:xliff:itsm:2.1"
+                               itsm:taIdentRef="http://dbpedia.org/resource/Arizona"/>
+         </output>
+      </node>
+      <node path="/xliff/file[1]/unit[2]/segment[1]/source[1]/sm[1]/@id"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[2]/segment[1]/source[1]/sm[1]/@type"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[2]/segment[1]/source[1]/sm[1]/@itsm:taClassRef"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[2]/segment[1]/source[1]/sm[1]/@itsm:taIdentRef"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[2]/segment[1]/target[1]"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[2]/segment[2]" outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[2]/segment[2]/source[1]"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[2]/segment[2]/source[1]/em[1]"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[2]/segment[2]/source[1]/em[1]/@startRef"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[2]/segment[2]/target[1]"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[3]" outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[3]/@id" outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[3]/segment[1]" outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[3]/segment[1]/source[1]"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[3]/segment[1]/source[1]/mrk[1]"
+            outputType="new-value-global">
+         <output>
+            <taClassRefPointer xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
+                               xmlns:itsm="urn:oasis:names:tc:xliff:itsm:2.1"
+                               itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"/>
+            <taIdentRefPointer xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
+                               xmlns:itsm="urn:oasis:names:tc:xliff:itsm:2.1"
+                               itsm:taIdentRef="http://dbpedia.org/resource/Arizona"/>
+         </output>
+      </node>
+      <node path="/xliff/file[1]/unit[3]/segment[1]/source[1]/mrk[1]/@id"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[3]/segment[1]/source[1]/mrk[1]/@type"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[3]/segment[1]/source[1]/mrk[1]/@itsm:taClassRef"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[3]/segment[1]/source[1]/mrk[1]/@itsm:taIdentRef"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[3]/segment[1]/source[2]"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[3]/segment[1]/source[2]/sm[1]"
+            outputType="new-value-global">
+         <output>
+            <sm_em-content xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
+                           xmlns:itsm="urn:oasis:names:tc:xliff:itsm:2.1">Arizona</sm_em-content>
+            <taClassRefPointer xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
+                               xmlns:itsm="urn:oasis:names:tc:xliff:itsm:2.1"
+                               itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"/>
+            <taIdentRefPointer xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
+                               xmlns:itsm="urn:oasis:names:tc:xliff:itsm:2.1"
+                               itsm:taIdentRef="http://dbpedia.org/resource/Arizona"/>
+         </output>
+      </node>
+      <node path="/xliff/file[1]/unit[3]/segment[1]/source[2]/sm[1]/@id"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[3]/segment[1]/source[2]/sm[1]/@type"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[3]/segment[1]/source[2]/sm[1]/@itsm:taClassRef"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[3]/segment[1]/source[2]/sm[1]/@itsm:taIdentRef"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[3]/segment[1]/source[2]/em[1]"
+            outputType="no-value">
+         <output/>
+      </node>
+      <node path="/xliff/file[1]/unit[3]/segment[1]/source[2]/em[1]/@startRef"
             outputType="no-value">
          <output/>
       </node>

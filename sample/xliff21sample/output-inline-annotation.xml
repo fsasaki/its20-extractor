@@ -38,6 +38,22 @@
                    itsm:taIdentRef="http://dbpedia.org/resource/Arizona">
                   <itsAnn xmlns="">
                      <elem>
+                        <sm_em-content xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
+                                       xmlns:its="http://www.w3.org/2005/11/its"
+                                       xmlns:datc="http://example.com/datacats">Arizona<em xmlns="urn:oasis:names:tc:xliff:document:2.0" startRef="sm1"/> Yeah!<sm xmlns="urn:oasis:names:tc:xliff:document:2.0"
+                               id="sm1"
+                               type="itsm:generic"
+                               itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"
+                               itsm:taIdentRef="http://dbpedia.org/resource/Arizona"/>Arizona<em xmlns="urn:oasis:names:tc:xliff:document:2.0" startRef="sm1"/> Yeah!<mrk xmlns="urn:oasis:names:tc:xliff:document:2.0"
+                                id="m1"
+                                type="itsm:generic"
+                                itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"
+                                itsm:taIdentRef="http://dbpedia.org/resource/Arizona">Arizona</mrk>
+                           <sm xmlns="urn:oasis:names:tc:xliff:document:2.0"
+                               id="sm1"
+                               type="itsm:generic"
+                               itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"
+                               itsm:taIdentRef="http://dbpedia.org/resource/Arizona"/>Arizona</sm_em-content>
                         <taClassRefPointer xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
                                            xmlns:its="http://www.w3.org/2005/11/its"
                                            xmlns:datc="http://example.com/datacats"
@@ -50,8 +66,105 @@
                   </itsAnn>
                </sm>Arizona<em startRef="sm1">
                   <itsAnn xmlns=""/>
-               </em>
+               </em> Yeah!</source>
+         </segment>
+      </unit>
+      <unit id="u2">
+         <itsAnn xmlns=""/>
+         <segment>
+            <itsAnn xmlns=""/>
+            <source>
+               <itsAnn xmlns=""/>
+               <sm id="sm1"
+                   type="itsm:generic"
+                   itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"
+                   itsm:taIdentRef="http://dbpedia.org/resource/Arizona">
+                  <itsAnn xmlns="">
+                     <elem>
+                        <sm_em-content xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
+                                       xmlns:its="http://www.w3.org/2005/11/its"
+                                       xmlns:datc="http://example.com/datacats">Arizona<em xmlns="urn:oasis:names:tc:xliff:document:2.0" startRef="sm1"/> Yeah!<mrk xmlns="urn:oasis:names:tc:xliff:document:2.0"
+                                id="m1"
+                                type="itsm:generic"
+                                itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"
+                                itsm:taIdentRef="http://dbpedia.org/resource/Arizona">Arizona</mrk>
+                           <sm xmlns="urn:oasis:names:tc:xliff:document:2.0"
+                               id="sm1"
+                               type="itsm:generic"
+                               itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"
+                               itsm:taIdentRef="http://dbpedia.org/resource/Arizona"/>Arizona</sm_em-content>
+                        <taClassRefPointer xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
+                                           xmlns:its="http://www.w3.org/2005/11/its"
+                                           xmlns:datc="http://example.com/datacats"
+                                           itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"/>
+                        <taIdentRefPointer xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
+                                           xmlns:its="http://www.w3.org/2005/11/its"
+                                           xmlns:datc="http://example.com/datacats"
+                                           itsm:taIdentRef="http://dbpedia.org/resource/Arizona"/>
+                     </elem>
+                  </itsAnn>
+               </sm>Arizona</source>
+            <target>
+               <itsAnn xmlns=""/>Аризона</target>
+         </segment>
+         <segment>
+            <itsAnn xmlns=""/>
+            <source>
+               <itsAnn xmlns=""/>
+               <em startRef="sm1">
+                  <itsAnn xmlns=""/>
+               </em> Yeah!</source>
+            <target>
+               <itsAnn xmlns=""/>Да!</target>
+         </segment>
+      </unit>
+      <unit id="u3">
+         <itsAnn xmlns=""/>
+         <segment>
+            <itsAnn xmlns=""/>
+            <source>
+               <itsAnn xmlns=""/>
+               <mrk id="m1"
+                    type="itsm:generic"
+                    itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"
+                    itsm:taIdentRef="http://dbpedia.org/resource/Arizona">
+                  <itsAnn xmlns="">
+                     <elem>
+                        <taClassRefPointer xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
+                                           xmlns:its="http://www.w3.org/2005/11/its"
+                                           xmlns:datc="http://example.com/datacats"
+                                           itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"/>
+                        <taIdentRefPointer xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
+                                           xmlns:its="http://www.w3.org/2005/11/its"
+                                           xmlns:datc="http://example.com/datacats"
+                                           itsm:taIdentRef="http://dbpedia.org/resource/Arizona"/>
+                     </elem>
+                  </itsAnn>Arizona</mrk>
             </source>
+            <source>
+               <itsAnn xmlns=""/>
+               <sm id="sm1"
+                   type="itsm:generic"
+                   itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"
+                   itsm:taIdentRef="http://dbpedia.org/resource/Arizona">
+                  <itsAnn xmlns="">
+                     <elem>
+                        <sm_em-content xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
+                                       xmlns:its="http://www.w3.org/2005/11/its"
+                                       xmlns:datc="http://example.com/datacats">Arizona</sm_em-content>
+                        <taClassRefPointer xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
+                                           xmlns:its="http://www.w3.org/2005/11/its"
+                                           xmlns:datc="http://example.com/datacats"
+                                           itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"/>
+                        <taIdentRefPointer xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
+                                           xmlns:its="http://www.w3.org/2005/11/its"
+                                           xmlns:datc="http://example.com/datacats"
+                                           itsm:taIdentRef="http://dbpedia.org/resource/Arizona"/>
+                     </elem>
+                  </itsAnn>
+               </sm>Arizona<em startRef="sm1">
+                  <itsAnn xmlns=""/>
+               </em> Yeah!</source>
          </segment>
       </unit>
    </file>
