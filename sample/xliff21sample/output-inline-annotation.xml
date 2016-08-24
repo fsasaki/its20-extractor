@@ -40,20 +40,7 @@
                      <elem>
                         <sm_em-content xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
                                        xmlns:its="http://www.w3.org/2005/11/its"
-                                       xmlns:datc="http://example.com/datacats">Arizona<em xmlns="urn:oasis:names:tc:xliff:document:2.0" startRef="sm1"/> Yeah!<sm xmlns="urn:oasis:names:tc:xliff:document:2.0"
-                               id="sm1"
-                               type="itsm:generic"
-                               itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"
-                               itsm:taIdentRef="http://dbpedia.org/resource/Arizona"/>Arizona<em xmlns="urn:oasis:names:tc:xliff:document:2.0" startRef="sm1"/> Yeah!<mrk xmlns="urn:oasis:names:tc:xliff:document:2.0"
-                                id="m1"
-                                type="itsm:generic"
-                                itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"
-                                itsm:taIdentRef="http://dbpedia.org/resource/Arizona">Arizona</mrk>
-                           <sm xmlns="urn:oasis:names:tc:xliff:document:2.0"
-                               id="sm1"
-                               type="itsm:generic"
-                               itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"
-                               itsm:taIdentRef="http://dbpedia.org/resource/Arizona"/>Arizona</sm_em-content>
+                                       xmlns:datc="http://example.com/datacats">Arizona-u1-sm1</sm_em-content>
                         <taClassRefPointer xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
                                            xmlns:its="http://www.w3.org/2005/11/its"
                                            xmlns:datc="http://example.com/datacats"
@@ -64,7 +51,7 @@
                                            itsm:taIdentRef="http://dbpedia.org/resource/Arizona"/>
                      </elem>
                   </itsAnn>
-               </sm>Arizona<em startRef="sm1">
+               </sm>Arizona-u1-sm1<em startRef="sm1">
                   <itsAnn xmlns=""/>
                </em> Yeah!</source>
          </segment>
@@ -83,16 +70,7 @@
                      <elem>
                         <sm_em-content xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
                                        xmlns:its="http://www.w3.org/2005/11/its"
-                                       xmlns:datc="http://example.com/datacats">Arizona<em xmlns="urn:oasis:names:tc:xliff:document:2.0" startRef="sm1"/> Yeah!<mrk xmlns="urn:oasis:names:tc:xliff:document:2.0"
-                                id="m1"
-                                type="itsm:generic"
-                                itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"
-                                itsm:taIdentRef="http://dbpedia.org/resource/Arizona">Arizona</mrk>
-                           <sm xmlns="urn:oasis:names:tc:xliff:document:2.0"
-                               id="sm1"
-                               type="itsm:generic"
-                               itsm:taClassRef="http://nerd.eurecom.fr/ontology#Place"
-                               itsm:taIdentRef="http://dbpedia.org/resource/Arizona"/>Arizona</sm_em-content>
+                                       xmlns:datc="http://example.com/datacats">Arizona-u2-sm1</sm_em-content>
                         <taClassRefPointer xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
                                            xmlns:its="http://www.w3.org/2005/11/its"
                                            xmlns:datc="http://example.com/datacats"
@@ -103,7 +81,7 @@
                                            itsm:taIdentRef="http://dbpedia.org/resource/Arizona"/>
                      </elem>
                   </itsAnn>
-               </sm>Arizona</source>
+               </sm>Arizona-u2-sm1</source>
             <target>
                <itsAnn xmlns=""/>Аризона</target>
          </segment>
@@ -151,7 +129,7 @@
                      <elem>
                         <sm_em-content xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
                                        xmlns:its="http://www.w3.org/2005/11/its"
-                                       xmlns:datc="http://example.com/datacats">Arizona</sm_em-content>
+                                       xmlns:datc="http://example.com/datacats">Arizona-u3-sm1</sm_em-content>
                         <taClassRefPointer xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
                                            xmlns:its="http://www.w3.org/2005/11/its"
                                            xmlns:datc="http://example.com/datacats"
@@ -162,9 +140,46 @@
                                            itsm:taIdentRef="http://dbpedia.org/resource/Arizona"/>
                      </elem>
                   </itsAnn>
-               </sm>Arizona<em startRef="sm1">
+               </sm>Arizona-u3-sm1<em startRef="sm1">
                   <itsAnn xmlns=""/>
                </em> Yeah!</source>
+         </segment>
+      </unit>
+      <unit id="u4">
+         <itsAnn xmlns=""/>
+         <segment>
+            <itsAnn xmlns=""/>
+            <source>
+               <itsAnn xmlns=""/>
+               <mrk id="m1" translate="no" type="term">
+                  <itsAnn xmlns=""/>Text1 <sm id="sm1"
+                      type="itsm:generic"
+                      itsm:taClassRef="http://example/ontology#Thing"
+                      itsm:taIdentRef="http://example.com/ref">
+                     <itsAnn xmlns="">
+                        <elem>
+                           <sm_em-content xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
+                                          xmlns:its="http://www.w3.org/2005/11/its"
+                                          xmlns:datc="http://example.com/datacats">Arizona-u4-sm1Text4</sm_em-content>
+                           <taClassRefPointer xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
+                                              xmlns:its="http://www.w3.org/2005/11/its"
+                                              xmlns:datc="http://example.com/datacats"
+                                              itsm:taClassRef="http://example/ontology#Thing"/>
+                           <taIdentRefPointer xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0"
+                                              xmlns:its="http://www.w3.org/2005/11/its"
+                                              xmlns:datc="http://example.com/datacats"
+                                              itsm:taIdentRef="http://example.com/ref"/>
+                        </elem>
+                     </itsAnn>
+                  </sm>Arizona-u4-sm1</mrk>
+            </source>
+         </segment>
+         <segment>
+            <itsAnn xmlns=""/>
+            <source>
+               <itsAnn xmlns=""/>Text4<em startRef="sm1">
+                  <itsAnn xmlns=""/>
+               </em> text5.</source>
          </segment>
       </unit>
    </file>

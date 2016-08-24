@@ -286,8 +286,22 @@
 						<output>
 							<XSL:if test="self::xlf2:sm" xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0">
 								<XSL:variable name="startRefId" select="@id"/>
-								<XSL:variable name="parentElem" select="name(parent::*)"/>
-								<sm_em-content><XSL:copy-of select="self::xlf2:sm/following::node()[parent::*[name()=$parentElem] and following::xlf2:em[parent::*[name()=$parentElem] and @startRef=$startRefId]]"></XSL:copy-of></sm_em-content>
+								<XSL:variable name="segments"><dummy><XSL:copy-of select="ancestor::xlf2:unit[1]//xlf2:segment"></XSL:copy-of></dummy></XSL:variable>
+								<XSL:message>segments: <XSL:copy-of select="$segments"/></XSL:message>
+								<XSL:message>startRefId: <XSL:value-of select="$startRefId"/></XSL:message>
+								<XSL:message>sm: <XSL:copy-of select="$segments//xlf2:sm[@id=$startRefId]"/></XSL:message>
+								<XSL:message>sm following nodes: <XSL:copy-of select="$segments//xlf2:sm[@id=$startRefId]/following::node()"/></XSL:message>
+								<XSL:message>following nodes - ancestor xl2:source <XSL:copy-of select="$segments//xlf2:sm[@id=$startRefId]/following::node()[ancestor::xlf2:source and following::xlf2:em[ancestor::xlf2:source and @startRef=$startRefId]]"/></XSL:message>
+								<sm_em-content>
+									<XSL:choose>
+										<XSL:when test="ancestor::xlf2:source">
+											<XSL:copy-of select="$segments//xlf2:sm[@id=$startRefId]/following::node()[ancestor::xlf2:source and following::xlf2:em[ancestor::xlf2:source and @startRef=$startRefId]]"></XSL:copy-of>
+										</XSL:when>
+										<XSL:when test="ancestor::xlf2:target">
+											<XSL:copy-of select="$segments//xlf2:sm[@id=$startRefId]/following::node()[ancestor::xlf2:target and following::xlf2:em[ancestor::xlf2:target and @startRef=$startRefId]]"></XSL:copy-of>
+										</XSL:when>
+									</XSL:choose>
+								</sm_em-content>
 							</XSL:if>
 							<xsl:if test="not(empty($globalMarkup))">
 								<xsl:copy-of

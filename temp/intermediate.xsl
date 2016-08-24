@@ -147,9 +147,30 @@
             <output>
                <xsl:if test="self::xlf2:sm">
                   <xsl:variable name="startRefId" select="@id"/>
-                  <xsl:variable name="parentElem" select="name(parent::*)"/>
+                  <xsl:variable name="segments">
+                     <dummy>
+                        <xsl:copy-of select="ancestor::xlf2:unit[1]//xlf2:segment"/>
+                     </dummy>
+                  </xsl:variable>
+                  <xsl:message>segments: <xsl:copy-of select="$segments"/>
+                  </xsl:message>
+                  <xsl:message>startRefId: <xsl:value-of select="$startRefId"/>
+                  </xsl:message>
+                  <xsl:message>sm: <xsl:copy-of select="$segments//xlf2:sm[@id=$startRefId]"/>
+                  </xsl:message>
+                  <xsl:message>sm following nodes: <xsl:copy-of select="$segments//xlf2:sm[@id=$startRefId]/following::node()"/>
+                  </xsl:message>
+                  <xsl:message>following nodes - ancestor xl2:source <xsl:copy-of select="$segments//xlf2:sm[@id=$startRefId]/following::node()[ancestor::xlf2:source and following::xlf2:em[ancestor::xlf2:source and @startRef=$startRefId]]"/>
+                  </xsl:message>
                   <sm_em-content>
-                     <xsl:copy-of select="self::xlf2:sm/following::node()[parent::*[name()=$parentElem] and following::xlf2:em[parent::*[name()=$parentElem] and @startRef=$startRefId]]"/>
+                     <xsl:choose>
+                        <xsl:when test="ancestor::xlf2:source">
+                           <xsl:copy-of select="$segments//xlf2:sm[@id=$startRefId]/following::node()[ancestor::xlf2:source and following::xlf2:em[ancestor::xlf2:source and @startRef=$startRefId]]"/>
+                        </xsl:when>
+                        <xsl:when test="ancestor::xlf2:target">
+                           <xsl:copy-of select="$segments//xlf2:sm[@id=$startRefId]/following::node()[ancestor::xlf2:target and following::xlf2:em[ancestor::xlf2:target and @startRef=$startRefId]]"/>
+                        </xsl:when>
+                     </xsl:choose>
                   </sm_em-content>
                </xsl:if>
                <taClassRefPointer>
@@ -199,9 +220,30 @@
             <output>
                <xsl:if test="self::xlf2:sm">
                   <xsl:variable name="startRefId" select="@id"/>
-                  <xsl:variable name="parentElem" select="name(parent::*)"/>
+                  <xsl:variable name="segments">
+                     <dummy>
+                        <xsl:copy-of select="ancestor::xlf2:unit[1]//xlf2:segment"/>
+                     </dummy>
+                  </xsl:variable>
+                  <xsl:message>segments: <xsl:copy-of select="$segments"/>
+                  </xsl:message>
+                  <xsl:message>startRefId: <xsl:value-of select="$startRefId"/>
+                  </xsl:message>
+                  <xsl:message>sm: <xsl:copy-of select="$segments//xlf2:sm[@id=$startRefId]"/>
+                  </xsl:message>
+                  <xsl:message>sm following nodes: <xsl:copy-of select="$segments//xlf2:sm[@id=$startRefId]/following::node()"/>
+                  </xsl:message>
+                  <xsl:message>following nodes - ancestor xl2:source <xsl:copy-of select="$segments//xlf2:sm[@id=$startRefId]/following::node()[ancestor::xlf2:source and following::xlf2:em[ancestor::xlf2:source and @startRef=$startRefId]]"/>
+                  </xsl:message>
                   <sm_em-content>
-                     <xsl:copy-of select="self::xlf2:sm/following::node()[parent::*[name()=$parentElem] and following::xlf2:em[parent::*[name()=$parentElem] and @startRef=$startRefId]]"/>
+                     <xsl:choose>
+                        <xsl:when test="ancestor::xlf2:source">
+                           <xsl:copy-of select="$segments//xlf2:sm[@id=$startRefId]/following::node()[ancestor::xlf2:source and following::xlf2:em[ancestor::xlf2:source and @startRef=$startRefId]]"/>
+                        </xsl:when>
+                        <xsl:when test="ancestor::xlf2:target">
+                           <xsl:copy-of select="$segments//xlf2:sm[@id=$startRefId]/following::node()[ancestor::xlf2:target and following::xlf2:em[ancestor::xlf2:target and @startRef=$startRefId]]"/>
+                        </xsl:when>
+                     </xsl:choose>
                   </sm_em-content>
                </xsl:if>
                <taClassRefPointer>
