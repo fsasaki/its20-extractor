@@ -286,7 +286,7 @@
 						<output>
 							<XSL:if test="self::xlf2:sm" xmlns:xlf2="urn:oasis:names:tc:xliff:document:2.0">
 								<XSL:variable name="startRefId" select="@id"/>
-								<XSL:variable name="segments"><dummy><XSL:copy-of select="ancestor::xlf2:unit[1]//xlf2:segment"></XSL:copy-of></dummy></XSL:variable>
+								<XSL:variable name="segments"><dummy><XSL:copy-of select="ancestor::xlf2:unit[1]//xlf2:segment | ancestor::xlf2:unit[1]//xlf2:ignorable"></XSL:copy-of></dummy></XSL:variable>
 								<XSL:message>segments: <XSL:copy-of select="$segments"/></XSL:message>
 								<XSL:message>startRefId: <XSL:value-of select="$startRefId"/></XSL:message>
 								<XSL:message>sm: <XSL:copy-of select="$segments//xlf2:sm[@id=$startRefId]"/></XSL:message>
